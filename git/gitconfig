@@ -2,6 +2,9 @@
 	br = branch
 	ci = commit
 	co = checkout
+	dc = diff --cached
+	df = diff
+	lg = log
 	st = status
 [color]
 	ui = true
