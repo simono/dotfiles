@@ -5,6 +5,8 @@
 	dc = diff --cached
 	df = diff
 	lg = log
+	lgo = log origin/master..master
+	puu = pull upstream master
 	st = status
 [color]
 	ui = true
