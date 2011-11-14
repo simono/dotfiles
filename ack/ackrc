@@ -1,0 +1,18 @@
+# ack configuration file.
+#
+# Location: ~/.ackrc
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+# Ignore Maven's target dir
+--ignore-dir=target
+
+# Similar to "smartcase" in vim
+--smart-case
+
+# Always sort the files
+--sort-files
+
+# Coma type
+--type-set=coma=.i,.cma
