@@ -1,0 +1,109 @@
+" Vim configuration file.
+"
+" Location: ~/.vimrc
+"
+" Simon Olofsson <simon@olofsson.de>
+"
+
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" enable file type detection
+filetype plugin indent on
+" syntax highlighting
+syntax on
+" completion mode that is used in insert mode
+set completeopt=longest,menu
+" highlight the screen line of the cursor
+set cursorline
+" Use ack for grepping
+set grepprg=ack-grep\ -a
+" highlight the previous search pattern
+set hlsearch
+" ignore case in search patterns
+set ignorecase
+" do incremental searching
+set incsearch
+" always show status line
+set laststatus=2
+" print the line number in front of each line
+set number
+" show the cursor position all the time
+set ruler
+" minimal number of screen lines to keep above and below the cursor
+set scrolloff=2
+" display incomplete commands
+set showcmd
+" when a bracket is inserted, briefly jump to the matching one
+set showmatch
+" override 'ignorecase' if the search pattern contains upper case characters
+set smartcase
+" completion mode that is used on the command line
+set wildmode=longest,list
+
+" Vim 7.3 features
+if v:version > 702
+	" highlight column after 'textwidth'
+	set colorcolumn=+1
+	" Concealed text is completely hidden unless it has
+	" a custom replacement character defined
+	set conceallevel=2
+endif
+
+" Appearance
+if has("gui_macvim")
+	" Dark background
+	set background=dark
+else
+	" Load color scheme
+	colorscheme desert
+endif
+
+" FileType settings
+autocmd FileType *html set tabstop=2 shiftwidth=2
+autocmd FileType *tex set textwidth=80 tabstop=2 shiftwidth=2
+autocmd FileType mail set textwidth=72 wrap
+autocmd FileType php set tabstop=2 shiftwidth=2
+autocmd FileType text setlocal textwidth=78
+autocmd FileType vimwiki set tabstop=2 shiftwidth=2
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+if !exists(":DiffOrig")
+	command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+				\ | wincmd p | diffthis
+endif
+
+if has("gui_running")
+	" save sessions with .vis extension
+	map <Leader>se :mksession!  session.vis<CR>
+	" automatically source vim sessions
+	au BufRead *.vis source %
+endif
+
+" CTRL-U in insert mode deletes a lot. Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+inoremap <C-U> <C-G>u<C-U>
+
+" Signature
+nnoremap <Leader>sig i Simon Olofsson <<C-r>=$DEBEMAIL<CR>><Esc>
+
+" Spell checking
+" Toggle German spelling, with \sg
+nnoremap <Leader>sg :setlocal spell! spelllang=de_20 <CR>
+" Toggle English spelling, with \sa
+nnoremap <Leader>sa :setlocal spell! spelllang=en_us <CR>
+
+" Search and replace the word under the cursor, with \sr
+nnoremap <Leader>sr :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+
+" Use <F6> to close HTML/XML tags
+inoremap <F6> </<C-X><C-O>
+
+" Use <F7> to toggle between 'paste' and 'nopaste'
+set pastetoggle=<F7>
