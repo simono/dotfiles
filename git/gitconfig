@@ -1,3 +1,10 @@
+# git configuration file.
+#
+# Location: ~/.gitconfig
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
 [alias]
 	br = branch
 	ci = commit
