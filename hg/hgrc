@@ -1,0 +1,16 @@
+# Mercurial configuration file.
+#
+# Location: ~/.hgrc
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+[ui]
+username = Simon Olofsson <simon@olofsson.de>
+
+[extensions]
+color =
+fetch =
+graphlog =
+pager =
+record =
