@@ -8,11 +8,11 @@
 set -o errexit
 set -o nounset
 
-local full_path="$(pwd)/$(dirname $0)"
+full_path="$(pwd)/$(dirname $0)"
 
 getopts f force && shift $((OPTIND-1))
 test $force = 'f' || force=''
-local ln="ln -vs$force"
+ln="ln -vs$force"
 
 $ln $full_path/ack/ackrc	$HOME/.ackrc
 $ln $full_path/git/gitconfig	$HOME/.gitconfig
