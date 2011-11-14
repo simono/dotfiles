@@ -1,0 +1,17 @@
+# Zsh config for login shells.
+#
+# Location: ~/.zprofile
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+# set PATH
+for p in '/usr/local/bin' "$HOME/bin"; do
+	if [ -d $p ]; then
+		PATH="$p:$PATH"
+	fi
+done
+
+export EDITOR='vim'
+export PAGER='vimpager'
+export LSCOLORS='gxBxhxDxfxhxhxhxhxcxcx'

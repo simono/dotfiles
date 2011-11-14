@@ -1,0 +1,237 @@
+# Zsh config for interactive shells.
+#
+# Location: ~/.zshrc
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=$HISTSIZE
+
+# Set some system dependent variables
+case $(uname -s) in
+	'Linux' )
+		local lsOpts='--color=auto'
+		local rmOpts='-I'
+		alias ack="ack-grep"
+		alias so-mktemp='mktemp'
+		;;
+	*BSD )
+		local lsOpts='-G'
+		local rmOpts='-I'
+		alias so-mktemp='mktemp -t sim'
+		;;
+	'Darwin' )
+		local lsOpts='-G'
+		alias so-mktemp='mktemp -t sim'
+		;;
+	* )
+		echo "Unknown system: $(uname -s)"
+		;;
+esac
+
+# Aliases
+alias cp='nocorrect cp -iv'
+alias df='df -h'
+alias du='du -h'
+alias ll='ls -l'
+alias ls="ls -hF $lsOpts"
+alias mkdir='nocorrect mkdir'
+alias mmv='nocorrect mmv -v'
+alias mv='nocorrect mv -iv'
+alias rm="rm -v $rmOpts"
+
+# Custom aliases
+alias so-ci='nocorrect so-checkin'
+alias so-tmp='cd $(so-mktemp -d)'
+alias so-reset='cd; clear'
+alias so-svn-hdiff='so-svn-diff -rBASE:HEAD'
+alias so-svn-hlog='svn log -rHEAD:BASE'
+
+# The shell's MIME system
+autoload -U zsh-mime-setup && zsh-mime-setup
+
+# When typing an URL, escape characters like *
+autoload -U url-quote-magic
+zle -N self-insert url-quote-magic
+
+# Colors
+autoload -U colors && colors
+
+for color in blue cyan magenta green red; do
+	eval $color='%{$fg[${color}]%}'
+done
+local resetColor="%{${reset_color}%}";
+
+# Format for folders
+local folder="%(4~.%1~.%~)"
+
+# Prompt
+PS1="$blue%n$resetColor@$cyan%m$resetColor:$magenta$folder%(?.$green.$red)%#$resetColor "
+# Show the vi mode on the right side and update it
+zle-line-init zle-keymap-select() {
+	RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+	RPS2=$RPS1
+	zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+# Options, see zshoptions(1)
+# Changing Directories
+setopt auto_cd auto_pushd cdable_vars pushd_ignore_dups pushd_silent pushd_to_home
+# Completion
+setopt auto_menu complete_in_word
+# Expansion and Globbing
+setopt extended_glob nomatch
+# History
+setopt append_history hist_ignore_all_dups hist_reduce_blanks hist_verify
+# Input/Output
+setopt correct_all
+unsetopt flow_control
+# Job Control
+setopt long_list_jobs
+unsetopt notify
+# Prompting
+setopt transient_rprompt
+# Zle
+unsetopt beep
+
+# Completion, see zshcompsys(1)
+autoload -U compinit && compinit
+zstyle ':completion:*' auto-description 'specify: %d'
+zstyle ':completion:*' complete 1
+zstyle ':completion:*' completer _list _oldlist _expand _complete _ignored _match _correct _approximate _prefix
+zstyle ':completion:*' condition 0
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' file-sort name
+zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' glob 1
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' ignore-parents parent pwd .. directory
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+zstyle ':completion:*' list-suffixes true
+zstyle ':completion:*' match-original both
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=** r:|=**' 'l:|=* r:|=*'
+zstyle ':completion:*' max-errors 2 numeric
+zstyle ':completion:*' menu select=4
+zstyle ':completion:*' original false
+zstyle ':completion:*' preserve-prefix '//[^/]##/'
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+zstyle ':completion:*' special-dirs true
+zstyle ':completion:*' squeeze-slashes true
+zstyle ':completion:*' substitute 1
+zstyle ':completion:*' use-cache 1
+zstyle ':completion:*' verbose true
+
+# Keys
+# Use vi bindings
+bindkey -v
+
+# have zkbd determine your keymaps
+# unset $DISPLAY while running zkbd, because is doesn't work under Mac OS X
+local oldDisplay=$DISPLAY
+unset DISPLAY
+autoload -U zkbd
+local zkbdFile="${ZDOTDIR:-$HOME}/.zkbd/$TERM-${DISPLAY:-$VENDOR-$OSTYPE}"
+[[ ! -f $zkbdFile ]] && zkbd
+source $zkbdFile
+export DISPLAY=$oldDisplay
+
+# setup keys accordingly
+[[ -n "${key[Backspace]}" ]] && bindkey "${key[Backspace]}" backward-delete-char
+[[ -n "${key[Home]}"      ]] && bindkey "${key[Home]}"      beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey "${key[End]}"       end-of-line
+[[ -n "${key[Insert]}"    ]] && bindkey "${key[Insert]}"    overwrite-mode
+[[ -n "${key[Delete]}"    ]] && bindkey "${key[Delete]}"    delete-char
+[[ -n "${key[Up]}"        ]] && bindkey "${key[Up]}"        up-line-or-history
+[[ -n "${key[Down]}"      ]] && bindkey "${key[Down]}"      down-line-or-history
+[[ -n "${key[Left]}"      ]] && bindkey "${key[Left]}"      backward-char
+[[ -n "${key[Right]}"     ]] && bindkey "${key[Right]}"     forward-char
+[[ -n "${key[PageUp]}"    ]] && bindkey "${key[PageUp]}"    up-line-or-history
+[[ -n "${key[PageDown]}"  ]] && bindkey "${key[PageDown]}"  down-line-or-history
+
+# enable special keys, when we're in insert mode
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
+bindkey '^N' vi-down-line-or-history
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^O' copy-prev-shell-word
+# load 'menuselect' keymap
+zmodload -i zsh/complist
+# execute a selection when pressing enter
+bindkey -M menuselect '^M' .accept-line
+
+# Setup screen
+if [[ $TERM == screen* ]]; then
+
+	# Update screen's window title
+	update_window_title() {
+		print -nP "\ek$1\e\\"
+	}
+
+	# Display the full command string
+	preexec() {
+		update_window_title "$1"
+	}
+
+	# Extract path when showing a prompt
+	precmd() {
+		update_window_title "$folder%#"
+		# Ring the bell before displaying the prompt
+		echo -ne '\a'
+	}
+fi
+
+# Functions
+
+so-diff() {
+	diff -ruN "$@" | $PAGER
+}
+
+so-svn-diff() {
+	# Remove carriage returns from the diff
+	svn diff "$@" | tr -d '\r' | $PAGER
+}
+
+so-xml-format() {
+	for f in $@; do
+		if [[ -f $f ]]; then
+			xmllint --format "$f" --output "$f"
+		else
+			echo "$f is not a file."
+		fi
+	done
+}
+
+so-take() {
+	mkdir -p "$1" && cd "$1"
+}
+
+so-checkin() {
+	if [[ $# -eq 0 ]]; then
+		if [[ -f debian/changelog ]]; then
+			debcommit -C
+		else
+			echo "Usage: $0 My commit message"
+		fi
+		return 0
+	fi
+	local tmp=$(so-mktemp)
+	echo -n $@ > $tmp
+	if [[ -d .svn ]]; then
+		svn ci -F $tmp
+	else
+		hg ci -l $tmp
+	fi
+	rm -f $tmp > /dev/null
+}
+
+# Other stuff
+[[ -f /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
