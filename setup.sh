@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Link config files.
+# Setup config files.
 #
 # Simon Olofsson <simon@olofsson.de>
 #
