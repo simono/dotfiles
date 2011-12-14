@@ -193,9 +193,7 @@ fi
 
 git() { hub "$@" }
 
-so-diff() {
-	diff -ruN "$@" | $PAGER
-}
+so-diff() { diff -ruN "$@" | $PAGER }
 
 so-svn-diff() {
 	# Remove carriage returns from the diff
@@ -212,9 +210,7 @@ so-xml-format() {
 	done
 }
 
-so-take() {
-	mkdir -p "$1" && cd "$1"
-}
+so-take() { mkdir -p "$1" && cd "$1" }
 
 so-checkin() {
 	if [[ $# -eq 0 ]]; then
