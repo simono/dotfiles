@@ -191,6 +191,8 @@ fi
 
 # Functions
 
+git() { hub "$@" }
+
 so-diff() {
 	diff -ruN "$@" | $PAGER
 }
