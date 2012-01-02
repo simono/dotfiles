@@ -45,7 +45,6 @@ alias mv='nocorrect mv -iv'
 alias rm="rm -v $rmOpts"
 
 # Custom aliases
-alias so-ci='nocorrect so-checkin'
 alias so-du-dirs='du -s *(/)'
 alias so-reset='cd; clear'
 alias so-svn-hdiff='so-svn-diff -rBASE:HEAD'
@@ -213,25 +212,6 @@ so-xml-format() {
 }
 
 so-take() { mkdir -p "$1" && cd "$1" }
-
-so-checkin() {
-	if [[ $# -eq 0 ]]; then
-		if [[ -f debian/changelog ]]; then
-			debcommit -C
-		else
-			echo "Usage: $0 My commit message"
-		fi
-		return 0
-	fi
-	local tmp=$(so-mktemp)
-	echo -n $@ > $tmp
-	if [[ -d .svn ]]; then
-		svn ci -F $tmp
-	else
-		hg ci -l $tmp
-	fi
-	rm -f $tmp > /dev/null
-}
 
 # Other stuff
 [[ -f /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
