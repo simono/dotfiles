@@ -34,6 +34,7 @@ esac
 
 # Aliases
 alias cp='nocorrect cp -iv'
+alias debcommit='debcommit -C'
 alias df='df -h'
 alias du='du -h'
 alias ll='ls -l'
