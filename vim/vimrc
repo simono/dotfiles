@@ -70,6 +70,7 @@ autocmd FileType mail set textwidth=72 wrap
 autocmd FileType php set tabstop=2 shiftwidth=2
 autocmd FileType text setlocal textwidth=78
 autocmd FileType vimwiki set tabstop=2 shiftwidth=2
+autocmd FileType xml set tabstop=2 shiftwidth=2
 autocmd FileType xslt set tabstop=2 shiftwidth=2
 
 " Convenient command to see the difference between the current buffer and the
