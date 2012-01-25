@@ -114,3 +114,6 @@ inoremap <F6> </<C-X><C-O>
 
 " Use <F7> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F7>
+
+" Toggle NERDTree with <F8>
+nnoremap <F8> :NERDTreeToggle<CR>
