@@ -1,3 +1,3 @@
 # My config files.
 
-Just run `link.sh` to create all links.
+Just run `setup.sh`.
