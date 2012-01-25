@@ -1,3 +1,3 @@
 # My config files.
 
-Just run `setup.sh`.
+Just run `git submodule update --init` and `setup.sh`.
