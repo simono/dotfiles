@@ -26,6 +26,8 @@ link ack/ackrc		ackrc
 link git/gitconfig	gitconfig
 link hg/hgrc		hgrc
 link tmux/tmux.conf	tmux.conf
+mkdir -p $HOME/.vim
+link vim/bundle		vim/bundle
 link vim/vimrc		vimrc
 link zsh/zprofile	zprofile
 link zsh/zshrc		zshrc
