@@ -20,7 +20,7 @@ set backspace=indent,eol,start
 " enable file type detection
 filetype plugin indent on
 " syntax highlighting
-syntax on
+syntax enable
 " completion mode that is used in insert mode
 set completeopt=longest,menu
 " highlight the screen line of the cursor
