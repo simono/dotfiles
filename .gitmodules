@@ -4,3 +4,4 @@
 [submodule "vim/bundle/vimwiki"]
 	path = vim/bundle/vimwiki
 	url = git://github.com/vim-scripts/vimwiki.git
+	ignore = untracked
