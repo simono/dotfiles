@@ -32,8 +32,8 @@ set ignorecase
 set incsearch
 " always show status line
 set laststatus=2
-" print the line number in front of each line
-set number
+" show the line numer relative to the current line
+set relativenumber
 " show the cursor position all the time
 set ruler
 " minimal number of screen lines to keep above and below the cursor
