@@ -14,9 +14,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
 " enable file type detection
 filetype plugin indent on
 " syntax highlighting
