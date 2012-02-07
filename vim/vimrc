@@ -114,3 +114,13 @@ set pastetoggle=<F7>
 
 " Toggle NERDTree with <F8>
 nnoremap <F8> :NERDTreeToggle<CR>
+
+" Disable arrow keys
+noremap		<Up>	<nop>
+noremap		<Down>	<nop>
+noremap		<Left>	<nop>
+noremap		<Right>	<nop>
+inoremap	<Up>	<nop>
+inoremap	<Down>	<nop>
+inoremap	<Left>	<nop>
+inoremap	<Right>	<nop>
