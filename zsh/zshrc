@@ -71,6 +71,10 @@ local folder="%(4~.%1~.%~)"
 
 # Prompt
 PS1="$blue%n$resetColor@$cyan%m$resetColor:$magenta$folder%(?.$green.$red)%#$resetColor "
+
+# Use vi bindings
+bindkey -v
+
 # Start in normal (cmd) mode
 zle-line-init() {
 	zle -K vicmd
@@ -142,9 +146,6 @@ zstyle ':completion:*' substitute 1
 zstyle ':completion:*' use-cache 1
 zstyle ':completion:*' verbose true
 
-# Keys
-# Use vi bindings
-bindkey -v
 # Setup screen
 if [[ $TERM == screen* ]]; then
 
