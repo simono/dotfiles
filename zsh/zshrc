@@ -138,12 +138,6 @@ zstyle ':completion:*' verbose true
 # Keys
 # Use vi bindings
 bindkey -v
-
-# load 'menuselect' keymap
-zmodload -i zsh/complist
-# execute a selection when pressing enter
-bindkey -M menuselect '^M' .accept-line
-
 # Setup screen
 if [[ $TERM == screen* ]]; then
 
