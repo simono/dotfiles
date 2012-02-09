@@ -134,16 +134,6 @@ zstyle ':completion:*' verbose true
 # Use vi bindings
 bindkey -v
 
-# have zkbd determine your keymaps
-# unset $DISPLAY while running zkbd, because is doesn't work under Mac OS X
-local oldDisplay=$DISPLAY
-unset DISPLAY
-autoload -U zkbd
-local zkbdFile="${ZDOTDIR:-$HOME}/.zkbd/$TERM-${DISPLAY:-$VENDOR-$OSTYPE}"
-[[ ! -f $zkbdFile ]] && zkbd
-source $zkbdFile
-export DISPLAY=$oldDisplay
-
 # setup keys accordingly
 [[ -n "${key[Backspace]}" ]] && bindkey "${key[Backspace]}" backward-delete-char
 [[ -n "${key[Home]}"      ]] && bindkey "${key[Home]}"      beginning-of-line
