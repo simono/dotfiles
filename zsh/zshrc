@@ -71,6 +71,12 @@ local folder="%(4~.%1~.%~)"
 
 # Prompt
 PS1="$blue%n$resetColor@$cyan%m$resetColor:$magenta$folder%(?.$green.$red)%#$resetColor "
+# Start in normal (cmd) mode
+zle-line-init() {
+	zle -K vicmd
+}
+zle -N zle-line-init
+
 # Show the vi mode on the right side and update it
 zle-line-init zle-keymap-select() {
 	RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
