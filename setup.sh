@@ -10,7 +10,7 @@ set -o nounset
 
 # link target linkName
 link() {
-	local target="$(pwd)/$(dirname $0)/$1"
+	local target="$(pwd)/$(dirname $0)/$1/$2"
 	local linkName="$HOME/.$2"
 
 	if [ -L $linkName ]; then
@@ -22,12 +22,12 @@ link() {
 	fi
 }
 
-link ack/ackrc		ackrc
-link git/gitconfig	gitconfig
-link hg/hgrc		hgrc
-link tmux/tmux.conf	tmux.conf
+link ack	ackrc
+link git	gitconfig
+link hg		hgrc
+link tmux	tmux.conf
 mkdir -p $HOME/.vim
-link vim/bundle		vim/bundle
-link vim/vimrc		vimrc
-link zsh/zprofile	zprofile
-link zsh/zshrc		zshrc
+link ''		vim/bundle
+link vim	vimrc
+link zsh	zprofile
+link zsh	zshrc
