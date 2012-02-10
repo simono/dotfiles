@@ -14,9 +14,9 @@ link() {
 	local linkName="$HOME/.$2"
 
 	if [ -L $linkName ]; then
-		ln -vsf $target $linkName
+		ln -nvsf $target $linkName
 	elif [ ! -e $linkName ]; then
-		ln -vs $target $linkName
+		ln -nvs $target $linkName
 	else
 		echo "$linkName already exists!"
 	fi
