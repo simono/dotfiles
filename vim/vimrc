@@ -83,6 +83,12 @@ if !exists(":DiffOrig")
 				\ | wincmd p | diffthis
 endif
 
+" Run xmllint on the range
+if !exists(":XmlFormat")
+	command -range=% XmlFormat set ft=xml 
+		\ | :<line1>,<line2>!xmllint --format --recover - 2>/dev/null
+endif
+
 if has("gui_running")
 	" save sessions with .vis extension
 	map <Leader>se :mksession!  session.vis<CR>
