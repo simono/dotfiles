@@ -75,6 +75,15 @@ PS1="$blue%n$resetColor@$cyan%m$resetColor:$magenta$folder%(?.$green.$red)%#$res
 # Use vi bindings
 bindkey -v
 
+# Remove all bindings beginning with an escape character (probably cursor keys)
+bindkey -rpM viins '^['
+bindkey -rpM vicmd '^['
+
+# Some keys to change the case
+bindkey -M vicmd 'gu' down-case-word
+bindkey -M vicmd 'gU' up-case-word
+bindkey -M vicmd 'g~' vi-oper-swap-case
+
 # Start in normal (cmd) mode
 zle-line-init() {
 	zle -K vicmd
