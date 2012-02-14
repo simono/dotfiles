@@ -199,5 +199,7 @@ so-xml-format() {
 
 so-take() { mkdir -p "$1" && cd "$1" }
 
+so-svn-ls() { svn st | sed -n "{s/^$1\s\+// p}" }
+
 # Other stuff
 [[ -f /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
