@@ -154,6 +154,8 @@ zstyle ':completion:*' substitute 1
 zstyle ':completion:*' use-cache 1
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+# only complete named directories (instead of user directories)
+zstyle ':completion:*:-tilde-:*' tag-order named-directories
 
 # Setup screen
 if [[ $TERM == screen* ]]; then
