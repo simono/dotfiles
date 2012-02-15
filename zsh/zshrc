@@ -131,7 +131,6 @@ zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' complete 1
 zstyle ':completion:*' completer _list _oldlist _expand _complete _ignored _match _correct _approximate _prefix
 zstyle ':completion:*' condition 0
-zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle ':completion:*' expand prefix suffix
 zstyle ':completion:*' file-sort name
 zstyle ':completion:*' format 'Completing %d'
@@ -154,6 +153,7 @@ zstyle ':completion:*' squeeze-slashes true
 zstyle ':completion:*' substitute 1
 zstyle ':completion:*' use-cache 1
 zstyle ':completion:*' verbose true
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 
 # Setup screen
 if [[ $TERM == screen* ]]; then
