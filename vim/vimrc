@@ -44,6 +44,8 @@ set showcmd
 set showmatch
 " override 'ignorecase' if the search pattern contains upper case characters
 set smartcase
+" enhanced completion
+set wildmenu
 " completion mode that is used on the command line
 set wildmode=longest,list
 
