@@ -14,17 +14,20 @@ SAVEHIST=$HISTSIZE
 case $(uname -s) in
 	'Linux' )
 		local lsOpts='--color=auto'
+		local lsColors=$(dircolors -b)
 		local rmOpts='-I'
 		alias ack="ack-grep"
 		alias so-mktemp='mktemp'
 		;;
 	*BSD )
 		local lsOpts='-G'
+		local lsColors=$LSCOLORS
 		local rmOpts='-I'
 		alias so-mktemp='mktemp -t sim'
 		;;
 	'Darwin' )
 		local lsOpts='-G'
+		local lsColors=$LSCOLORS
 		alias so-mktemp='mktemp -t sim'
 		;;
 	* )
@@ -138,7 +141,7 @@ zstyle ':completion:*' glob 1
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' ignore-parents parent pwd .. directory
 zstyle ':completion:*' insert-unambiguous true
-zstyle ':completion:*' list-colors ${(s.:.)LSCOLORS}
+zstyle ':completion:*' list-colors ${(s.:.)lsColors}
 zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
 zstyle ':completion:*' list-suffixes true
 zstyle ':completion:*' match-original both
