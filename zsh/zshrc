@@ -43,9 +43,9 @@ alias du='du -h'
 alias ll='ls -l'
 alias ls="ls -hF $lsOpts"
 alias mkdir='nocorrect mkdir'
-alias mmv='nocorrect mmv -v'
 alias mv='nocorrect mv -iv'
 alias rm="rm -v $rmOpts"
+alias zmv='noglob zmv -vW'
 
 # Custom aliases
 alias so-du-dirs='du -s *(/)'
@@ -56,6 +56,9 @@ alias so-tmp='cd $(so-mktemp -d)'
 
 # A Calculator
 autoload -U zcalc
+
+# Rename multiple files
+autoload -U zmv
 
 # The shell's MIME system
 autoload -U zsh-mime-setup && zsh-mime-setup
