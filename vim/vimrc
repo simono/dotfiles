@@ -18,8 +18,13 @@ call pathogen#helptags()
 filetype plugin indent on
 " syntax highlighting
 syntax enable
+" highlight column after 'textwidth'
+set colorcolumn=+1
 " completion mode that is used in insert mode
 set completeopt=longest,menu
+" Concealed text is completely hidden unless it has
+" a custom replacement character defined
+set conceallevel=2
 " highlight the screen line of the cursor
 set cursorline
 " Use ack for grepping
@@ -48,15 +53,6 @@ set smartcase
 set wildmenu
 " completion mode that is used on the command line
 set wildmode=longest,list
-
-" Vim 7.3 features
-if v:version > 702
-	" highlight column after 'textwidth'
-	set colorcolumn=+1
-	" Concealed text is completely hidden unless it has
-	" a custom replacement character defined
-	set conceallevel=2
-endif
 
 " Appearance
 if has("gui_macvim")
