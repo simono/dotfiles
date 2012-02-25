@@ -49,6 +49,8 @@ set showcmd
 set showmatch
 " override 'ignorecase' if the search pattern contains upper case characters
 set smartcase
+" Use two spaces for a tab
+set tabstop=2 shiftwidth=2
 " enhanced completion
 set wildmenu
 " completion mode that is used on the command line
@@ -64,14 +66,9 @@ else
 endif
 
 " FileType settings
-autocmd FileType *html set tabstop=2 shiftwidth=2
-autocmd FileType *tex set textwidth=80 tabstop=2 shiftwidth=2
+autocmd FileType *tex set textwidth=80
 autocmd FileType mail set textwidth=72 wrap
-autocmd FileType php set tabstop=2 shiftwidth=2
 autocmd FileType text setlocal textwidth=78
-autocmd FileType vimwiki set tabstop=2 shiftwidth=2
-autocmd FileType xml set tabstop=2 shiftwidth=2
-autocmd FileType xslt set tabstop=2 shiftwidth=2
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
