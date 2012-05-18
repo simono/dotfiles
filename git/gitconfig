@@ -17,8 +17,6 @@
 	st = status
 [color]
 	ui = true
-[github]
-	user = simono
 [user]
 	name = Simon Olofsson
 	email = simon@olofsson.de
