@@ -70,7 +70,7 @@ zle -N self-insert url-quote-magic
 # Colors
 autoload -U colors && colors
 
-for color in blue cyan magenta green red; do
+for color in blue cyan green magenta red; do
 	eval $color='%{$fg[${color}]%}'
 done
 local resetColor="%{${reset_color}%}";
