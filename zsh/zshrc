@@ -79,7 +79,7 @@ local resetColor="%{${reset_color}%}";
 local folder="%(4~.%1~.%~)"
 
 # Prompt
-PS1="$blue%n$resetColor@$cyan%m$resetColor:$magenta$folder%(?.$green.$red)%#$resetColor "
+PS1='$blue%m$resetColor:$cyan$folder%(?.$green.$red)%#$resetColor '
 
 # Use vi bindings
 bindkey -v
