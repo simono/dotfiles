@@ -31,3 +31,4 @@ link ''		vim/bundle
 link vim	vimrc
 link zsh	zprofile
 link zsh	zshrc
+link ''		zsh
