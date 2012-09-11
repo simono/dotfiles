@@ -12,23 +12,19 @@ SAVEHIST=$HISTSIZE
 
 # Set some system dependent variables
 case $(uname -s) in
+	*BSD | 'Darwin' )
+		local lsOpts='-G'
+		local lsColors=$LSCOLORS
+		alias so-mktemp='mktemp -t sim'
+		;|
+	*BSD | 'Linux' )
+		local rmOpts='-I'
+		;|
 	'Linux' )
 		local lsOpts='--color=auto'
 		local lsColors=$(dircolors -b)
-		local rmOpts='-I'
 		alias ack="ack-grep"
 		alias so-mktemp='mktemp'
-		;;
-	*BSD )
-		local lsOpts='-G'
-		local lsColors=$LSCOLORS
-		local rmOpts='-I'
-		alias so-mktemp='mktemp -t sim'
-		;;
-	'Darwin' )
-		local lsOpts='-G'
-		local lsColors=$LSCOLORS
-		alias so-mktemp='mktemp -t sim'
 		;;
 	* )
 		echo "Unknown system: $(uname -s)"
