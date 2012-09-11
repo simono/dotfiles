@@ -25,6 +25,8 @@ case $(uname -s) in
 		local lsColors=$(dircolors -b)
 		alias ack="ack-grep"
 		alias so-mktemp='mktemp'
+		;|
+	*BSD | 'Darwin' | 'Linux' )
 		;;
 	* )
 		echo "Unknown system: $(uname -s)"
