@@ -22,6 +22,8 @@ link() {
 	fi
 }
 
+(cd $(dirname $0) && git submodule update --init)
+
 link ack	ackrc
 link git	gitconfig
 link hg		hgrc
