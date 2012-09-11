@@ -177,27 +177,25 @@ zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 # only complete named directories (instead of user directories)
 zstyle ':completion:*:-tilde-:*' tag-order named-directories
 
-# Setup screen
-if [[ $TERM == screen* ]]; then
-
-	# Update screen's window title
-	update_window_title() {
+# Update screen's window title
+update_window_title() {
+	if [[ $TERM == screen* ]]; then
 		print -nP "\ek$1\e\\"
-	}
+	fi
+}
 
-	# Display the full command string
-	preexec() {
-		update_window_title "$1"
-	}
+# Display the full command string
+preexec() {
+	update_window_title "$1"
+}
 
-	# Extract path when showing a prompt
-	precmd() {
-		vcs_info
-		update_window_title "$folder%#"
-		# Ring the bell before displaying the prompt
-		echo -ne '\a'
-	}
-fi
+# Extract path when showing a prompt
+precmd() {
+	vcs_info
+	update_window_title "$folder%#"
+	# Ring the bell before displaying the prompt
+	echo -ne '\a'
+}
 
 # Functions
 
