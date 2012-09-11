@@ -157,7 +157,7 @@ zstyle ':completion:*' completer _list _oldlist _expand _complete _ignored _matc
 zstyle ':completion:*' condition 0
 zstyle ':completion:*' expand prefix suffix
 zstyle ':completion:*' file-sort name
-zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' format "${cyan}Completing %d${resetColor}"
 zstyle ':completion:*' glob 1
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' ignore-parents parent pwd .. directory
