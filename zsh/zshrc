@@ -42,6 +42,10 @@ alias mv='nocorrect mv -iv'
 alias rm="rm -v $rmOpts"
 alias zmv='noglob zmv -vW'
 
+# Directory operations
+alias ...='cd ../..'
+alias -- -='cd -'
+
 # Custom aliases
 alias so-du-dirs='du -s *(/)'
 alias so-reset='cd; clear'
