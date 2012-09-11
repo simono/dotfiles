@@ -40,6 +40,7 @@ alias ls="ls -hF $lsOpts"
 alias mkdir='nocorrect mkdir'
 alias mv='nocorrect mv -iv'
 alias rm="rm -v $rmOpts"
+alias sudo='nocorrect sudo'
 alias zmv='noglob zmv -vW'
 
 # Directory operations
