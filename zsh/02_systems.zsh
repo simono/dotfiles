@@ -16,7 +16,7 @@ case $(uname -s) in
 		;|
 	'Linux' )
 		local lsOpts='--color=auto'
-		local lsColors=$(dircolors -b)
+		lsColors=$(dircolors -b)
 		alias ack="ack-grep"
 		alias so-mktemp='mktemp'
 		;|
