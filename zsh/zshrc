@@ -5,7 +5,7 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-for f in $HOME/.zsh/*.zsh; do
+for f in $HOME/.zsh/[[:digit:]]*_*.zsh; do
 	source $f;
 done
 
