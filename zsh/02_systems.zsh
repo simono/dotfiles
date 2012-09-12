@@ -1,6 +1,6 @@
 # Zsh System specific stuff.
 #
-# Location: ~/.zsh/system
+# Location: ~/.zsh/02_systems.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

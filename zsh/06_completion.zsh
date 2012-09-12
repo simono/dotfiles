@@ -1,6 +1,6 @@
 # Zsh Completion.
 #
-# Location: ~/.zsh/completion
+# Location: ~/.zsh/06_completion.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

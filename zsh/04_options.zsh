@@ -1,6 +1,6 @@
 # Zsh Options.
 #
-# Location: ~/.zsh/options
+# Location: ~/.zsh/04_options.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

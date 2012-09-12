@@ -1,6 +1,6 @@
 # Zsh Vi.
 #
-# Location: ~/.zsh/vi
+# Location: ~/.zsh/07_vi.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

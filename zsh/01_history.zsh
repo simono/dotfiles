@@ -1,6 +1,6 @@
 # Zsh History.
 #
-# Location: ~/.zsh/history
+# Location: ~/.zsh/01_history.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

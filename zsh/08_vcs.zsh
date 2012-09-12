@@ -1,6 +1,6 @@
 # Zsh VCS.
 #
-# Location: ~/.zsh/vcs
+# Location: ~/.zsh/08_vcs.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

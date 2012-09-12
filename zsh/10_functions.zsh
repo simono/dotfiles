@@ -1,6 +1,6 @@
 # Zsh Functions.
 #
-# Location: ~/.zsh/functions
+# Location: ~/.zsh/10_functions.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

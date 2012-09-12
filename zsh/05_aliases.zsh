@@ -1,6 +1,6 @@
 # Zsh Aliases.
 #
-# Location: ~/.zsh/aliases
+# Location: ~/.zsh/05_aliases.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

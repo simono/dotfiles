@@ -1,6 +1,6 @@
 # Zsh Prompt.
 #
-# Location: ~/.zsh/prompt
+# Location: ~/.zsh/03_prompt.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #

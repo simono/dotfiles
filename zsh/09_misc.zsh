@@ -1,6 +1,6 @@
 # Zsh Misc.
 #
-# Location: ~/.zsh/misc
+# Location: ~/.zsh/09_misc.zsh
 #
 # Simon Olofsson <simon@olofsson.de>
 #
