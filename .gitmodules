@@ -19,7 +19,7 @@
 	url = git://github.com/derekwyatt/vim-scala.git
 [submodule "vim/bundle/bufexplorer.zip"]
 	path = vim/bundle/bufexplorer.zip
-	url = https://github.com/vim-scripts/bufexplorer.zip
+	url = git://github.com/vim-scripts/bufexplorer.zip
 	ignore = untracked
 [submodule "vim/bundle/vim-speeddating"]
 	path = vim/bundle/vim-speeddating
