@@ -7,6 +7,7 @@
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=magenta'
 ZSH_HIGHLIGHT_STYLES[path]='fg=cyan'
 
 dangerous_cmds=('rm' 'sudo')
