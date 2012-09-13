@@ -79,12 +79,12 @@ autocmd FileType text setlocal textwidth=78
 " Only define it when not defined already.
 if !exists(":DiffOrig")
 	command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-				\ | wincmd p | diffthis
+		\ | wincmd p | diffthis
 endif
 
 " Run xmllint on the range
 if !exists(":XmlFormat")
-	command -range=% XmlFormat set ft=xml 
+	command -range=% XmlFormat set ft=xml
 		\ | :<line1>,<line2>!xmllint --format --recover - 2>/dev/null
 endif
 
