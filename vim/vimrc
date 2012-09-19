@@ -126,3 +126,6 @@ inoremap	<Up>	<nop>
 inoremap	<Down>	<nop>
 inoremap	<Left>	<nop>
 inoremap	<Right>	<nop>
+
+" Powerline
+let g:Powerline_symbols = 'unicode'
