@@ -22,7 +22,7 @@ link() {
 	fi
 }
 
-(cd $(dirname $0) && git submodule update --init)
+(cd $(dirname $0) && git pull && git submodule update --init)
 
 link ack	ackrc
 link git	gitconfig
