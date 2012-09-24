@@ -16,6 +16,3 @@
 
 # Always sort the files
 --sort-files
-
-# Coma type
---type-set=coma=.i,.cma
