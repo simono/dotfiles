@@ -11,6 +11,9 @@
 # Ignore Maven's target dir
 --ignore-dir=target
 
+# Use "less" as pager
+--pager=less -FnrX
+
 # Similar to "smartcase" in vim
 --smart-case
 
