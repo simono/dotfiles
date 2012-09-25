@@ -12,5 +12,5 @@ ZSH_HIGHLIGHT_STYLES[path]='fg=cyan'
 
 dangerous_cmds=('rm' 'sudo')
 for i in $dangerous_cmds; do
-	ZSH_HIGHLIGHT_PATTERNS+=($i 'fg=white,bold,bg=red')
+	ZSH_HIGHLIGHT_PATTERNS+=("$i " 'fg=white,bold,bg=red')
 done
