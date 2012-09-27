@@ -25,7 +25,14 @@ precmd() {
 	echo -ne '\a'
 }
 
-git() { hub "$@" }
+git() {
+	# Use hub if it's available
+	if (( $+commands[hub] )); then
+		hub "$@" 
+	else
+		command git "$@"
+	fi
+}
 
 so-diff() { diff -ruN "$@" | $PAGER }
 
