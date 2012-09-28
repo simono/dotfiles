@@ -27,11 +27,7 @@ precmd() {
 
 git() {
 	# Use hub if it's available
-	if (( $+commands[hub] )); then
-		hub "$@" 
-	else
-		command git "$@"
-	fi
+	${commands[hub]:-$commands[git]} "$@" 
 }
 
 so-diff() { diff -ruN "$@" | $PAGER }

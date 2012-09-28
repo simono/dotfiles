@@ -15,4 +15,4 @@ zstyle ':vcs_info:*' get-revision true
 zstyle ':vcs_info:*' formats "[$vcs_format]"
 zstyle ':vcs_info:*' actionformats "[$vcs_format(%a)]"
 # Use the git command not an alias or a function
-zstyle ':vcs_info:git:*:-all-' command $(which -p git)
+zstyle ':vcs_info:git:*:-all-' command $commands[git]
