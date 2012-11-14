@@ -22,6 +22,8 @@ syntax enable
 set completeopt=longest,menu
 " highlight the screen line of the cursor
 set cursorline
+" put all swap files together in one place
+set directory^=$HOME/.vim_swap//
 " Use ack for grepping
 set grepprg=ack-grep\ -a
 " highlight the previous search pattern
