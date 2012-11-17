@@ -64,8 +64,8 @@ endif
 
 " Appearance
 if has("gui_macvim")
-	" Dark background
 	set background=dark
+	colorscheme solarized
 else
 	" Load color scheme
 	colorscheme desert
