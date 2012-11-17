@@ -73,7 +73,6 @@ endif
 
 " FileType settings
 autocmd FileType *tex setlocal textwidth=80
-autocmd FileType mail setlocal textwidth=72 wrap
 autocmd FileType markdown setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType text setlocal textwidth=78
 
