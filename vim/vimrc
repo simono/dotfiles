@@ -63,11 +63,10 @@ if v:version > 702
 endif
 
 " Appearance
-if has("gui_macvim")
+if has("gui_running")
 	set background=dark
 	colorscheme solarized
 else
-	" Load color scheme
 	colorscheme desert
 endif
 
