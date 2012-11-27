@@ -112,9 +112,6 @@ nnoremap <Leader>sg :setlocal spell! spelllang=de_20 <CR>
 " Toggle English spelling, with \sa
 nnoremap <Leader>sa :setlocal spell! spelllang=en_us <CR>
 
-" Search and replace the word under the cursor, with \sr
-nnoremap <Leader>sr :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
-
 " Use <F6> to close HTML/XML tags
 inoremap <F6> </<C-X><C-O>
 
