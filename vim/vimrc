@@ -103,6 +103,8 @@ inoremap jj <ESC>
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
+" Clear highlighting
+nnoremap <leader>/ :noh<cr>
 
 " Spell checking
 " Toggle German spelling, with \sg
