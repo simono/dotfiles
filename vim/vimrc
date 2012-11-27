@@ -103,8 +103,6 @@ inoremap jj <ESC>
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-" Signature
-nnoremap <Leader>sig i Simon Olofsson <<C-r>=$DEBEMAIL<CR>><Esc>
 
 " Spell checking
 " Toggle German spelling, with \sg
