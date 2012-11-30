@@ -25,11 +25,6 @@ precmd() {
 	echo -ne '\a'
 }
 
-git() {
-	# Use hub if it's available
-	${commands[hub]:-$commands[git]} "$@" 
-}
-
 so-diff() { diff -ruN "$@" | $PAGER }
 
 so-svn-diff() {
