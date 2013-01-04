@@ -41,3 +41,6 @@
 	path = vim/bundle/VimClojure
 	url = git://github.com/vim-scripts/VimClojure.git
 	ignore = untracked
+[submodule "vim/bundle/vim-sleuth"]
+	path = vim/bundle/vim-sleuth
+	url = git@github.com:tpope/vim-sleuth.git
