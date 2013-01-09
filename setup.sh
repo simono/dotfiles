@@ -29,6 +29,7 @@ link git	gitconfig
 link hg		hgrc
 link tmux	tmux.conf
 mkdir -p $HOME/.vim
+mkdir -p $HOME/.cache/vim/{swap,backup,undo}
 link ''		vim/bundle
 link vim	vimrc
 link zsh	zprofile
