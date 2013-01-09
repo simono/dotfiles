@@ -14,40 +14,18 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 execute pathogen#helptags()
 
-" enable file type detection
-filetype plugin indent on
-" syntax highlighting
-syntax enable
 " completion mode that is used in insert mode
 set completeopt=longest,menu
 " highlight the screen line of the cursor
 set cursorline
-" put all swap files together in one place
-set directory^=$HOME/.vim_swap//
 " Use ack for grepping
 set grepprg=ack
 " highlight the previous search pattern
 set hlsearch
 " ignore case in search patterns
 set ignorecase
-" do incremental searching
-set incsearch
-" always show status line
-set laststatus=2
-" show the cursor position all the time
-set ruler
-" minimal number of screen lines to keep above and below the cursor
-set scrolloff=2
-" display incomplete commands
-set showcmd
-" when a bracket is inserted, briefly jump to the matching one
-set showmatch
-" override 'ignorecase' if the search pattern contains upper case characters
-set smartcase
 " Use two spaces for a tab
 set tabstop=2 shiftwidth=2
-" enhanced completion
-set wildmenu
 " completion mode that is used on the command line
 set wildmode=longest,list
 
@@ -102,9 +80,6 @@ inoremap jj <ESC>
 " CTRL-U in insert mode deletes a lot. Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
-
-" Clear highlighting
-nnoremap <leader>/ :noh<cr>
 
 " Spell checking
 " Toggle German spelling, with \sg
