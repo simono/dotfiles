@@ -11,8 +11,8 @@ set nocompatible
 
 " Setup pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
+execute pathogen#helptags()
 
 " enable file type detection
 filetype plugin indent on
