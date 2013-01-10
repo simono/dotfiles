@@ -50,7 +50,7 @@ endif
 
 " FileType settings
 autocmd FileType *tex setlocal textwidth=80
-autocmd FileType markdown setlocal expandtab linebreak
+autocmd FileType markdown setlocal textwidth=80 expandtab
 autocmd FileType text setlocal textwidth=80
 
 " Convenient command to see the difference between the current buffer and the
