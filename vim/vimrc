@@ -24,6 +24,8 @@ set grepprg=ack
 set hlsearch
 " ignore case in search patterns
 set ignorecase
+" override 'ignorecase' if the search pattern contains upper case characters
+set smartcase
 " Use two spaces for a tab
 set tabstop=2 shiftwidth=2
 " completion mode that is used on the command line
