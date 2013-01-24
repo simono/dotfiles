@@ -14,6 +14,12 @@ case $(uname -s) in
 	*BSD | 'Linux' )
 		local rmOpts='-I'
 		;|
+	'Darwin' )
+		alias mark='/Applications/Marked.app/Contents/Resources/mark'
+		alias mvimdiff='mvim -d'
+		alias vim='mvim -v'
+		alias vimdiff='vim -d'
+		;|
 	'Linux' )
 		local lsOpts='--color=auto'
 		lsColors=$(dircolors -b)
