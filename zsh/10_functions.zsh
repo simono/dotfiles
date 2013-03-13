@@ -5,7 +5,7 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Update screen's window title
+# Update tmux window title
 update_window_title() {
 	if [[ $TERM == screen* ]]; then
 		print -nP "\ek$1\e\\"
