@@ -27,11 +27,6 @@ precmd() {
 
 so-diff() { diff -ruN "$@" | $PAGER }
 
-so-svn-diff() {
-	# Remove carriage returns from the diff
-	svn diff "$@" | tr -d '\r' | $PAGER
-}
-
 so-xml-format() {
 	for f in $@; do
 		if [[ -f $f ]]; then
@@ -43,5 +38,3 @@ so-xml-format() {
 }
 
 so-take() { mkdir -p "$1" && cd "$1" }
-
-so-svn-ls() { svn st | sed -nE "s/^[$1][[:space:]]+//p" }

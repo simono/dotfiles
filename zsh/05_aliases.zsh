@@ -24,6 +24,4 @@ alias -- -='cd -'
 # Custom aliases
 alias so-du-dirs='du -s *(/)'
 alias so-reset='cd; clear'
-alias so-svn-hdiff='so-svn-diff -rBASE:HEAD'
-alias so-svn-hlog='svn log -rHEAD:BASE'
 alias so-tmp='cd $(so-mktemp -d)'
