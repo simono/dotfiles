@@ -22,7 +22,6 @@ alias ...='cd ../..'
 alias -- -='cd -'
 
 # Custom aliases
-alias so-brew-outdated='brew update; brew outdated'
 alias so-du-dirs='du -s *(/)'
 alias so-reset='cd; clear'
 alias so-svn-hdiff='so-svn-diff -rBASE:HEAD'
