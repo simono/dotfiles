@@ -18,7 +18,7 @@ case $(uname -s) in
 		alias mark='/Applications/Marked.app/Contents/Resources/mark'
 		alias mvimdiff='mvim -d'
 		alias vim='mvim -v'
-		alias vimdiff='vim -d'
+		alias vimdiff='mvim -vd'
 		;|
 	'Linux' )
 		local lsOpts='--color=auto'
