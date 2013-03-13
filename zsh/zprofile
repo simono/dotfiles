@@ -12,6 +12,13 @@ for p in '/usr/local/bin' "$HOME/bin"; do
 	fi
 done
 
+# Set fpath
+for p in '/usr/local/share/zsh/site-functions' '/usr/local/share/zsh-completions'; do
+	if [[ -d $p ]]; then
+		fpath=($p $fpath)
+	fi
+done
+
 export EDITOR='vim'
 export PAGER='vimpager'
 export LSCOLORS='gxBxhxDxfxhxhxhxhxcxcx'
