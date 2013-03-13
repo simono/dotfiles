@@ -5,7 +5,7 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# set PATH
+# Set PATH
 for p in '/usr/local/bin' "$HOME/bin"; do
 	if [[ -d $p ]]; then
 		PATH="$p:$PATH"
