@@ -8,13 +8,13 @@
 autoload -U compinit && compinit
 
 zstyle ':completion:*' auto-description 'specify: %d'
-zstyle ':completion:*' complete 1
+zstyle ':completion:*' complete true
 zstyle ':completion:*' completer _list _oldlist _expand _complete _ignored _match _correct _approximate _prefix
-zstyle ':completion:*' condition 0
+zstyle ':completion:*' condition false
 zstyle ':completion:*' expand prefix suffix
 zstyle ':completion:*' file-sort name
 zstyle ':completion:*' format "%F{cyan}Completing %d%f"
-zstyle ':completion:*' glob 1
+zstyle ':completion:*' glob true
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' ignore-parents parent pwd .. directory
 zstyle ':completion:*' insert-unambiguous true
@@ -31,8 +31,8 @@ zstyle ':completion:*' rehash true
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' squeeze-slashes true
-zstyle ':completion:*' substitute 1
-zstyle ':completion:*' use-cache 1
+zstyle ':completion:*' substitute true
+zstyle ':completion:*' use-cache true
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 
