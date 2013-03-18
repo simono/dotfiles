@@ -27,6 +27,7 @@ zstyle ':completion:*' max-errors 2 numeric
 zstyle ':completion:*' menu select=4
 zstyle ':completion:*' original false
 zstyle ':completion:*' preserve-prefix '//[^/]##/'
+zstyle ':completion:*' rehash true
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' squeeze-slashes true
