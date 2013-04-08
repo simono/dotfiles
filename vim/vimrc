@@ -24,6 +24,8 @@ set grepprg=ack
 set hlsearch
 " ignore case in search patterns
 set ignorecase
+" Don't insert two spaces when joining lines
+set nojoinspaces
 " override 'ignorecase' if the search pattern contains upper case characters
 set smartcase
 " Use two spaces for a tab
