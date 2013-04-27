@@ -5,9 +5,6 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Operate on all files
---all
-
 # Ignore Maven's target dir
 --ignore-dir=target
 
