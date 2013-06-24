@@ -45,6 +45,11 @@ set undofile
 " Completion mode that is used on the command line
 set wildmode=longest,list
 
+" Store everything under ~/.vim
+set backupdir^=~/.vim/backup/
+set directory^=~/.vim/swap/
+set viminfo+=n~/.vim/viminfo
+set undodir^=~/.vim/undo/
 
 " Appearance
 if has("gui_running")
