@@ -14,23 +14,24 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 execute pathogen#helptags()
 
-" completion mode that is used in insert mode
+" Completion mode that is used in insert mode
 set completeopt=longest,menu
-" highlight the screen line of the cursor
+" Highlight the screen line of the cursor
 set cursorline
-" Use ack for grepping
+" Use ack for greping
 set grepprg=ack
-" highlight the previous search pattern
+" Highlight the previous search pattern
 set hlsearch
-" ignore case in search patterns
+" Ignore case in search patterns
 set ignorecase
 " Don't insert two spaces when joining lines
 set nojoinspaces
-" override 'ignorecase' if the search pattern contains upper case characters
+" Override 'ignorecase' if the search pattern
+" contains upper case characters
 set smartcase
 " Use two spaces for a tab
 set tabstop=2 shiftwidth=2
-" completion mode that is used on the command line
+" Completion mode that is used on the command line
 set wildmode=longest,list
 
 " Vim 7.3 features
