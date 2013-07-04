@@ -59,11 +59,6 @@ else
 	colorscheme desert
 endif
 
-" Use the System Clipboard on OS X
-if has("mac")
-	set clipboard=unnamed
-endif
-
 " FileType settings
 autocmd FileType *tex setlocal textwidth=80
 autocmd FileType markdown setlocal textwidth=80 expandtab
