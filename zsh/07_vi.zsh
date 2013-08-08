@@ -8,6 +8,9 @@
 # Use vi bindings
 bindkey -v
 
+# Map 'jj' to escape
+bindkey -M viins 'jj' vi-cmd-mode
+
 # Remove all bindings beginning with an escape character (probably cursor keys)
 bindkey -rpM viins '^['
 bindkey -rpM vicmd '^['
