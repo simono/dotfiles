@@ -10,8 +10,8 @@ set -o nounset
 
 # link target linkName
 link() {
-	local target="$(pwd)/$(dirname $0)/$1/$2"
-	local linkName="$HOME/.$2"
+	local target="$(pwd)/$(dirname $0)/$1"
+	local linkName="$HOME/$2"
 
 	if [ -L $linkName ]; then
 		ln -nvsf $target $linkName
@@ -22,17 +22,23 @@ link() {
 	fi
 }
 
+linkHidden() {
+	link "$1/$2" ".$2"
+}
+
 (cd $(dirname $0) && git pull && git submodule update --init)
 
-link ack	ackrc
-link git	gitconfig
-link hg		hgrc
-link tmux	tmux.conf
+linkHidden ack	ackrc
+linkHidden git	gitconfig
+linkHidden hg		hgrc
+linkHidden tmux	tmux.conf
 mkdir -p $HOME/.vim/swap
 mkdir -p $HOME/.vim/backup
 mkdir -p $HOME/.vim/undo
-link ''		vim/bundle
-link vim	vimrc
-link zsh	zprofile
-link zsh	zshrc
-link ''		zsh
+linkHidden ''		vim/bundle
+linkHidden vim	vimrc
+mkdir -p $HOME/bin
+link vimpager/vimpager bin/vimpager
+linkHidden zsh	zprofile
+linkHidden zsh	zshrc
+linkHidden ''		zsh
