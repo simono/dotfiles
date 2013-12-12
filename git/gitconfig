@@ -20,3 +20,5 @@
 [user]
 	name = Simon Olofsson
 	email = simon@olofsson.de
+[push]
+	default = simple
