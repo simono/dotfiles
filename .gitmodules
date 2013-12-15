@@ -39,6 +39,9 @@
 [submodule "vimpager"]
 	path = vimpager
 	url = https://github.com/rkitover/vimpager.git
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
 [submodule "vim/bundle/vim-unimpaired"]
 	path = vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
