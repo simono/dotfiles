@@ -7,7 +7,7 @@
 
 autoload -U vcs_info
 
-local vcs_format="%F{magenta}%1.1s%F{red}%u%c%F{yellow}%b%f"
+local vcs_format="$FG[violet]%1.1s$FG[blue]%u%c$FG[cyan]%b%f"
 
 zstyle ':vcs_info:*' enable bzr git hg svn
 zstyle ':vcs_info:*' check-for-changes true
