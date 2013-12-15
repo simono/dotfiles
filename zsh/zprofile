@@ -20,8 +20,8 @@ for p in '/usr/local/share/zsh/site-functions' '/usr/local/share/zsh-completions
 done
 
 export EDITOR='vim'
-export PAGER='vimpager'
 export LSCOLORS='gxBxhxDxfxhxhxhxhxcxcx'
+(( $+commands[vimpager] )) && export PAGER='vimpager'
 
 # Set SSH_AUTH_SOCK, so that the agent is available in SSH sessions
 export SSH_AUTH_SOCK=${SSH_AUTH_SOCK:-$(find /tmp/launch-* -name Listeners)}
