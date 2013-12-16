@@ -26,7 +26,7 @@ linkHidden() {
 	link "$1/$2" ".$2"
 }
 
-(cd $(dirname $0) && git pull && git submodule update --init)
+(cd $(dirname $0) && git checkout master && git pull && git submodule update --init)
 
 linkHidden ack	ackrc
 linkHidden git	gitconfig
