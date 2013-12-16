@@ -13,4 +13,6 @@ source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/syntax-highlighting.zsh
 
 # Only available on Ubuntu
-[[ -f /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
+if [[ -f /etc/zsh_command_not_found ]]; then
+	source /etc/zsh_command_not_found
+fi
