@@ -27,6 +27,8 @@ set conceallevel=2
 set cursorline
 " Use ack for greping
 set grepprg=ack
+" Hide Buffers instead of closing them
+set hidden
 " Highlight the previous search pattern
 set hlsearch
 " Ignore case in search patterns
