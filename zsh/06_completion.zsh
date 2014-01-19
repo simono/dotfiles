@@ -25,9 +25,9 @@ zstyle ':completion:*' ignore-parents parent pwd .. directory
 # Insert unambiguous completions
 zstyle ':completion:*' insert-unambiguous true
 zstyle ':completion:*' list-colors ${(s.:.)lsColors}
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
 # Use the same colors as ls
 # Completion lists that don’t fit on the screen can be scrolled
+zstyle ':completion:*:default' list-prompt ''
 # Show all ambiguous pathname components
 zstyle ':completion:*' list-suffixes true
 # Try to match without a wildcard at first
@@ -42,14 +42,13 @@ zstyle ':completion:*' original false
 zstyle ':completion:*' preserve-prefix '//[^/]##/'
 # Automatically rehash
 zstyle ':completion:*' rehash true
-zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 # Display a message when the completion list does not fit on the screen as a whole
+zstyle ':completion:*:default' select-prompt ''
 # Add ‘.’ and ‘..’ as possible completions
 zstyle ':completion:*' special-dirs true
 # Treat multiple slashes as a single slash
 zstyle ':completion:*' squeeze-slashes true
 zstyle ':completion:*' use-cache true
-zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 
 # Only complete named directories (instead of user directories)
 zstyle ':completion:*:-tilde-:*' tag-order named-directories
