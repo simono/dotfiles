@@ -9,7 +9,6 @@ autoload -U compinit && compinit
 
 # Description for options that are not described by the completion functions
 zstyle ':completion:*' auto-description 'specify: %d'
-zstyle ':completion:*' complete true
 # The completer functions to use
 zstyle ':completion:*' completer _list _oldlist _expand _complete _ignored _match _correct _approximate _prefix
 # Complete if there's only one match
