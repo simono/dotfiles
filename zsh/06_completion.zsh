@@ -48,8 +48,7 @@ zstyle ':completion:*:default' select-prompt ''
 zstyle ':completion:*' special-dirs true
 # Treat multiple slashes as a single slash
 zstyle ':completion:*' squeeze-slashes true
-zstyle ':completion:*' use-cache true
-
 # Only complete named directories (instead of user directories)
 zstyle ':completion:*:-tilde-:*' tag-order named-directories
 # Use a completion cache
+zstyle ':completion:*' use-cache true
