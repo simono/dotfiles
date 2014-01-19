@@ -16,16 +16,16 @@ zstyle ':completion:*' completer _list _oldlist _expand _complete _ignored _matc
 zstyle ':completion:*' condition false
 # Completing strings consisting of multiple parts, such as path names
 zstyle ':completion:*' expand prefix suffix
-zstyle ':completion:*' format "$FG[cyan]Completing %d%f"
 # Show the kind of matches
+zstyle ':completion:*:descriptions' format "$FG[cyan]Completing %d%f"
 # Display all different types of matches separately
 zstyle ':completion:*' group-name ''
 # Ignore the current path when completing
 zstyle ':completion:*' ignore-parents parent pwd .. directory
 # Insert unambiguous completions
 zstyle ':completion:*' insert-unambiguous true
-zstyle ':completion:*' list-colors ${(s.:.)lsColors}
 # Use the same colors as ls
+zstyle ':completion:*:default' list-colors ${(s.:.)lsColors}
 # Completion lists that don’t fit on the screen can be scrolled
 zstyle ':completion:*:default' list-prompt ''
 # Show all ambiguous pathname components
