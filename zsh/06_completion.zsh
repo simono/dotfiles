@@ -32,8 +32,8 @@ zstyle ':completion:*:default' list-prompt ''
 zstyle ':completion:*' list-suffixes true
 # Try to match without a wildcard at first
 zstyle ':completion:*' match-original both
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=** r:|=**' 'l:|=* r:|=*'
 # Try some fancy stuff, after simple completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[.,_-]=** r:|=**' 'l:|=* r:|=*'
 # Use menu selection with at least 4 Matches
 zstyle ':completion:*' menu select=4
 # Always add the original as possible correction
