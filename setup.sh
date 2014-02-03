@@ -48,9 +48,9 @@ linkHidden zsh	zprofile
 linkHidden zsh	zshrc
 linkHidden ''		zsh
 
-if [[ $(uname -s) = 'Darwin' ]]; then
+if [ $(uname -s) = 'Darwin' ]; then
 
-	if [[ ! -x /usr/local/bin/brew ]]; then
+	if [ ! -x /usr/local/bin/brew ]; then
 		ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 	fi
 
