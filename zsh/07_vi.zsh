@@ -24,7 +24,7 @@ bindkey -M vicmd 'gu' down-case-word
 bindkey -M vicmd 'gU' up-case-word
 bindkey -M vicmd 'g~' vi-oper-swap-case
 
-# Start in normal (cmd) mode
+# Start in normal mode
 zle-line-init() {
 	zle -K vicmd
 }
