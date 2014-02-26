@@ -24,6 +24,9 @@ bindkey -M vicmd 'gu' down-case-word
 bindkey -M vicmd 'gU' up-case-word
 bindkey -M vicmd 'g~' vi-oper-swap-case
 
+# Push the current buffer onto the buffer stack and clear the buffer
+bindkey -M vicmd 'q' push-line-or-edit
+
 # Start in normal mode
 zle-line-init() {
 	zle -K vicmd
