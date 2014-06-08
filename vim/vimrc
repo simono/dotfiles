@@ -63,6 +63,7 @@ endif
 
 " FileType settings
 autocmd FileType *tex setlocal textwidth=80
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType markdown setlocal textwidth=80 expandtab
 autocmd FileType text setlocal textwidth=80
 
@@ -101,6 +102,3 @@ inoremap	<Right>	<nop>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
-
-" Markdown
-let g:markdown_fenced_languages = [ "java", "python", "ruby", "shell=sh" ]
