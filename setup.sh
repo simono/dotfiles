@@ -8,8 +8,6 @@
 set -o errexit
 set -o nounset
 
-PACKAGES='ack reattach-to-user-namespace ssh-copy-id tmux zsh-completions'
-
 # link target linkName
 link() {
 	local target="$(pwd)/$(dirname $0)/$1"
@@ -54,8 +52,6 @@ if [ $(uname -s) = 'Darwin' ]; then
 		ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 	fi
 
-	for p in $PACKAGES; do
-		test -z "$(brew ls --versions $p)" && brew install $p
-	done
+	brew bundle $(dirname $0)
 
 fi
