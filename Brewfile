@@ -10,6 +10,7 @@ install caskroom/cask/brew-cask
 
 cask install dropbox
 cask install firefox
+cask install flash
 cask install gimp
 cask install github
 cask install libreoffice
