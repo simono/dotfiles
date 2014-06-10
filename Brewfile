@@ -12,11 +12,9 @@ cask install dropbox
 cask install firefox
 cask install gimp
 cask install github
-cask install inkscape
 cask install libreoffice
 cask install macvim
 cask install sourcetree
 cask install vlc
-cask install xquartz
 
 outdated
