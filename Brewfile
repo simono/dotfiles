@@ -4,6 +4,7 @@ install ack
 install reattach-to-user-namespace
 install ssh-copy-id
 install tmux
+install vimpager
 install zsh-completions
 
 install caskroom/cask/brew-cask

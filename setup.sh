@@ -39,9 +39,6 @@ mkdir -p $HOME/.vim/backup
 mkdir -p $HOME/.vim/undo
 linkHidden ''		vim/bundle
 linkHidden vim	vimrc
-mkdir -p $HOME/bin
-link vimpager/vimpager bin/vimpager
-link vimpager/vimcat bin/vimcat
 linkHidden zsh	zprofile
 linkHidden zsh	zshrc
 linkHidden ''		zsh
