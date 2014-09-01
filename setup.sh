@@ -34,6 +34,7 @@ linkHidden hg		hgrc
 linkHidden tmux	tmux.conf
 mkdir -p $HOME/.tmux
 linkHidden ''	tmux/tmux-colors-solarized
+linkHidden ''	tmux/tmux-sensible
 mkdir -p $HOME/.vim/swap
 mkdir -p $HOME/.vim/backup
 mkdir -p $HOME/.vim/undo

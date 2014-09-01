@@ -42,3 +42,6 @@
 [submodule "tmux/tmux-colors-solarized"]
 	path = tmux/tmux-colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized.git
+[submodule "tmux/tmux-sensible"]
+	path = tmux/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
