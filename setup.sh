@@ -8,9 +8,11 @@
 set -o errexit
 set -o nounset
 
+current_dir="$(dirname $0)"
+
 # link target linkName
 link() {
-	local target="$(pwd)/$(dirname $0)/$1"
+	local target="$(pwd)/$current_dir/$1"
 	local linkName="$HOME/$2"
 
 	if [ -L $linkName ]; then
@@ -26,7 +28,7 @@ linkHidden() {
 	link "$1/$2" ".$2"
 }
 
-(cd $(dirname $0) && git checkout master && git pull && git submodule update --init)
+(cd $current_dir && git checkout master && git pull && git submodule update --init)
 
 linkHidden ack	ackrc
 linkHidden git	gitconfig
@@ -46,11 +48,9 @@ linkHidden ''		zsh
 
 if [ $(uname -s) = 'Darwin' ]; then
 
-	if [ ! -x /usr/local/bin/brew ]; then
-		ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+	if [ -x /usr/local/bin/ansible-playbook ]; then
+		ansible-playbook -i $current_dir/hosts $current_dir/homebrew.yml
+	else
+		echo 'Please install Ansible!'
 	fi
-
-	brew tap homebrew/boneyard
-	brew bundle $(dirname $0)
-
 fi
