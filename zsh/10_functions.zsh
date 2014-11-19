@@ -38,3 +38,5 @@ so-xml-format() {
 }
 
 so-take() { mkdir -p "$1" && cd "$1" }
+
+so-vm() { cp ~/.zsh/templates/vm/* . }
