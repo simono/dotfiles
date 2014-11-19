@@ -12,8 +12,8 @@ current_dir="$(dirname $0)"
 
 # link target linkName
 link() {
-	local target="$(pwd)/$current_dir/$1"
-	local linkName="$HOME/$2"
+	local target="$(pwd)/$current_dir/$1/$2"
+	local linkName="$HOME/.$2"
 
 	if [ -L $linkName ]; then
 		ln -nvsf $target $linkName
@@ -24,27 +24,23 @@ link() {
 	fi
 }
 
-linkHidden() {
-	link "$1/$2" ".$2"
-}
-
 (cd $current_dir && git checkout master && git pull && git submodule update --init)
 
-linkHidden ack	ackrc
-linkHidden git	gitconfig
-linkHidden hg		hgrc
-linkHidden tmux	tmux.conf
+link ack	ackrc
+link git	gitconfig
+link hg		hgrc
+link tmux	tmux.conf
 mkdir -p $HOME/.tmux
-linkHidden ''	tmux/tmux-colors-solarized
-linkHidden ''	tmux/tmux-sensible
+link ''	tmux/tmux-colors-solarized
+link ''	tmux/tmux-sensible
 mkdir -p $HOME/.vim/swap
 mkdir -p $HOME/.vim/backup
 mkdir -p $HOME/.vim/undo
-linkHidden ''		vim/bundle
-linkHidden vim	vimrc
-linkHidden zsh	zprofile
-linkHidden zsh	zshrc
-linkHidden ''		zsh
+link ''		vim/bundle
+link vim	vimrc
+link zsh	zprofile
+link zsh	zshrc
+link ''		zsh
 
 if [ $(uname -s) = 'Darwin' ]; then
 
