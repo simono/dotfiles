@@ -39,4 +39,7 @@ so-xml-format() {
 
 so-take() { mkdir -p "$1" && cd "$1" }
 
-so-vm() { cp ~/.zsh/templates/vm/* . }
+so-vm() {
+	git clone -q https://github.com/simono/template-vagrant-ansible.git .
+	rm -rf .git LICENSE README.md &> /dev/null
+}
