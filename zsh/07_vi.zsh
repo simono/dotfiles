@@ -29,7 +29,7 @@ bindkey -M vicmd 'q' push-line-or-edit
 
 # Start in normal mode
 zle-line-init() {
-	zle -K vicmd
+	zle vi-cmd-mode
 }
 zle -N zle-line-init
 
