@@ -23,7 +23,4 @@ export EDITOR='vim'
 (( $+commands[vimpager] )) && export PAGER='vimpager'
 export LSCOLORS='gxfxbEaEBxxEhEhBaDaCaD'
 
-# Set SSH_AUTH_SOCK, so that the agent is available in SSH sessions
-export SSH_AUTH_SOCK=${SSH_AUTH_SOCK:-$(find /tmp/launch-* -name Listeners)}
-
 test -f "$HOME/.zprofile.local" && source "$HOME/.zprofile.local"
