@@ -45,3 +45,6 @@
 [submodule "tmux/tmux-sensible"]
 	path = tmux/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible.git
+[submodule "vim/bundle/editorconfig-vim"]
+	path = vim/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
