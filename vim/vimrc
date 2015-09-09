@@ -85,10 +85,10 @@ endif
 inoremap jj <ESC>
 
 " Spell checking
-" Toggle German spelling, with \sg
-nnoremap <Leader>sg :setlocal spell! spelllang=de_20 <CR>
-" Toggle English spelling, with \sa
-nnoremap <Leader>sa :setlocal spell! spelllang=en_us <CR>
+" Toggle German spelling, with \\sg
+nnoremap <Leader><Leader>sg :setlocal spell! spelllang=de_20 <CR>
+" Toggle English spelling, with \\sa
+nnoremap <Leader><Leader>sa :setlocal spell! spelllang=en_us <CR>
 
 " Disable arrow keys
 noremap		<Up>	<nop>
@@ -102,3 +102,7 @@ inoremap	<Right>	<nop>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
+
+" EasyMotion
+map <Leader> <Plug>(easymotion-prefix)
+let g:EasyMotion_smartcase = 1
