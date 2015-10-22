@@ -25,8 +25,6 @@ precmd() {
 	echo -ne '\a'
 }
 
-so-diff() { diff -ruN "$@" | $PAGER }
-
 so-xml-format() {
 	for f in $@; do
 		if [[ -f $f ]]; then
