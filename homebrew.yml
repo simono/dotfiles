@@ -7,8 +7,11 @@
     - name: Install Homebrew
       shell: ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
       when: brew_installed.stat.exists == false
-    - name: Tap Homebrew Cask
-      homebrew_tap: tap=caskroom/cask state=present
+    - name: Add Taps
+      homebrew_tap: tap={{item}} state=present
+      with_items:
+        - caskroom/cask
+        - simono/simono
     - name: Upgrade Homebrew packages
       homebrew: update_homebrew=yes upgrade_all=yes
     - name: Install Homebrew packages
