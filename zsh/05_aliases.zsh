@@ -22,7 +22,5 @@ alias ...='cd ../..'
 alias -- -='cd -'
 
 # Custom aliases
-alias so-du-dirs='du -s *(/)'
-alias so-reset='cd; clear'
 alias so-tmp='cd $(so-mktemp -d)'
 alias so-wdiff='dwdiff -c -P --diff-input'
