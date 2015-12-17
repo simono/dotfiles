@@ -51,3 +51,5 @@ zstyle ':completion:*' squeeze-slashes true
 zstyle ':completion:*:-tilde-:*' tag-order named-directories
 # Use a completion cache
 zstyle ':completion:*' use-cache true
+
+(( $+commands[gulp] )) && eval "$(gulp --completion=zsh)"
