@@ -19,6 +19,7 @@
       with_items:
         - ack
         - brew-cask
+        - gnu-sed
         - httpie
         - reattach-to-user-namespace
         - ssh-copy-id
@@ -28,11 +29,12 @@
     - name: Install Homebrew Casks
       homebrew_cask: name={{item}} state=present
       with_items:
+        - atom
+        - chromium
         - dropbox
         - firefox
         - gimp
         - github-desktop
-        - libreoffice
         - macvim
         - sourcetree
         - vlc
