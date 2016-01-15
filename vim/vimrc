@@ -59,6 +59,8 @@ if has("gui_running")
 	colorscheme solarized
 else
 	colorscheme desert
+	" Airline
+	let g:airline#extensions#tabline#enabled = 1
 endif
 
 " FileType settings
@@ -99,9 +101,6 @@ inoremap	<Up>	<nop>
 inoremap	<Down>	<nop>
 inoremap	<Left>	<nop>
 inoremap	<Right>	<nop>
-
-" Airline
-let g:airline#extensions#tabline#enabled = 1
 
 " EasyMotion
 map <Leader> <Plug>(easymotion-prefix)
