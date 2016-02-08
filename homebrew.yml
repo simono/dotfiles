@@ -30,7 +30,6 @@
       homebrew_cask: name={{item}} state=present
       with_items:
         - atom
-        - chromium
         - dropbox
         - firefox
         - gimp
