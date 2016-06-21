@@ -22,3 +22,5 @@
 	email = simon@olofsson.de
 [push]
 	default = simple
+[diff]
+	renames = copies
