@@ -15,6 +15,7 @@
 	lgo = log origin/master..master
 	puu = pull upstream master
 	st = status
+	wdf = diff --color-words
 [color]
 	ui = true
 [user]
