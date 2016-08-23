@@ -18,7 +18,6 @@
       homebrew: name={{item}} state=present
       with_items:
         - ack
-        - brew-cask
         - gnu-sed
         - httpie
         - reattach-to-user-namespace
