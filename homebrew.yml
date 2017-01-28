@@ -19,7 +19,6 @@
       with_items:
         - ack
         - gnu-sed
-        - httpie
         - reattach-to-user-namespace
         - ssh-copy-id
         - tmux
@@ -33,6 +32,7 @@
         - firefox
         - gimp
         - github-desktop
+        - google-chrome
         - macvim
         - sourcetree
         - vlc
