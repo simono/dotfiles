@@ -24,6 +24,7 @@
         - tmux
         - vimpager
         - zsh-completions
+        - zsh-syntax-highlighting
     - name: Install Homebrew Casks
       homebrew_cask: name={{item}} state=present
       with_items:
