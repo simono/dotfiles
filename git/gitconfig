@@ -25,3 +25,5 @@
 	default = simple
 [diff]
 	renames = copies
+[log]
+	follow = true
