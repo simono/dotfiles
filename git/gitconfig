@@ -27,3 +27,4 @@
 	renames = copies
 [log]
 	follow = true
+	mailmap = true
