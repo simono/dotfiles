@@ -13,7 +13,6 @@
         - ack
         - gnu-sed
         - reattach-to-user-namespace
-        - ssh-copy-id
         - tmux
         - vimpager
         - zsh-completions
