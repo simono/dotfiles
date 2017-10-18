@@ -15,11 +15,7 @@ case $(uname -s) in
 		local rmOpts='-I'
 		;|
 	'Darwin' )
-		alias mark='/Applications/Marked.app/Contents/Resources/mark'
-		alias mvimdiff='mvim -d'
 		alias so-brew-unused='for i in $(brew list); do test -z "$(brew uses --installed $i)" && echo "Unused: $i"; done'
-		alias vim='mvim -v'
-		alias vimdiff='mvim -vd'
 		;|
 	'Linux' )
 		local lsOpts='--color=auto'
