@@ -20,12 +20,9 @@
     - name: Install Homebrew Casks
       homebrew_cask: name={{item}} state=present
       with_items:
-        - atom
         - dropbox
-        - firefox
         - gimp
         - google-chrome
-        - macvim
         - sourcetree
         - vlc
     - name: Cleanup Homebrew
