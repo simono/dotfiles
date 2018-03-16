@@ -22,7 +22,7 @@
       with_items:
         - dropbox
         - gimp
-        - google-chrome
+        - chromium
         - sourcetree
         - vlc
     - name: Cleanup Homebrew
