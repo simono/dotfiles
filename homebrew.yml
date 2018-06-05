@@ -4,7 +4,7 @@
     - name: Add Taps
       homebrew_tap: tap={{item}} state=present
       with_items:
-        - caskroom/cask
+        - homebrew/cask
     - name: Upgrade Homebrew packages
       homebrew: update_homebrew=yes upgrade_all=yes
     - name: Install Homebrew packages
