@@ -44,7 +44,7 @@ link ''		zsh
 if [ $(uname -s) = 'Darwin' ]; then
 
 	if [ -x /usr/local/bin/ansible-playbook ]; then
-		(cd $current_dir && ansible-playbook -i $current_dir/hosts $current_dir/homebrew.yml)
+		(cd $current_dir && ansible-playbook -i hosts homebrew.yml)
 	else
 		echo 'Please install Ansible!'
 	fi
