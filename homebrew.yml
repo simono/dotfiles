@@ -26,4 +26,4 @@
         - sourcetree
         - vlc
     - name: Cleanup Homebrew
-      shell: brew cask cleanup && brew cleanup
+      shell: brew cleanup
