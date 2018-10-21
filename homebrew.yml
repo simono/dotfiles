@@ -8,15 +8,16 @@
     - name: Upgrade Homebrew packages
       homebrew: update_homebrew=yes upgrade_all=yes
     - name: Install Homebrew packages
-      homebrew: name={{item}} state=present
-      with_items:
-        - ack
-        - gnu-sed
-        - reattach-to-user-namespace
-        - tmux
-        - vimpager
-        - zsh-completions
-        - zsh-syntax-highlighting
+      homebrew:
+        name:
+          - ack
+          - gnu-sed
+          - reattach-to-user-namespace
+          - tmux
+          - vimpager
+          - zsh-completions
+          - zsh-syntax-highlighting
+        state: present
     - name: Install Homebrew Casks
       homebrew_cask: name={{item}} state=present
       with_items:
