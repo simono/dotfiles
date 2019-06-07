@@ -14,3 +14,5 @@ if [[ -f $syntax_highlighting ]]; then
 	source $syntax_highlighting
   source $HOME/.zsh/syntax-highlighting.zsh
 fi
+
+test -f "$HOME/.zshrc.local" && source "$HOME/.zshrc.local"
