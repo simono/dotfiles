@@ -42,9 +42,3 @@
 [submodule "vim/bundle/editorconfig-vim"]
 	path = vim/bundle/editorconfig-vim
 	url = git://github.com/editorconfig/editorconfig-vim.git
-[submodule "vim/bundle/vim-easymotion"]
-	path = vim/bundle/vim-easymotion
-	url = git://github.com/easymotion/vim-easymotion.git
-[submodule "vim/bundle/vim-systemd-syntax"]
-	path = vim/bundle/vim-systemd-syntax
-	url = git@github.com:Matt-Deacalion/vim-systemd-syntax.git

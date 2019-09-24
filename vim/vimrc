@@ -101,7 +101,3 @@ inoremap	<Up>	<nop>
 inoremap	<Down>	<nop>
 inoremap	<Left>	<nop>
 inoremap	<Right>	<nop>
-
-" EasyMotion
-map <Leader> <Plug>(easymotion-prefix)
-let g:EasyMotion_smartcase = 1
