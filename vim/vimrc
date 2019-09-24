@@ -9,11 +9,6 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" Setup pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-execute pathogen#helptags()
-
 " Show the line numer relative to the current line
 set relativenumber
 

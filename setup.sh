@@ -35,7 +35,8 @@ link ''	tmux/tmux-sensible
 mkdir -p $HOME/.vim/swap
 mkdir -p $HOME/.vim/backup
 mkdir -p $HOME/.vim/undo
-link ''		vim/bundle
+mkdir -p $HOME/.vim/pack/my-plugins
+link ''		vim/pack/my-plugins/start
 link vim	vimrc
 link zsh	zprofile
 link zsh	zshrc
