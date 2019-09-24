@@ -14,39 +14,31 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 execute pathogen#helptags()
 
-" Keep backup files
-set backup
-" Highlight column after 'textwidth'
-set colorcolumn=+1
+" Show the line numer relative to the current line
+set relativenumber
+
+" Use two spaces for a tab
+set tabstop=2 shiftwidth=2
+
+" Don't insert two spaces when joining lines
+set nojoinspaces
+
 " Completion mode that is used in insert mode
 set completeopt=longest,menu
-" Concealed text is completely hidden unless it has
-" a custom replacement character defined
-set conceallevel=2
-" Highlight the screen line of the cursor
-set cursorline
-" Use ack for greping
-set grepprg=ack
-" Hide Buffers instead of closing them
-set hidden
+" Completion mode that is used on the command line
+set wildmode=longest,list
+
 " Highlight the previous search pattern
 set hlsearch
 " Ignore case in search patterns
 set ignorecase
-" Don't insert two spaces when joining lines
-set nojoinspaces
-" Show the line numer relative to the current line
-set relativenumber
-" Override 'ignorecase' if the search pattern
-" contains upper case characters
+" Override 'ignorecase' if the search pattern contains upper case characters
 set smartcase
-" Use two spaces for a tab
-set tabstop=2 shiftwidth=2
+
+" Keep backup files
+set backup
 " Enable undo persistence
 set undofile
-" Completion mode that is used on the command line
-set wildmode=longest,list
-
 " Store everything under ~/.vim
 set backupdir^=~/.vim/backup/
 set directory^=~/.vim/swap/
@@ -54,43 +46,6 @@ set viminfo+=n~/.vim/viminfo
 set undodir^=~/.vim/undo/
 
 " Appearance
-if has("gui_running")
-	set background=dark
-	colorscheme solarized
-else
-	colorscheme desert
-	" Airline
-	let g:airline#extensions#tabline#enabled = 1
-endif
-
-" FileType settings
-autocmd FileType *tex setlocal textwidth=80
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-autocmd FileType markdown setlocal textwidth=80 expandtab
-autocmd FileType text setlocal textwidth=80
-
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
-if !exists(":DiffOrig")
-	command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		\ | wincmd p | diffthis
-endif
-
-" Run xmllint on the range
-if !exists(":XmlFormat")
-	command -range=% XmlFormat set ft=xml
-		\ | :<line1>,<line2>!xmllint --format --recover - 2>/dev/null
-endif
-
-" Easier escaping
-inoremap jj <ESC>
-
-" Spell checking
-" Toggle German spelling, with \\sg
-nnoremap <Leader><Leader>sg :setlocal spell! spelllang=de_20 <CR>
-" Toggle English spelling, with \\sa
-nnoremap <Leader><Leader>sa :setlocal spell! spelllang=en_us <CR>
 
 " Disable arrow keys
 noremap		<Up>	<nop>
