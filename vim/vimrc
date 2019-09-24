@@ -46,6 +46,11 @@ set viminfo+=n~/.vim/viminfo
 set undodir^=~/.vim/undo/
 
 " Appearance
+let g:lightline = {
+			\ 'colorscheme': 'solarized',
+			\ }
+" Lightline shows the mode already
+set noshowmode
 
 " Disable arrow keys
 noremap		<Up>	<nop>
