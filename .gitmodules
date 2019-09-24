@@ -18,9 +18,6 @@
 	path = vim/bundle/vim-eunuch
 	url = git://github.com/tpope/vim-eunuch.git
 	ignore = untracked
-[submodule "vim/bundle/vim-colors-solarized"]
-	path = vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/vim-sleuth"]
 	path = vim/bundle/vim-sleuth
 	url = git://github.com/tpope/vim-sleuth.git
@@ -42,3 +39,6 @@
 [submodule "vim/bundle/lightline.vim"]
 	path = vim/bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
+[submodule "vim/bundle/vim-solarized8"]
+	path = vim/bundle/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git

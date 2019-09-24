@@ -46,6 +46,9 @@ set viminfo+=n~/.vim/viminfo
 set undodir^=~/.vim/undo/
 
 " Appearance
+set background=light
+let g:solarized_termtrans = 1
+colorscheme solarized8
 let g:lightline = {
 			\ 'colorscheme': 'solarized',
 			\ }
