@@ -11,18 +11,11 @@
 	co = checkout
 	dc = diff --cached
 	df = diff
-	lg = log
-	lgo = log origin/master..master
-	puu = pull upstream master
 	st = status
 	wdf = diff --color-words
-[color]
-	ui = true
 [user]
 	name = Simon Olofsson
 	email = simon@olofsson.de
-[push]
-	default = simple
 [diff]
 	renames = copies
 [log]
