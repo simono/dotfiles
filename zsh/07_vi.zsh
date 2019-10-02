@@ -8,9 +8,6 @@
 # Use vi bindings
 bindkey -v
 
-# Map 'jj' to escape
-bindkey -M viins 'jj' vi-cmd-mode
-
 # vim-like undo and redo
 bindkey -M vicmd 'u' undo
 bindkey -M vicmd '^R' redo
