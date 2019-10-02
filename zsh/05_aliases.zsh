@@ -21,6 +21,3 @@ alias zmv='noglob zmv -vW'
 # Directory operations
 alias ...='cd ../..'
 alias -- -='cd -'
-
-# Custom aliases
-alias so-tmp='cd $(so-mktemp -d)'

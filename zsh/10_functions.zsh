@@ -5,7 +5,11 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+# A Calculator
+autoload -U zcalc
 
+# Rename multiple files
+autoload -U zmv
 
 # When typing an URL, escape characters like *
 autoload -Uz url-quote-magic
@@ -22,6 +26,10 @@ so-bell() {
 	echo -ne '\a'
 }
 add-zsh-hook precmd so-bell
+
+so-tmp() {
+	cd $(so-mktemp -d)
+}
 
 so-take() {
 	mkdir -p "$1" && cd "$1"
