@@ -16,16 +16,6 @@ so-bell() {
 }
 add-zsh-hook precmd so-bell
 
-so-xml-format() {
-	for f in $@; do
-		if [[ -f $f ]]; then
-			xmllint --format "$f" --output "$f"
-		else
-			echo "$f is not a file."
-		fi
-	done
-}
-
 so-take() {
 	mkdir -p "$1" && cd "$1"
 }

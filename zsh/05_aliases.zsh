@@ -24,4 +24,3 @@ alias -- -='cd -'
 
 # Custom aliases
 alias so-tmp='cd $(so-mktemp -d)'
-alias so-wdiff='dwdiff -c -P --diff-input | vimpager'
