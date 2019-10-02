@@ -13,7 +13,7 @@ for p in '/usr/local/bin' "$HOME/bin"; do
 done
 
 # Set fpath
-for p in '/usr/local/share/zsh/site-functions' '/usr/local/share/zsh-completions'; do
+for p in '/usr/local/share/zsh/site-functions' '/usr/local/share/zsh-completions' "$HOME/.zsh/pure"; do
 	if [[ -d $p ]]; then
 		fpath=($p $fpath)
 	fi

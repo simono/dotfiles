@@ -5,25 +5,16 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Update tmux window title
-update_window_title() {
-	if [[ $TERM == screen* ]]; then
-		print -nP "\ek$1\e\\"
-	fi
-}
 
-# Display the full command string
-preexec() {
-	update_window_title "$1"
-}
 
-# Extract path when showing a prompt
-precmd() {
-	vcs_info
-	update_window_title "$folder%#"
+# provides a simple way of adding or removing hooks
+autoload -Uz add-zsh-hook
+
+so-bell() {
 	# Ring the bell before displaying the prompt
 	echo -ne '\a'
 }
+add-zsh-hook precmd so-bell
 
 so-xml-format() {
 	for f in $@; do

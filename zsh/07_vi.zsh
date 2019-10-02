@@ -34,15 +34,6 @@ zle-line-init() {
 }
 zle -N zle-line-init
 
-# Show the vi mode on the right side and update it
-zle-keymap-select() {
-	RPS1="${${KEYMAP/(main|viins)/-- INSERT --}/vicmd/}"
-	RPS2=$RPS1
-	zle reset-prompt
-	RPS1=""
-	RPS2=$RPS1
-}
-zle -N zle-keymap-select
 
 # Edit the command line
 autoload -U edit-command-line

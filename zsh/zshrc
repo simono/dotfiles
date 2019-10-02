@@ -9,6 +9,9 @@ for f in $HOME/.zsh/[[:digit:]]*_*.zsh; do
 	source $f;
 done
 
+autoload -U promptinit; promptinit
+prompt pure
+
 local syntax_highlighting='/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
 if [[ -f $syntax_highlighting ]]; then
 	source $syntax_highlighting

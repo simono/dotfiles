@@ -16,7 +16,7 @@ zstyle ':completion:*' condition false
 # Completing strings consisting of multiple parts, such as path names
 zstyle ':completion:*' expand prefix suffix
 # Show the kind of matches
-zstyle ':completion:*:descriptions' format "$FG[cyan]Completing %d%f"
+zstyle ':completion:*:descriptions' format "Completing %d"
 # Display all different types of matches separately
 zstyle ':completion:*' group-name ''
 # Ignore the current path when completing
