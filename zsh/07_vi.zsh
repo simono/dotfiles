@@ -8,15 +8,6 @@
 # Use vi bindings
 bindkey -v
 
-# vim-like undo and redo
-bindkey -M vicmd 'u' undo
-bindkey -M vicmd '^R' redo
-
-# Some keys to change the case
-bindkey -M vicmd 'gu' down-case-word
-bindkey -M vicmd 'gU' up-case-word
-bindkey -M vicmd 'g~' vi-oper-swap-case
-
 # Start in normal mode
 zle-line-init() {
 	zle vi-cmd-mode
@@ -29,4 +20,4 @@ bindkey -M vicmd 'q' push-line-or-edit
 # Edit the command line
 autoload -U edit-command-line
 zle -N edit-command-line
-bindkey -M vicmd 'v' edit-command-line
+bindkey -M vicmd '^v' edit-command-line
