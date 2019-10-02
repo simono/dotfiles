@@ -8,7 +8,6 @@
 case $(uname -s) in
 	*BSD | 'Darwin' )
 		local lsOpts='-G'
-		local lsColors=$LSCOLORS
 		alias so-mktemp='mktemp -t sim'
 		;|
 	*BSD | 'Linux' )
@@ -19,7 +18,6 @@ case $(uname -s) in
 		;|
 	'Linux' )
 		local lsOpts='--color=auto'
-		local lsColors=$(dircolors -b)
 		alias ack="ack-grep"
 		alias so-mktemp='mktemp'
 		;|
