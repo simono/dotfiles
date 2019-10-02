@@ -11,11 +11,6 @@ bindkey -v
 # Map 'jj' to escape
 bindkey -M viins 'jj' vi-cmd-mode
 
-# Remove all bindings beginning with an escape character (probably cursor keys)
-# Breaks pasting in macOS Sierra
-#bindkey -rpM viins '^['
-bindkey -rpM vicmd '^['
-
 # vim-like undo and redo
 bindkey -M vicmd 'u' undo
 bindkey -M vicmd '^R' redo

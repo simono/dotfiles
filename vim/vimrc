@@ -49,13 +49,3 @@ let g:lightline = {
 			\ }
 " Lightline shows the mode already
 set noshowmode
-
-" Disable arrow keys
-noremap		<Up>	<nop>
-noremap		<Down>	<nop>
-noremap		<Left>	<nop>
-noremap		<Right>	<nop>
-inoremap	<Up>	<nop>
-inoremap	<Down>	<nop>
-inoremap	<Left>	<nop>
-inoremap	<Right>	<nop>
