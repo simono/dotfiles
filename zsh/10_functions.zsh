@@ -7,6 +7,13 @@
 
 
 
+# When typing an URL, escape characters like *
+autoload -Uz url-quote-magic
+zle -N self-insert url-quote-magic
+# Apply quoting to copy-pasted URLs
+autoload -Uz bracketed-paste-magic
+zle -N bracketed-paste bracketed-paste-magic
+
 # provides a simple way of adding or removing hooks
 autoload -Uz add-zsh-hook
 
