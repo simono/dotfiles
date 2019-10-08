@@ -45,3 +45,6 @@
 [submodule "zsh/pure"]
 	path = zsh/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule "zsh/zsh-nvm"]
+	path = zsh/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm
