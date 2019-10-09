@@ -26,5 +26,3 @@
         - gimp
         - iina
         - sourcetree
-    - name: Cleanup Homebrew
-      shell: brew cleanup
