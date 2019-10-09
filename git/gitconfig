@@ -21,3 +21,5 @@
 [log]
 	follow = true
 	mailmap = true
+[include]
+	path = .gitconfig.local
