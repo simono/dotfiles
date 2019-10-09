@@ -48,3 +48,6 @@
 [submodule "zsh/zsh-nvm"]
 	path = zsh/zsh-nvm
 	url = https://github.com/lukechilds/zsh-nvm
+[submodule "zsh/git-open"]
+	path = zsh/git-open
+	url = git@github.com:paulirish/git-open.git

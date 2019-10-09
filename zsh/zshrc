@@ -15,6 +15,8 @@ prompt pure
 NVM_AUTO_USE=true
 source $HOME/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
 
+source $HOME/.zsh/git-open/git-open.plugin.zsh
+
 test -f "$HOME/.zshrc.local" && source "$HOME/.zshrc.local"
 
 local syntax_highlighting='/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
