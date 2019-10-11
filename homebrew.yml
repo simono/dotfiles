@@ -5,6 +5,7 @@
       homebrew_tap: tap={{item}} state=present
       with_items:
         - homebrew/cask
+        - beeftornado/rmtree
     - name: Upgrade Homebrew packages
       homebrew: update_homebrew=yes upgrade_all=yes
     - name: Install Homebrew packages
