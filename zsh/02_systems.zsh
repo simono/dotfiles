@@ -13,9 +13,6 @@ case $(uname -s) in
 	*BSD | 'Linux' )
 		local rmOpts='-I'
 		;|
-	'Darwin' )
-		alias so-brew-unused='for i in $(brew list); do test -z "$(brew uses --installed $i)" && echo "Unused: $i"; done'
-		;|
 	'Linux' )
 		local lsOpts='--color=auto'
 		alias ack="ack-grep"
