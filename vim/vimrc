@@ -41,7 +41,11 @@ set viminfo+=n~/.vim/viminfo
 set undodir^=~/.vim/undo/
 
 " Appearance
-set background=light
+if system("defaults read -g AppleInterfaceStyle") =~ "^Dark"
+	set background=dark
+else
+	set background=light
+endif
 let g:solarized_termtrans = 1
 colorscheme solarized8
 let g:lightline = {

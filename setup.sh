@@ -28,6 +28,7 @@ link() {
 
 link ack	ackrc
 link git	gitconfig
+link ''		terminal
 link tmux	tmux.conf
 mkdir -p $HOME/.tmux
 link ''	tmux/tmux-colors-solarized
