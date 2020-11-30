@@ -27,12 +27,13 @@ link() {
 (cd $current_dir && git checkout master && git pull && git submodule update --init)
 
 link ack	ackrc
+link ''		Brewfile
 link git	gitconfig
 link ''		terminal
 link tmux	tmux.conf
 mkdir -p $HOME/.tmux
-link ''	tmux/tmux-colors-solarized
-link ''	tmux/tmux-sensible
+link ''		tmux/tmux-colors-solarized
+link ''		tmux/tmux-sensible
 mkdir -p $HOME/.vim/swap
 mkdir -p $HOME/.vim/backup
 mkdir -p $HOME/.vim/undo
@@ -44,10 +45,8 @@ link zsh	zshrc
 link ''		zsh
 
 if [ $(uname -s) = 'Darwin' ]; then
-
-	if [ -x /usr/local/bin/ansible-playbook ]; then
-		(cd $current_dir && ansible-playbook -i hosts homebrew.yml)
-	else
-		echo 'Please install Ansible!'
-	fi
+	brew bundle install --global --no-lock
+	brew bundle install --file=~/.Brewfile.local --no-lock
+	brew upgrade
+	brew cleanup
 fi
