@@ -6,6 +6,12 @@
 #
 
 case $(uname -s) in
+	'Darwin' )
+		local hb_cnf_handler="$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+		if [ -f "$hb_cnf_handler" ]; then
+			source "$hb_cnf_handler";
+		fi
+		;|
 	*BSD | 'Darwin' )
 		local lsOpts='-G'
 		alias so-mktemp='mktemp -t sim'
