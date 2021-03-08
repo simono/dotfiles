@@ -16,7 +16,7 @@ cask "iina"
 cask "microsoft-edge"
 cask "sourcetree"
 cask "visual-studio-code"
-mas "1Blocker", id: 1107421413
+mas "1Blocker", id: 1365531024
 mas "Bear", id: 1091189122
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
