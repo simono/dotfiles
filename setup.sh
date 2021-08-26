@@ -24,7 +24,7 @@ link() {
 	fi
 }
 
-(cd $current_dir && git checkout master && git pull && git submodule update --init)
+(cd $current_dir && git checkout main && git pull && git submodule update --init)
 
 link ack	ackrc
 link ''		Brewfile
