@@ -8,9 +8,6 @@
 # A Calculator
 autoload -U zcalc
 
-# Rename multiple files
-autoload -U zmv
-
 # When typing an URL, escape characters like *
 autoload -Uz url-quote-magic
 zle -N self-insert url-quote-magic

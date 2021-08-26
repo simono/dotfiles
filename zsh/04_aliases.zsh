@@ -16,7 +16,6 @@ alias mv='nocorrect mv -iv'
 alias rm="rm -v $rmOpts"
 alias sudo='nocorrect sudo'
 alias zcalc='noglob zcalc'
-alias zmv='noglob zmv -vW'
 
 # Directory operations
 alias ...='cd ../..'
