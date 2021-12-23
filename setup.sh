@@ -29,9 +29,7 @@ link() {
 (cd $current_dir && git checkout main && git pull && git submodule update --init)
 
 link ack	ackrc
-link ''		Brewfile
 link git	gitconfig
-link ''		terminal
 link tmux	tmux.conf
 mkdir -p $HOME/.tmux
 link ''		tmux/tmux-colors-solarized
@@ -48,6 +46,9 @@ link ''		zsh
 
 if [ $(uname -s) = 'Darwin' ]; then
 	caffeinate -w $$ &
+
+	link ''		Brewfile
+	link ''		terminal
 
 	brew bundle install --global --no-lock
 	localBrewfile="$HOME/.Brewfile-$(hostname -s)"
