@@ -2,7 +2,6 @@ tap "homebrew/command-not-found"
 tap "beeftornado/rmtree"
 
 brew "ack"
-brew "ansible"
 brew "f2"
 brew "fd"
 brew "gnu-sed"
@@ -18,7 +17,6 @@ cask "firefox"
 cask "gimp"
 cask "iina"
 cask "microsoft-edge"
-cask "sourcetree"
 cask "visual-studio-code"
 
 mas "1Blocker", id: 1365531024
