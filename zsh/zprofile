@@ -5,19 +5,11 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Set PATH
-for p in '/usr/local/bin' "$HOME/bin"; do
-	if [[ -d $p ]]; then
-		PATH="$p:$PATH"
-	fi
-done
+test -x /opt/homebrew/bin/brew && eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Set fpath
-for p in '/usr/local/share/zsh/site-functions' '/usr/local/share/zsh-completions'; do
-	if [[ -d $p ]]; then
-		fpath=($p $fpath)
-	fi
-done
+if type brew &>/dev/null; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:$(brew --prefix)/share/zsh-completions:${FPATH}"
+fi
 
 export EDITOR='vim'
 (( $+commands[vimpager] )) && export PAGER='vimpager'
