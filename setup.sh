@@ -50,9 +50,12 @@ if [ $(uname -s) = 'Darwin' ]; then
 	link ''		Brewfile
 	link ''		terminal
 
+	localBrewfile="Brewfile-$(hostname -s)"
+	link ''		$localBrewfile
+
 	brew bundle install --global --no-lock
-	localBrewfile="$HOME/.Brewfile-$(hostname -s)"
-	test -r $localBrewfile && brew bundle install --file=$localBrewfile --no-lock
+	localBrewfilePath="$HOME/.$localBrewfile"
+	test -r $localBrewfilePath && brew bundle install --file=$localBrewfilePath --no-lock
 
 	brew upgrade
 	brew cleanup
