@@ -15,7 +15,9 @@ link() {
 	local target="$(pwd)/$current_dir/$1/$2"
 	local linkName="$HOME/.$2"
 
-	if [ -L $linkName ]; then
+	if [ ! -r $target ]; then
+		return
+	elif [ -L $linkName ]; then
 		ln -nvsf $target $linkName
 	elif [ ! -e $linkName ]; then
 		ln -nvs $target $linkName
