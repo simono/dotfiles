@@ -45,6 +45,8 @@ link zsh	zshrc
 link ''		zsh
 
 if [ $(uname -s) = 'Darwin' ]; then
+	caffeinate -w $$ &
+
 	brew bundle install --global --no-lock
 	localBrewfile="$HOME/.Brewfile-$(hostname -s)"
 	test -r $localBrewfile && brew bundle install --file=$localBrewfile --no-lock
