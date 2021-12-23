@@ -1,5 +1,6 @@
 cask "cyberduck"
 cask "microsoft-edge"
+cask "sourcetree"
 cask "tunnelblick"
 cask "visual-studio-code"
 
