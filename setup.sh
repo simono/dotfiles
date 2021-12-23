@@ -53,4 +53,9 @@ if [ $(uname -s) = 'Darwin' ]; then
 
 	brew upgrade
 	brew cleanup
+
+	clear
+	brew outdated
+	mas outdated
+	softwareupdate -l
 fi
