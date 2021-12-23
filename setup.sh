@@ -46,7 +46,8 @@ link ''		zsh
 
 if [ $(uname -s) = 'Darwin' ]; then
 	brew bundle install --global --no-lock
-	test -r ~/.Brewfile.local && brew bundle install --file=~/.Brewfile.local --no-lock
+	localBrewfile="$HOME/.Brewfile-$(hostname -s)"
+	test -r $localBrewfile && brew bundle install --file=$localBrewfile --no-lock
 	brew upgrade
 	brew cleanup
 fi
