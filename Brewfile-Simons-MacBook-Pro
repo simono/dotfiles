@@ -1,0 +1,14 @@
+cask "cyberduck"
+cask "microsoft-edge"
+cask "tunnelblick"
+cask "visual-studio-code"
+
+mas "AusweisApp2", id: 948660805
+mas "Bear", id: 1091189122
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft To Do", id: 274495053
+mas "Microsoft Word", id: 462054704
+mas "MoneyMoney", id: 872698314
+mas "OneDrive", id: 823766827
