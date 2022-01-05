@@ -39,9 +39,6 @@
 [submodule "vim/bundle/vim-solarized8"]
 	path = vim/pack/my-plugins/start/vim-solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
-[submodule "terminal/osx-terminal.app-colors-solarized"]
-	path = terminal/osx-terminal.app-colors-solarized
-	url = git@github.com:tomislav/osx-terminal.app-colors-solarized.git
 [submodule "zsh/zsh-nvm"]
 	path = zsh/zsh-nvm
 	url = https://github.com/lukechilds/zsh-nvm
