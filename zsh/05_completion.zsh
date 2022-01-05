@@ -5,7 +5,7 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-autoload -U compinit && compinit
+autoload -U compinit && compinit $SO_COMPINIT_ARGS
 
 # Description for options that are not described by the completion functions
 zstyle ':completion:*' auto-description 'specify: %d'

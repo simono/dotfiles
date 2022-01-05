@@ -22,4 +22,7 @@ export LS_COLORS='di=36:ln=35:so=31;1;44:pi=30;1;44:ex=1;31:bd=0;1;44:cd=37;1;44
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 
+# Additional args for compinit, can be overriden in .zprofile.local
+export SO_COMPINIT_ARGS=''
+
 test -f "$HOME/.zprofile.local" && source "$HOME/.zprofile.local"
