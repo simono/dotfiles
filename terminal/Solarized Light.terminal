@@ -1267,7 +1267,7 @@
 	<key>BlinkText</key>
 	<false/>
 	<key>CommandString</key>
-	<string>/opt/homebrew/bin/tmux</string>
+	<string>zsh --login -c 'tmux'</string>
 	<key>CursorColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -1673,10 +1673,6 @@
 		<dict>
 			<key>ProcessName</key>
 			<string>tmux</string>
-		</dict>
-		<dict>
-			<key>ProcessName</key>
-			<string>-tmux</string>
 		</dict>
 	</array>
 	<key>redColour</key>
