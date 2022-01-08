@@ -1,47 +1,47 @@
 [submodule "vim/bundle/vim-surround"]
 	path = vim/pack/my-plugins/start/vim-surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/pack/my-plugins/start/vim-repeat
-	url = git://github.com/tpope/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
 [submodule "vim/bundle/vim-commentary"]
 	path = vim/pack/my-plugins/start/vim-commentary
-	url = git://github.com/tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/bundle/vim-speeddating"]
 	path = vim/pack/my-plugins/start/vim-speeddating
-	url = git://github.com/tpope/vim-speeddating.git
+	url = https://github.com/tpope/vim-speeddating.git
 	ignore = untracked
 [submodule "vim/bundle/vim-eunuch"]
 	path = vim/pack/my-plugins/start/vim-eunuch
-	url = git://github.com/tpope/vim-eunuch.git
+	url = https://github.com/tpope/vim-eunuch.git
 	ignore = untracked
 [submodule "vim/bundle/vim-sleuth"]
 	path = vim/pack/my-plugins/start/vim-sleuth
-	url = git://github.com/tpope/vim-sleuth.git
+	url = https://github.com/tpope/vim-sleuth.git
 [submodule "vim/bundle/vim-sensible"]
 	path = vim/pack/my-plugins/start/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible.git
 [submodule "vim/bundle/vim-unimpaired"]
 	path = vim/pack/my-plugins/start/vim-unimpaired
-	url = git://github.com/tpope/vim-unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "tmux/tmux-colors-solarized"]
 	path = tmux/tmux-colors-solarized
-	url = git://github.com/seebi/tmux-colors-solarized.git
+	url = https://github.com/seebi/tmux-colors-solarized.git
 [submodule "tmux/tmux-sensible"]
 	path = tmux/tmux-sensible
-	url = git://github.com/tmux-plugins/tmux-sensible.git
+	url = https://github.com/tmux-plugins/tmux-sensible.git
 [submodule "vim/bundle/editorconfig-vim"]
 	path = vim/pack/my-plugins/start/editorconfig-vim
-	url = git://github.com/editorconfig/editorconfig-vim.git
+	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/bundle/lightline.vim"]
 	path = vim/pack/my-plugins/start/lightline.vim
-	url = https://github.com/itchyny/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
 [submodule "vim/bundle/vim-solarized8"]
 	path = vim/pack/my-plugins/start/vim-solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
 [submodule "zsh/zsh-nvm"]
 	path = zsh/zsh-nvm
-	url = https://github.com/lukechilds/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm.git
 [submodule "zsh/git-open"]
 	path = zsh/git-open
-	url = git@github.com:paulirish/git-open.git
+	url = https://github.com/paulirish/git-open.git
