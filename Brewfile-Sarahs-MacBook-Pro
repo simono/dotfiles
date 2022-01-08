@@ -1,0 +1,4 @@
+cask "google-chrome"
+cask "microsoft-teams"
+cask "zoom"
+cask "zotero"
