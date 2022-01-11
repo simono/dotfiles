@@ -1,0 +1,34 @@
+brew "ansible"
+brew "dos2unix"
+brew "gettext"
+brew "git-flow-avh"
+brew "httpie"
+brew "kubernetes-cli"
+brew "maven"
+brew "openjdk@11"
+brew "openjdk@8"
+brew "subversion"
+brew "watch"
+brew "xmlstarlet"
+
+cask "browserosaurus"
+cask "cyberduck"
+cask "docker"
+cask "eclipse-jee"
+cask "microsoft-edge"
+cask "microsoft-teams"
+cask "sourcetree"
+cask "vagrant"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "visualvm"
+cask "wireshark"
+
+mas "Bear", id: 1091189122
+mas "LibreOffice Vanilla", id: 921923693
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft To Do", id: 1274495053
+mas "Microsoft Word", id: 462054704
+mas "OneDrive", id: 823766827
