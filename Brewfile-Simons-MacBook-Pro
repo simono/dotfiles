@@ -1,3 +1,6 @@
+brew "youtube-dl"
+brew "ffmpeg"
+
 cask "cyberduck"
 cask "microsoft-edge"
 cask "microsoft-teams"
