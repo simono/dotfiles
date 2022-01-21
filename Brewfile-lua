@@ -13,7 +13,6 @@ brew "xmlstarlet"
 
 cask "browserosaurus"
 cask "cyberduck"
-cask "docker"
 cask "eclipse-jee"
 cask "microsoft-edge"
 cask "microsoft-teams"
