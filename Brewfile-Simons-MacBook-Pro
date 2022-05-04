@@ -6,7 +6,6 @@ cask "microsoft-edge"
 cask "microsoft-teams"
 cask "miro"
 cask "sourcetree"
-cask "tunnelblick"
 cask "visual-studio-code"
 
 mas "AusweisApp2", id: 948660805
