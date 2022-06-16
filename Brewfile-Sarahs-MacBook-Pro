@@ -1,5 +1,6 @@
 cask "adobe-digital-editions"
 cask "google-chrome"
 cask "microsoft-teams"
+cask "miro"
 cask "zoom"
 cask "zotero"
