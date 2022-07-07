@@ -23,6 +23,7 @@ cask "virtualbox"
 cask "visual-studio-code"
 cask "visualvm"
 cask "wireshark"
+cask "zoom"
 
 mas "Bear", id: 1091189122
 mas "LibreOffice Vanilla", id: 921923693
