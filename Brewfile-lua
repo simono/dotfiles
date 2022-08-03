@@ -26,7 +26,6 @@ cask "wireshark"
 cask "zoom"
 
 mas "Bear", id: 1091189122
-mas "LibreOffice Vanilla", id: 921923693
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
