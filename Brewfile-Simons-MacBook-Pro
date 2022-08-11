@@ -1,3 +1,5 @@
+tap "homebrew/cask-drivers"
+
 brew "youtube-dl"
 brew "ffmpeg"
 
@@ -6,6 +8,7 @@ cask "microsoft-edge"
 cask "microsoft-teams"
 cask "miro"
 cask "sourcetree"
+cask "tiptoi-manager"
 cask "visual-studio-code"
 
 mas "AusweisApp2", id: 948660805
