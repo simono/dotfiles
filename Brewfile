@@ -23,4 +23,3 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "PDF Toolkit+", id: 545164971
 mas "Pages", id: 409201541
-mas "The Unarchiver", id: 425424353
