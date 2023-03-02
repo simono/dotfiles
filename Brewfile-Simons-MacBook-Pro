@@ -4,6 +4,7 @@ brew "youtube-dl"
 brew "ffmpeg"
 
 cask "cyberduck"
+cask "google-chrome"
 cask "microsoft-edge"
 cask "microsoft-teams"
 cask "miro"
