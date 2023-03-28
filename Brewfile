@@ -16,7 +16,9 @@ brew "zsh-syntax-highlighting"
 
 cask "firefox"
 cask "gimp"
+cask "google-chrome"
 cask "iina"
+cask "miro"
 
 mas "1Blocker", id: 1365531024
 mas "Keynote", id: 409183694
