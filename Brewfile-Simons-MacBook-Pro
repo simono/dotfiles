@@ -8,7 +8,6 @@ cask "tiptoi-manager"
 cask "visual-studio-code"
 
 mas "AusweisApp2", id: 948660805
-mas "Bear", id: 1091189122
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
