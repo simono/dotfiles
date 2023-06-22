@@ -20,6 +20,7 @@ if [ $(uname -s) = 'Darwin' ]; then
 	test -r $localBrewfile && brew bundle install --file=$localBrewfile --no-lock
 
 	brew upgrade --ignore-pinned
+ 	brew autoremove
 	brew cleanup
 
 	clear
