@@ -1,4 +1,5 @@
 cask "adobe-digital-editions"
 cask "microsoft-teams"
+cask "webex"
 cask "zoom"
 cask "zotero"
