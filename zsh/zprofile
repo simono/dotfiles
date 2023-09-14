@@ -12,6 +12,8 @@ if type brew &>/dev/null; then
   fpath+="$(brew --prefix)/share/zsh-completions"
 fi
 
+test -d "$HOME/.zfunc" && fpath+="$HOME/.zfunc"
+
 export EDITOR='vim'
 (( $+commands[vimpager] )) && export PAGER='vimpager'
 
