@@ -8,7 +8,8 @@
 test -x /opt/homebrew/bin/brew && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 if type brew &>/dev/null; then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:$(brew --prefix)/share/zsh-completions:${FPATH}"
+  fpath+="$(brew --prefix)/share/zsh/site-functions"
+  fpath+="$(brew --prefix)/share/zsh-completions"
 fi
 
 export EDITOR='vim'
