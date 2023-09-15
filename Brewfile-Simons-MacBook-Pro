@@ -1,4 +1,5 @@
 brew "ffmpeg"
+brew "rustup-init"
 brew "youtube-dl"
 
 cask "cyberduck"
