@@ -1,6 +1,6 @@
 #!/usr/bin/env osascript -l JavaScript
 
-const appearancePreferences = Application("System Events").appearancePreferences;
+const appearancePreferences = Application('System Events').appearancePreferences;
 const settings = `Solarized ${appearancePreferences.darkMode() ? 'Dark' : 'Light'}`;
 
 const terminal = Application('Terminal');
