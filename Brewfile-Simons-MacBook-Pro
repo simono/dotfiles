@@ -4,7 +4,6 @@ brew "rustup-init"
 brew "youtube-dl"
 
 cask "cyberduck"
-cask "microsoft-teams"
 cask "sourcetree"
 cask "tiptoi-manager"
 cask "visual-studio-code"
