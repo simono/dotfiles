@@ -1,7 +1,5 @@
-brew "ffmpeg"
 brew "openconnect"
 brew "rustup-init"
-brew "youtube-dl"
 
 cask "cyberduck"
 cask "sourcetree"
