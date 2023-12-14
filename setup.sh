@@ -19,7 +19,7 @@ if [ $(uname -s) = 'Darwin' ]; then
 	localBrewfile="$HOME/.Brewfile-$(hostname -s)"
 	test -r $localBrewfile && brew bundle install --file=$localBrewfile --no-lock
 
-	brew upgrade --ignore-pinned
+	brew upgrade
  	brew autoremove
 	brew cleanup
 
