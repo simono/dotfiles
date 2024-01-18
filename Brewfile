@@ -18,7 +18,6 @@ cask "firefox"
 cask "gimp"
 cask "google-chrome"
 cask "iina"
-cask "miro"
 
 mas "1Blocker", id: 1365531024
 mas "GoodLinks", id: 1474335294
