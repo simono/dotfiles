@@ -39,9 +39,6 @@
 [submodule "vim/bundle/vim-solarized8"]
 	path = vim/pack/my-plugins/start/vim-solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
-[submodule "zsh/zsh-nvm"]
-	path = zsh/zsh-nvm
-	url = https://github.com/lukechilds/zsh-nvm.git
 [submodule "zsh/git-open"]
 	path = zsh/git-open
 	url = https://github.com/paulirish/git-open.git

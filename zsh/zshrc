@@ -12,9 +12,6 @@ done
 autoload -U promptinit; promptinit
 prompt pure
 
-NVM_AUTO_USE=true
-source $HOME/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
-
 source $HOME/.zsh/git-open/git-open.plugin.zsh
 
 test -f "$HOME/.zshrc.local" && source "$HOME/.zshrc.local"
