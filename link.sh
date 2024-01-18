@@ -30,7 +30,7 @@ link ack	ackrc
 link git	gitconfig
 link tmux	tmux.conf
 mkdir -p $HOME/.tmux
-link ''		tmux/tmux-colors-solarized
+link ''		tmux/rose-pine
 link ''		tmux/tmux-sensible
 mkdir -p $HOME/.vim/swap
 mkdir -p $HOME/.vim/backup

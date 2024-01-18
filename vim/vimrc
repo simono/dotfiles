@@ -41,15 +41,15 @@ set viminfo+=n~/.vim/viminfo
 set undodir^=~/.vim/undo/
 
 " Appearance
+let g:disable_bg = 1
 if system("defaults read -g AppleInterfaceStyle") =~ "^Dark"
 	set background=dark
+	colorscheme rosepine_moon
+	let g:lightline = { 'colorscheme': 'rosepine_moon' }
 else
 	set background=light
+	colorscheme rosepine_dawn	
+	let g:lightline = { 'colorscheme': 'rosepine_dawn' }
 endif
-let g:solarized_termtrans = 1
-colorscheme solarized8
-let g:lightline = {
-			\ 'colorscheme': 'solarized',
-			\ }
 " Lightline shows the mode already
 set noshowmode
