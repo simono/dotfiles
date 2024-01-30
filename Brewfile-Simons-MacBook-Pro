@@ -1,5 +1,6 @@
 brew "colima"
 brew "docker"
+brew "httpie"
 brew "openconnect"
 brew "rustup-init"
 
