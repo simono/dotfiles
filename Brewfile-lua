@@ -25,4 +25,6 @@ cask "visual-studio-code"
 cask "visualvm"
 cask "wireshark"
 
+mas "MeetingBar", id: 1532419400
 mas "Microsoft Excel", id: 462058435
+mas "Microsoft Word", id: 462054704

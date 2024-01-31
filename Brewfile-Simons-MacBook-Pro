@@ -10,5 +10,6 @@ cask "tiptoi-manager"
 cask "visual-studio-code"
 
 mas "AusweisApp2", id: 948660805
+mas "MeetingBar", id: 1532419400
 mas "Microsoft Excel", id: 462058435
 mas "MoneyMoney", id: 872698314
