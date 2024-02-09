@@ -16,7 +16,7 @@ source $HOME/.zsh/git-open/git-open.plugin.zsh
 
 test -f "$HOME/.zshrc.local" && source "$HOME/.zshrc.local"
 
-local syntax_highlighting='/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
+local syntax_highlighting="$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 if [[ -f $syntax_highlighting ]]; then
 	source $syntax_highlighting
 	source $HOME/.zsh/syntax-highlighting.zsh
