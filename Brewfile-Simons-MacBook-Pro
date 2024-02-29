@@ -1,5 +1,4 @@
 brew "colima"
-brew "docker"
 brew "gh"
 brew "httpie"
 brew "openconnect"

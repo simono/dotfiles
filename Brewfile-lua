@@ -1,6 +1,5 @@
 brew "ansible"
 brew "colima"
-brew "docker"
 brew "dos2unix"
 brew "gettext"
 brew "gh"
