@@ -16,6 +16,11 @@ source $HOME/.zsh/git-open/git-open.plugin.zsh
 
 test -f "$HOME/.zshrc.local" && source "$HOME/.zshrc.local"
 
+local autopair="$(brew --prefix)/share/zsh-autopair/autopair.zsh"
+if [[ -f $autopair ]]; then
+	source $autopair
+fi
+
 local syntax_highlighting="$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 if [[ -f $syntax_highlighting ]]; then
 	source $syntax_highlighting

@@ -11,6 +11,7 @@ brew "reattach-to-user-namespace"
 brew "tldr"
 brew "tmux"
 brew "vimpager"
+brew "zsh-autopair"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
