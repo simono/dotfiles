@@ -24,7 +24,7 @@ zstyle ':completion:*' ignore-parents parent pwd .. directory
 # Insert unambiguous completions
 zstyle ':completion:*' insert-unambiguous true
 # Use the same colors as ls
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*:default' list-colors ''
 # Completion lists that don’t fit on the screen can be scrolled
 zstyle ':completion:*:default' list-prompt ''
 # Show all ambiguous pathname components
