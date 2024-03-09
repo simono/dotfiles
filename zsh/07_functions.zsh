@@ -31,8 +31,3 @@ so-tmp() {
 so-take() {
 	mkdir -p "$1" && cd "$1"
 }
-
-so-vm() {
-	git clone -q https://github.com/simono/template-vagrant-ansible.git .
-	rm -rf .git LICENSE README.md &> /dev/null
-}
