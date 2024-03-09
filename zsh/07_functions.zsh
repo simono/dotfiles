@@ -25,7 +25,7 @@ so-bell() {
 add-zsh-hook precmd so-bell
 
 so-tmp() {
-	cd $(so-mktemp -d)
+	cd $(mktemp -d)
 }
 
 so-take() {
