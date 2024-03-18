@@ -14,6 +14,15 @@ zle-line-init() {
 }
 zle -N zle-line-init
 
+# History search with patterns in normal mode
+bindkey -M vicmd '/' history-incremental-pattern-search-backward
+bindkey -M isearch '^N' history-incremental-search-backward
+bindkey -M isearch '^P' history-incremental-search-forward
+
+# Auto-completion for history in insert mode
+bindkey -M 'viins' '^N' history-beginning-search-backward
+bindkey -M 'viins' '^P' history-beginning-search-forward
+
 # Push the current buffer onto the buffer stack and clear the buffer
 bindkey -M vicmd 'q' push-line-or-edit
 
