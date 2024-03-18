@@ -12,25 +12,25 @@
 	df = diff
 	st = status
 	wdf = diff --color-words
-[user]
-	name = Simon Olofsson
-	email = simon@olofsson.de
-	signingkey = ~/.ssh/id_ed25519.pub
-[diff]
-	renames = copies
-[log]
-	follow = true
-[include]
-	path = .gitconfig.local
-[gpg]
-	format = ssh
-[commit]
-	gpgsign = true
-[push]
-	autoSetupRemote = true
 [branch]
 	autoSetupRebase = always
+[commit]
+	gpgsign = true
+[diff]
+	renames = copies
 [fetch]
 	prune = true
+[gpg]
+	format = ssh
 [help]
 	autocorrect = prompt
+[include]
+	path = .gitconfig.local
+[log]
+	follow = true
+[push]
+	autoSetupRemote = true
+[user]
+	email = simon@olofsson.de
+	name = Simon Olofsson
+	signingkey = ~/.ssh/id_ed25519.pub
