@@ -8,7 +8,6 @@
 [alias]
 	br = branch
 	ci = commit
-	co = checkout
 	dc = diff --cached
 	df = diff
 	st = status
@@ -21,10 +20,17 @@
 	renames = copies
 [log]
 	follow = true
-	mailmap = true
 [include]
 	path = .gitconfig.local
 [gpg]
 	format = ssh
 [commit]
 	gpgsign = true
+[push]
+	autoSetupRemote = true
+[branch]
+	autoSetupRebase = always
+[fetch]
+	prune = true
+[help]
+	autocorrect = prompt
