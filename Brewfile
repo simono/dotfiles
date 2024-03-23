@@ -12,6 +12,7 @@ brew "tldr"
 brew "tmux"
 brew "vimpager"
 brew "zsh-autopair"
+brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 

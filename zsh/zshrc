@@ -21,6 +21,11 @@ if [[ -f $autopair ]]; then
 	source $autopair
 fi
 
+local autosuggestions="$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+if [[ -f $autosuggestions ]]; then
+	source $autosuggestions
+fi
+
 local syntax_highlighting="$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 if [[ -f $syntax_highlighting ]]; then
 	source $syntax_highlighting
