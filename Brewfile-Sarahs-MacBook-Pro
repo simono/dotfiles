@@ -4,3 +4,5 @@ cask "miro"
 cask "webex"
 cask "zoom"
 cask "zotero"
+
+mas "Microsoft Word", id: 462054704
