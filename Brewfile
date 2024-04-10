@@ -1,5 +1,4 @@
 tap "homebrew/command-not-found"
-tap "beeftornado/rmtree"
 
 brew "ack"
 brew "f2"
