@@ -31,6 +31,7 @@ link git	gitconfig
 link tmux	tmux.conf
 mkdir -p $HOME/.tmux
 link ''		tmux/rose-pine
+link ''		tmux/tmux-fingers
 link ''		tmux/tmux-sensible
 mkdir -p $HOME/.vim/swap
 mkdir -p $HOME/.vim/backup
