@@ -1,4 +1,4 @@
-brew "ansible"
+brew "ansible@8"
 brew "colima"
 brew "dos2unix"
 brew "gettext"
