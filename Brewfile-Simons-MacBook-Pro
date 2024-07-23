@@ -2,7 +2,7 @@ brew "colima"
 brew "gh"
 brew "httpie"
 brew "openconnect"
-brew "rustup-init"
+brew "rustup"
 
 cask "cyberduck"
 cask "sourcetree"
