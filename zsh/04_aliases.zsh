@@ -8,7 +8,6 @@
 alias cp='nocorrect cp -iv'
 alias df='df -h'
 alias du='du -h'
-alias gack='git ls-files --others --cached --exclude-standard | ack -x'
 alias ll='ls -l'
 alias ls="ls -hF $lsOpts"
 alias mkdir='nocorrect mkdir'

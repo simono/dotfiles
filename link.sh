@@ -26,7 +26,6 @@ link() {
 	fi
 }
 
-link ack ackrc
 link git gitconfig
 link tmux tmux.conf
 mkdir -p $HOME/.tmux

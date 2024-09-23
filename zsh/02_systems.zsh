@@ -17,7 +17,6 @@ case $(uname -s) in
 		;|
 	'Linux' )
 		local lsOpts='--color=auto'
-		alias ack="ack-grep"
 		;|
 	*BSD | 'Darwin' | 'Linux' )
 		;;

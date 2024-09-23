@@ -1,6 +1,5 @@
 tap "homebrew/command-not-found"
 
-brew "ack"
 brew "csview"
 brew "f2"
 brew "fd"
