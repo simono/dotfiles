@@ -1,0 +1,13 @@
+# ripgrep configuration file.
+#
+# Location: ~/.ripgreprc
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+# Trim really long lines and show a preview
+--max-columns=40
+--max-columns-preview
+
+# Ignore case unless pattern contains upper case characters
+--smart-case

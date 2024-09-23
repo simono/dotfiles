@@ -28,6 +28,7 @@ link() {
 
 link git gitconfig
 link tmux tmux.conf
+link ripgrep ripgreprc
 mkdir -p $HOME/.tmux
 link '' tmux/rose-pine
 link '' tmux/tmux-fingers

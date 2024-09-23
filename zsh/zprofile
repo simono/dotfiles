@@ -20,6 +20,9 @@ export EDITOR='vim'
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 
+# Config file for ripgrep
+RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
 # Additional args for compinit, can be overriden in .zprofile.local
 export SO_COMPINIT_ARGS=''
 
