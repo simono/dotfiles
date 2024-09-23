@@ -26,25 +26,25 @@ link() {
 	fi
 }
 
-link ack	ackrc
-link git	gitconfig
-link tmux	tmux.conf
+link ack ackrc
+link git gitconfig
+link tmux tmux.conf
 mkdir -p $HOME/.tmux
-link ''		tmux/rose-pine
-link ''		tmux/tmux-fingers
-link ''		tmux/tmux-sensible
+link '' tmux/rose-pine
+link '' tmux/tmux-fingers
+link '' tmux/tmux-sensible
 mkdir -p $HOME/.vim/swap
 mkdir -p $HOME/.vim/backup
 mkdir -p $HOME/.vim/undo
 mkdir -p $HOME/.vim/pack/my-plugins
-link ''		vim/pack/my-plugins/start
-link vim	vimrc
-link zsh	zprofile
-link zsh	zshrc
-link ''		zsh
+link '' vim/pack/my-plugins/start
+link vim vimrc
+link zsh zprofile
+link zsh zshrc
+link '' zsh
 
 if [ $(uname -s) = 'Darwin' ]; then
-	link ''		Brewfile
-	link ''		"Brewfile-$(hostname -s)"
-	link ''		terminal
+	link '' Brewfile
+	link '' "Brewfile-$(hostname -s)"
+	link '' terminal
 fi
