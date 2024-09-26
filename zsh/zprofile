@@ -21,7 +21,7 @@ export EDITOR='vim'
 export KEYTIMEOUT=1
 
 # Config file for ripgrep
-RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
 # Additional args for compinit, can be overriden in .zprofile.local
 export SO_COMPINIT_ARGS=''
