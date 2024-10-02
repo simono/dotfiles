@@ -1,6 +1,7 @@
 tap "homebrew/command-not-found"
 
 brew "csview"
+brew "eza"
 brew "f2"
 brew "fd"
 brew "gnu-sed"

@@ -8,8 +8,7 @@
 alias cp='nocorrect cp -iv'
 alias df='df -h'
 alias du='du -h'
-alias ll='ls -l'
-alias ls="ls -hF $lsOpts"
+alias ll='eza --long --git --group-directories-first --header --smart-group --time-style=relative'
 alias mkdir='nocorrect mkdir'
 alias mv='nocorrect mv -iv'
 alias rm="rm -Iv"
