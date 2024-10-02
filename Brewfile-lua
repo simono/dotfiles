@@ -11,6 +11,7 @@ brew "openjdk@11"
 brew "openjdk@8"
 brew "rustup"
 brew "subversion"
+brew "tcptraceroute"
 brew "watch"
 brew "xmlstarlet"
 
