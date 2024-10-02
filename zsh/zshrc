@@ -17,6 +17,11 @@ source $HOME/.zsh/git-open/git-open.plugin.zsh
 
 test -f "$HOME/.zshrc.local" && source "$HOME/.zshrc.local"
 
+local hb_cnf_handler="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f $hb_cnf_handler ]; then
+	source $hb_cnf_handler
+fi
+
 local autopair="$(brew --prefix)/share/zsh-autopair/autopair.zsh"
 if [[ -f $autopair ]]; then
 	source $autopair
