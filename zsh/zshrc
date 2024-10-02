@@ -6,10 +6,11 @@
 #
 
 for f in $HOME/.zsh/[[:digit:]]*_*.zsh; do
-	source $f;
+	source $f
 done
 
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt pure
 
 source $HOME/.zsh/git-open/git-open.plugin.zsh
