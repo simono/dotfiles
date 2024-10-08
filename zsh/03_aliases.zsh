@@ -15,6 +15,9 @@ alias rm="rm -Iv"
 alias sudo='nocorrect sudo'
 alias zcalc='noglob zcalc'
 
+# Use bat to highlight help messages
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+
 # Directory operations
 alias ...='cd ../..'
 alias -- -='cd -'

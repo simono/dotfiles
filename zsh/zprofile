@@ -15,10 +15,12 @@ fi
 test -d "$HOME/.zfunc" && fpath+="$HOME/.zfunc"
 
 export EDITOR='vim'
-(( $+commands[vimpager] )) && export PAGER='vimpager'
 
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
+
+# Use bat as manpager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Config file for ripgrep
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
