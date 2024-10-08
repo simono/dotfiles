@@ -31,3 +31,7 @@ so-tmp() {
 so-take() {
 	mkdir -p "$1" && cd "$1"
 }
+
+rg() {
+	command rg --json "$@" | delta
+}

@@ -16,16 +16,27 @@
 	autoSetupRebase = always
 [commit]
 	gpgsign = true
+[core]
+	pager = delta
+[delta]
+	# use n and N to move between diff sections
+	navigate = true
+	side-by-side = true
 [diff]
 	renames = copies
+	colorMoved = default
 [fetch]
 	prune = true
 [gpg]
 	format = ssh
 [help]
 	autocorrect = prompt
+[interactive]
+	diffFilter = delta --color-only
 [log]
 	follow = true
+[merge]
+	conflictstyle = diff3
 [push]
 	autoSetupRemote = true
 [user]
