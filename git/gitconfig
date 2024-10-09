@@ -11,7 +11,7 @@
 	dc = diff --cached
 	df = diff
 	st = status
-	wdf = diff --color-words
+	logg = log --graph --all
 [branch]
 	autoSetupRebase = always
 [commit]
@@ -25,6 +25,7 @@
 [diff]
 	renames = copies
 	colorMoved = default
+	algorithm = histogram
 [fetch]
 	prune = true
 [gpg]
@@ -35,10 +36,19 @@
 	diffFilter = delta --color-only
 [log]
 	follow = true
+	abbrevCommit = true
+	date = auto:relative
 [merge]
-	conflictStyle = diff3
+	conflictStyle = zdiff3
 [push]
 	autoSetupRemote = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+[rerere]
+	enabled = true
+[status]
+	showStash = true
 [user]
 	email = simon@olofsson.de
 	name = Simon Olofsson
