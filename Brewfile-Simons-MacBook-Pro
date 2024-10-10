@@ -5,7 +5,6 @@ brew "openconnect"
 brew "rustup"
 
 cask "cyberduck"
-cask "sourcetree"
 cask "tiptoi-manager"
 cask "visual-studio-code"
 
