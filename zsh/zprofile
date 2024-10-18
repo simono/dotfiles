@@ -19,6 +19,9 @@ export EDITOR='vim'
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 
+# Make less more usable
+export LESS="--ignore-case --no-histdups --color=s+y"
+
 # Use bat as manpager
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
