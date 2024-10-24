@@ -26,6 +26,7 @@
 	renames = copies
 	colorMoved = default
 	algorithm = histogram
+	wsErrorHighlight = all
 [fetch]
 	prune = true
 [gpg]
