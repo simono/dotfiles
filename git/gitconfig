@@ -12,6 +12,7 @@
 	df = diff
 	logg = log --graph --all
 	st = status
+	unstage = restore --staged
 [branch]
 	autoSetupRebase = always
 [commit]
