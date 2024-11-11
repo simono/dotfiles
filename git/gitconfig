@@ -10,8 +10,8 @@
 	ci = commit
 	dc = diff --cached
 	df = diff
-	st = status
 	logg = log --graph --all
+	st = status
 [branch]
 	autoSetupRebase = always
 [commit]
