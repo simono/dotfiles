@@ -8,6 +8,7 @@ brew "rustup"
 cask "cyberduck"
 cask "tiptoi-manager"
 cask "visual-studio-code"
+cask "wiso-steuer-2025"
 
 mas "AusweisApp2", id: 948660805
 mas "MeetingBar", id: 1532419400
