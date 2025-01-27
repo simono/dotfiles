@@ -20,7 +20,7 @@ zstyle ':completion:*:descriptions' format "Completing %d"
 # Display all different types of matches separately
 zstyle ':completion:*' group-name ''
 # Ignore the current path when completing
-zstyle ':completion:*' ignore-parents parent pwd .. directory
+zstyle ':completion:*' ignore-parents parent pwd directory
 # Insert unambiguous completions
 zstyle ':completion:*' insert-unambiguous true
 # Use the same colors as ls
