@@ -30,3 +30,4 @@ mas "Keynote", id: 409183694
 mas "Maccy", id: 1527619437
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "rcmd", id: 1596283165
