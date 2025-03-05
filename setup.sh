@@ -15,9 +15,9 @@ current_dir="$(dirname $0)"
 if [ $(uname -s) = 'Darwin' ]; then
 	caffeinate -w $$ &
 
-	brew bundle install --global --no-lock
+	brew bundle install --global
 	localBrewfile="$HOME/.Brewfile-$(hostname -s)"
-	test -r $localBrewfile && brew bundle install --file=$localBrewfile --no-lock
+	test -r $localBrewfile && brew bundle install --file=$localBrewfile
 
 	brew upgrade --greedy
  	brew autoremove
