@@ -26,6 +26,7 @@ link() {
 	fi
 }
 
+link '' config/fish
 link git gitconfig
 link tmux tmux.conf
 link ripgrep ripgreprc
