@@ -5,31 +5,12 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+# Setup shell for Homebrew.
+# We do this here because Fish is installed via Homebrew
+# and we want to make sure that the Homebrew paths are set.
 local brew="/opt/homebrew/bin/brew"
 test -x $brew && eval "$($brew shellenv)"
 
-if type brew &>/dev/null; then
-  fpath+="$(brew --prefix)/share/zsh/site-functions"
-  fpath+="$(brew --prefix)/share/zsh-completions"
-fi
-
-test -d "$HOME/.zfunc" && fpath+="$HOME/.zfunc"
-
+# Set the editor to Vim.
+# We do this here because tmux reads the EDITOR variable.
 export EDITOR='vim'
-
-# Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
-export KEYTIMEOUT=1
-
-# Make less more usable
-export LESS="--ignore-case --no-histdups --color=s+y"
-
-# Use bat as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-# Config file for ripgrep
-export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
-
-# Additional args for compinit, can be overriden in .zprofile.local
-export SO_COMPINIT_ARGS=''
-
-test -f "$HOME/.zprofile.local" && source "$HOME/.zprofile.local"

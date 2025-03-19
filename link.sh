@@ -41,8 +41,6 @@ mkdir -p $HOME/.vim/pack/my-plugins
 link '' vim/pack/my-plugins/start
 link vim vimrc
 link zsh zprofile
-link zsh zshrc
-link '' zsh
 
 if [ $(uname -s) = 'Darwin' ]; then
 	link '' Brewfile

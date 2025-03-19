@@ -33,9 +33,6 @@
 [submodule "vim/bundle/lightline.vim"]
 	path = vim/pack/my-plugins/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
-[submodule "zsh/git-open"]
-	path = zsh/git-open
-	url = https://github.com/paulirish/git-open.git
 [submodule "tmux/rose-pine"]
 	path = tmux/rose-pine
 	url = https://github.com/rose-pine/tmux.git
