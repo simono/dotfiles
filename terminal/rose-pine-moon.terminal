@@ -1416,6 +1416,8 @@
 	ADIANwBJAEwAUQBTAFoAYABrAHgAfgCLAKAApwDSAPwA/gEAAQIBCQEOARQBFgEYARoN
 	Zg1rDXYNfw2MDY8NnA2lDaoNsgAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAA21
 	</data>
+	<key>SetLanguageEnvironmentVariables</key>
+	<false/>
 	<key>ShowActiveProcessInTabTitle</key>
 	<true/>
 	<key>ShowActiveProcessInTitle</key>
