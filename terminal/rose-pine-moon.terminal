@@ -1419,7 +1419,7 @@
 	<key>ShowActiveProcessInTabTitle</key>
 	<true/>
 	<key>ShowActiveProcessInTitle</key>
-	<true/>
+	<false/>
 	<key>ShowActivityIndicatorInTab</key>
 	<true/>
 	<key>ShowComponentsWhenTabHasCustomTitle</key>
