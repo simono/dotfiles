@@ -40,8 +40,6 @@ mkdir -p $HOME/.vim/pack/my-plugins
 link '' vim/pack/my-plugins/start
 link vim vimrc
 link zsh zprofile
-link zsh zshrc
-link '' zsh
 
 mkdir -p $HOME/.config/fish
 ln -nvsf $(pwd)/$current_dir/fish/fish_plugins $HOME/.config/fish/
