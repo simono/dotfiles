@@ -5,7 +5,8 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-test -x /opt/homebrew/bin/brew && eval "$(/opt/homebrew/bin/brew shellenv)"
+local brew="/opt/homebrew/bin/brew"
+test -x $brew && eval "$($brew shellenv)"
 
 if type brew &>/dev/null; then
   fpath+="$(brew --prefix)/share/zsh/site-functions"
