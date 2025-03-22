@@ -20,6 +20,7 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
 cask "firefox"
+cask "font-sf-mono-nerd-font-ligaturized"
 cask "gimp"
 cask "google-chrome"
 cask "iina"
