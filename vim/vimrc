@@ -9,6 +9,9 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Use the system clipboard
+set clipboard^=unnamed
+
 " Show the absolute line number for the current line
 " and the relative line number for the other lines
 set number
