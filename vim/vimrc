@@ -9,7 +9,9 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" Show the line numer relative to the current line
+" Show the absolute line number for the current line
+" and the relative line number for the other lines
+set number
 set relativenumber
 
 " Use two spaces for a tab
