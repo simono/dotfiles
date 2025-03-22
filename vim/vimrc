@@ -48,7 +48,7 @@ if system("defaults read -g AppleInterfaceStyle") =~ "^Dark"
 	let g:lightline = { 'colorscheme': 'rosepine_moon' }
 else
 	set background=light
-	colorscheme rosepine_dawn	
+	colorscheme rosepine_dawn
 	let g:lightline = { 'colorscheme': 'rosepine_dawn' }
 endif
 " Lightline shows the mode already
