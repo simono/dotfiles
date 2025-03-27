@@ -40,8 +40,11 @@ mkdir -p $HOME/.vim/pack/my-plugins
 link '' vim/pack/my-plugins/start
 link vim vimrc
 link zsh zprofile
-link zsh zshrc
-link '' zsh
+
+mkdir -p $HOME/.config/fish
+ln -nvsf $(pwd)/$current_dir/fish/fish_plugins $HOME/.config/fish/
+ln -nvsf $(pwd)/$current_dir/fish/conf.d/* $HOME/.config/fish/conf.d/
+ln -nvsf $(pwd)/$current_dir/fish/functions/* $HOME/.config/fish/functions/
 
 if [ $(uname -s) = 'Darwin' ]; then
 	link '' Brewfile

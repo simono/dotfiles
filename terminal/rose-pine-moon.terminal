@@ -1263,7 +1263,7 @@
 	<key>Bell</key>
 	<false/>
 	<key>CommandString</key>
-	<string>zsh --login -c 'tmux'</string>
+	<string>tmux new-session $(which fish) \; set default-shell $(which fish)</string>
 	<key>CursorColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -1350,7 +1350,7 @@
 	<key>ProfileCurrentVersion</key>
 	<real>2.0699999999999998</real>
 	<key>RunCommandAsShell</key>
-	<true/>
+	<false/>
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
