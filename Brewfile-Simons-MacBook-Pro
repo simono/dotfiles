@@ -1,7 +1,7 @@
 brew "batt"
 brew "colima"
 brew "gh"
-brew "httpie"
+brew "xh"
 brew "openconnect"
 brew "rustup"
 

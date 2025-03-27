@@ -16,6 +16,7 @@ brew "sd"
 brew "starship"
 brew "tealdeer"
 brew "tmux"
+brew "zoxide"
 
 cask "firefox"
 cask "font-sf-mono-nerd-font-ligaturized"
