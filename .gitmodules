@@ -45,3 +45,6 @@
 [submodule "vim/pack/my-plugins/start/vim-ReplaceWithRegister"]
 	path = vim/pack/my-plugins/start/vim-ReplaceWithRegister
 	url = git@github.com:inkarkat/vim-ReplaceWithRegister.git
+[submodule "bat/rose-pine"]
+	path = bat/rose-pine
+	url = git@github.com:rose-pine/tm-theme.git
