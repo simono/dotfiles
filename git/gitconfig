@@ -25,6 +25,12 @@
 	# use n and N to move between diff sections
 	navigate = true
 	side-by-side = true
+[delta "light"]
+	syntax-theme = rose-pine-dawn
+	light = true
+[delta "dark"]
+	syntax-theme = rose-pine-moon
+	dark = true
 [diff]
 	renames = copies
 	colorMoved = default
