@@ -49,7 +49,6 @@ ln -nvsf $(pwd)/$current_dir/fish/functions/* $HOME/.config/fish/functions/
 mkdir -p "$(bat --config-dir)/themes"
 ln -nvsf $(pwd)/$current_dir/bat/rose-pine/dist/themes/rose-pine-*.tmTheme "$(bat --config-dir)/themes/"
 bat cache --build
-ln -nvsf $(pwd)/$current_dir/bat/config "$(bat --config-file)"
 
 if [ $(uname -s) = 'Darwin' ]; then
 	link '' Brewfile
