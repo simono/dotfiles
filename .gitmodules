@@ -51,3 +51,6 @@
 [submodule "eza/themes"]
 	path = eza/themes
 	url = git@github.com:eza-community/eza-themes.git
+[submodule "starship/rose-pine"]
+	path = starship/rose-pine
+	url = git@github.com:rose-pine/starship.git

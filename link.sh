@@ -54,6 +54,9 @@ mkdir -p $HOME/.config/eza/dark $HOME/.config/eza/light
 ln -nvsf $(pwd)/$current_dir/eza/themes/themes/rose-pine-dawn.yml $HOME/.config/eza/light/theme.yml
 ln -nvsf $(pwd)/$current_dir/eza/themes/themes/rose-pine-moon.yml $HOME/.config/eza/dark/theme.yml
 
+ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-dawn.toml $HOME/.config/
+ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-moon.toml $HOME/.config/
+
 if [ $(uname -s) = 'Darwin' ]; then
 	link '' Brewfile
 	link '' "Brewfile-$(hostname -s)"
