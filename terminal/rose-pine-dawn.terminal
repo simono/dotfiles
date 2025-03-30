@@ -1263,7 +1263,7 @@
 	<key>Bell</key>
 	<false/>
 	<key>CommandString</key>
-	<string>tmux new-session $(which fish) \; set default-shell $(which fish)</string>
+	<string>tmux</string>
 	<key>CursorColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
