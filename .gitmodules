@@ -44,13 +44,13 @@
 	url = https://github.com/Morantron/tmux-fingers
 [submodule "vim/pack/my-plugins/start/vim-ReplaceWithRegister"]
 	path = vim/pack/my-plugins/start/vim-ReplaceWithRegister
-	url = git@github.com:inkarkat/vim-ReplaceWithRegister.git
+	url = https://github.com/inkarkat/vim-ReplaceWithRegister
 [submodule "bat/rose-pine"]
 	path = bat/rose-pine
-	url = git@github.com:rose-pine/tm-theme.git
+	url = https://github.com/rose-pine/tm-theme
 [submodule "eza/themes"]
 	path = eza/themes
-	url = git@github.com:eza-community/eza-themes.git
+	url = https://github.com/eza-community/eza-themes
 [submodule "starship/rose-pine"]
 	path = starship/rose-pine
-	url = git@github.com:rose-pine/starship.git
+	url = https://github.com/rose-pine/starship
