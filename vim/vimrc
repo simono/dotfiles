@@ -47,7 +47,7 @@ set undodir^=~/.vim/undo/
 
 " Appearance
 let g:disable_bg = 1
-if system("defaults read -g AppleInterfaceStyle") =~ "^Dark"
+if $SO_APPEARANCE == "dark"
 	set background=dark
 	colorscheme rosepine_moon
 	let g:lightline = { 'colorscheme': 'rosepine_moon' }

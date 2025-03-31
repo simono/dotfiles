@@ -27,12 +27,14 @@ function __so_choose_theme --on-event fish_prompt
         set -gx GIT_CONFIG_PARAMETERS "'delta.dark=true'"
         set -gx EZA_CONFIG_DIR "$HOME/.config/eza/dark"
         set -gx STARSHIP_CONFIG "$HOME/.config/rose-pine-moon.toml"
+        set -gx SO_APPEARANCE "dark"
     else
         fish_config theme choose "Rosé Pine Dawn"
         set -gx BAT_THEME "rose-pine-dawn"
         set -gx GIT_CONFIG_PARAMETERS "'delta.light=true'"
         set -gx EZA_CONFIG_DIR "$HOME/.config/eza/light"
         set -gx STARSHIP_CONFIG "$HOME/.config/rose-pine-dawn.toml"
+        set -gx SO_APPEARANCE "light"
     end
     # Make the pager background transparent
     set -e fish_pager_color_background
