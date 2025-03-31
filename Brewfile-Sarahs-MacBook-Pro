@@ -4,4 +4,5 @@ cask "webex"
 cask "zoom"
 cask "zotero"
 
+mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Word", id: 462054704
