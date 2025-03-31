@@ -41,7 +41,7 @@ link '' vim/pack/my-plugins/start
 link vim vimrc
 link zsh zprofile
 
-mkdir -p $HOME/.config/fish
+mkdir -p $HOME/.config/fish/conf.d $HOME/.config/fish/functions
 ln -nvsf $(pwd)/$current_dir/fish/fish_plugins $HOME/.config/fish/
 ln -nvsf $(pwd)/$current_dir/fish/conf.d/* $HOME/.config/fish/conf.d/
 ln -nvsf $(pwd)/$current_dir/fish/functions/* $HOME/.config/fish/functions/
