@@ -54,8 +54,9 @@ mkdir -p $HOME/.config/eza/rose-pine-moon $HOME/.config/eza/rose-pine-dawn
 ln -nvsf $(pwd)/$current_dir/eza/themes/themes/rose-pine-dawn.yml $HOME/.config/eza/rose-pine-dawn/theme.yml
 ln -nvsf $(pwd)/$current_dir/eza/themes/themes/rose-pine-moon.yml $HOME/.config/eza/rose-pine-moon/theme.yml
 
-ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-dawn.toml $HOME/.config/
-ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-moon.toml $HOME/.config/
+mkdir -p $HOME/.config/starship
+ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-dawn.toml $HOME/.config/starship/
+ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-moon.toml $HOME/.config/starship/
 
 if [ $(uname -s) = 'Darwin' ]; then
 	link '' Brewfile

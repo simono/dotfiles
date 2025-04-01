@@ -29,7 +29,7 @@ function __so_update_theme --on-variable __so_theme
 
     # Eza and Starship use environment variables to choose the theme.
     set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-$theme_variant"
-    set -gx STARSHIP_CONFIG "$HOME/.config/rose-pine-$theme_variant.toml"
+    set -gx STARSHIP_CONFIG "$HOME/.config/starship/rose-pine-$theme_variant.toml"
 
     # Appearance and Theme for Vim.
     set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
