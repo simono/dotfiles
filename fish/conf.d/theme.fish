@@ -5,37 +5,35 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Choose theme based on system appearance.
-# We do this before the prompt is drawn in case the appearance changed.
-function __so_choose_theme --on-event fish_prompt
+# Update the theme.
+function __so_update_theme --on-variable __so_theme
+    set -f appearance "$__so_theme[1]"
+    set -f theme_variant "$__so_theme[2]"
+    set -f theme_variant_capitalized "$__so_theme[3]"
+
+    fish_config theme choose "Rosé Pine $theme_variant_capitalized"
+    # Make the pager background transparent
+    set -e fish_pager_color_background
 
     # Bat and delta both use `BAT_THEME`.
-    #
-    # They can detect the background color of the terminal automatically.
-    # This doesn't work in tmux when switching terminal themes, so we set it manually.
+    set -gx BAT_THEME "rose-pine-$theme_variant"
+
+    # delta can detect the background color of the terminal automatically.
+    # This doesn't work in tmux when switching terminal themes, so we set it
+    # manually.
     # See https://github.com/orgs/tmux/discussions/3994
     #
     # A possible workaround is to set the window background in tmux:
     # `set -g window-style 'bg=...'`
+    set -gx GIT_CONFIG_PARAMETERS "'delta.$appearance=true'"
 
     # Eza and Starship use environment variables to choose the theme.
-    # So we set it based on the appearance.
+    set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-$theme_variant"
+    set -gx STARSHIP_CONFIG "$HOME/.config/rose-pine-$theme_variant.toml"
 
-    if test "$(defaults read -g AppleInterfaceStyle 2> /dev/null)" = "Dark"
-        fish_config theme choose "Rosé Pine Moon"
-        set -gx BAT_THEME "rose-pine-moon"
-        set -gx GIT_CONFIG_PARAMETERS "'delta.dark=true'"
-        set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-moon"
-        set -gx STARSHIP_CONFIG "$HOME/.config/rose-pine-moon.toml"
-        set -gx SO_VIM_THEME "dark rosepine_moon"
-    else
-        fish_config theme choose "Rosé Pine Dawn"
-        set -gx BAT_THEME "rose-pine-dawn"
-        set -gx GIT_CONFIG_PARAMETERS "'delta.light=true'"
-        set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-dawn"
-        set -gx STARSHIP_CONFIG "$HOME/.config/rose-pine-dawn.toml"
-        set -gx SO_VIM_THEME "light rosepine_dawn"
-    end
-    # Make the pager background transparent
-    set -e fish_pager_color_background
+    # Appearance and Theme for Vim.
+    set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
 end
+
+# Initialize the theme.
+__so_update_theme
