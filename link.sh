@@ -50,9 +50,9 @@ mkdir -p "$(bat --config-dir)/themes"
 ln -nvsf $(pwd)/$current_dir/bat/rose-pine/dist/themes/rose-pine-*.tmTheme "$(bat --config-dir)/themes/"
 bat cache --build
 
-mkdir -p $HOME/.config/eza/dark $HOME/.config/eza/light
-ln -nvsf $(pwd)/$current_dir/eza/themes/themes/rose-pine-dawn.yml $HOME/.config/eza/light/theme.yml
-ln -nvsf $(pwd)/$current_dir/eza/themes/themes/rose-pine-moon.yml $HOME/.config/eza/dark/theme.yml
+mkdir -p $HOME/.config/eza/rose-pine-moon $HOME/.config/eza/rose-pine-dawn
+ln -nvsf $(pwd)/$current_dir/eza/themes/themes/rose-pine-dawn.yml $HOME/.config/eza/rose-pine-dawn/theme.yml
+ln -nvsf $(pwd)/$current_dir/eza/themes/themes/rose-pine-moon.yml $HOME/.config/eza/rose-pine-moon/theme.yml
 
 ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-dawn.toml $HOME/.config/
 ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-moon.toml $HOME/.config/

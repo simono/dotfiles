@@ -25,14 +25,14 @@ function __so_choose_theme --on-event fish_prompt
         fish_config theme choose "Rosé Pine Moon"
         set -gx BAT_THEME "rose-pine-moon"
         set -gx GIT_CONFIG_PARAMETERS "'delta.dark=true'"
-        set -gx EZA_CONFIG_DIR "$HOME/.config/eza/dark"
+        set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-moon"
         set -gx STARSHIP_CONFIG "$HOME/.config/rose-pine-moon.toml"
         set -gx SO_VIM_THEME "dark rosepine_moon"
     else
         fish_config theme choose "Rosé Pine Dawn"
         set -gx BAT_THEME "rose-pine-dawn"
         set -gx GIT_CONFIG_PARAMETERS "'delta.light=true'"
-        set -gx EZA_CONFIG_DIR "$HOME/.config/eza/light"
+        set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-dawn"
         set -gx STARSHIP_CONFIG "$HOME/.config/rose-pine-dawn.toml"
         set -gx SO_VIM_THEME "light rosepine_dawn"
     end
