@@ -5,6 +5,6 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-function so-tmp
+function so-tmp --description 'Create a temporary directory and jump to it'
     j (mktemp -d)
 end
