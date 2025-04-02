@@ -60,6 +60,5 @@ ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-moon.toml $HOME/.confi
 
 if [ $(uname -s) = 'Darwin' ]; then
 	link '' Brewfile
-	link '' "Brewfile-$(hostname -s)"
 	link '' terminal
 fi

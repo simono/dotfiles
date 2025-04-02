@@ -16,7 +16,7 @@ if [ $(uname -s) = 'Darwin' ]; then
 	caffeinate -w $$ &
 
 	brew bundle install --global
-	localBrewfile="$HOME/.Brewfile-$(hostname -s)"
+	localBrewfile="$HOME/.Brewfile.local
 	test -r $localBrewfile && brew bundle install --file=$localBrewfile
 
 	brew upgrade --greedy
