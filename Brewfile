@@ -6,6 +6,7 @@
 #
 
 tap "homebrew/command-not-found"
+tap "morantron/tmux-fingers"
 
 brew "bat"
 brew "colima"
@@ -18,6 +19,7 @@ brew "gh"
 brew "git-delta"
 brew "jaq"
 brew "mas"
+brew "morantron/tmux-fingers/tmux-fingers"
 brew "openconnect"
 brew "ripgrep"
 brew "rnr"
