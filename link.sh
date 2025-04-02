@@ -58,6 +58,9 @@ mkdir -p $HOME/.config/starship
 ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-dawn.toml $HOME/.config/starship/
 ln -nvsf $(pwd)/$current_dir/starship/rose-pine/rose-pine-moon.toml $HOME/.config/starship/
 
+mkdir -p $HOME/.config/zed
+ln -nvsf $(pwd)/$current_dir/zed/settings.json $HOME/.config/zed/
+
 if [ $(uname -s) = 'Darwin' ]; then
 	link '' Brewfile
 	link '' terminal
