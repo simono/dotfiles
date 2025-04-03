@@ -1,5 +1,7 @@
 # Simon's config files 🚀
 
+![dotfiles](https://socialify.git.ci/simono/dotfiles/image?custom_description=Simon%27s+config+files+%F0%9F%9A%80&description=1&font=Source+Code+Pro&language=1&name=1&owner=1&pattern=Plus&theme=Auto)
+
 Welcome to my collection of dotfiles! These configuration files are for various programs and tools I use regularly. Feel free to use, fork, and modify them as you see fit.
 
 > [!NOTE]
