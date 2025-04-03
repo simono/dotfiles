@@ -23,7 +23,7 @@
   },
   "terminal": {
     "shell": {
-      "program": "tmux"
+      "program": "fish"
     },
     "font_family": "Liga SFMono Nerd Font"
   },
