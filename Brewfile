@@ -28,6 +28,7 @@ brew "sd"
 brew "starship"
 brew "tealdeer"
 brew "tmux"
+brew "vivid"
 brew "xh"
 brew "zoxide"
 
