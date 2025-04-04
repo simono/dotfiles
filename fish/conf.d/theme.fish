@@ -14,6 +14,8 @@ function __so_update_theme --on-variable __so_theme
     fish_config theme choose "Rosé Pine $theme_variant_capitalized"
     # Make the pager background transparent
     set -e fish_pager_color_background
+    # Redraw the prompt
+    commandline -f repaint
 
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"
