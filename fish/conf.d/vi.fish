@@ -12,3 +12,6 @@ end
 
 # Open command line in Editor
 bind ctrl-v edit_command_buffer
+
+# Accept one word from the current autosuggestion
+bind -M insert ctrl-e nextd-or-forward-word
