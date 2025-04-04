@@ -1,0 +1,55 @@
+# Dotbot config for config files.
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean:
+    ~/:
+    ~/.config:
+      recursive: true
+
+- shell:
+    - git pull
+    - git submodule update --init --recursive
+
+- create:
+    - ~/.vim/backup
+    - ~/.vim/swap
+    - ~/.vim/undo
+
+- link:
+    ~/.config/bat/themes/:
+      glob: true
+      path: bat/rose-pine/dist/themes/rose-pine-*.tmTheme
+    ~/.config/eza/rose-pine-dawn/theme.yml: eza/themes/themes/rose-pine-dawn.yml
+    ~/.config/eza/rose-pine-moon/theme.yml: eza/themes/themes/rose-pine-moon.yml
+    ~/.config/fish/conf.d/:
+      glob: true
+      path: fish/conf.d/*
+    ~/.config/fish/fish_plugins: fish/fish_plugins
+    ~/.config/fish/functions/:
+      glob: true
+      path: fish/functions/*
+    ~/.config/starship/:
+      glob: true
+      path: starship/rose-pine/rose-pine-*.toml
+    ~/.config/zed/settings.json: zed/settings.json
+    ~/.gitconfig: git/gitconfig
+    ~/.ripgreprc: ripgrep/ripgreprc
+    ~/.terminal:
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux/:
+      glob: true
+      exclude: ["tmux/tmux.conf"]
+      path: tmux/*
+    ~/.vim/pack: vim/pack
+    ~/.vimrc: vim/vimrc
+    ~/.zprofile: zsh/zprofile
+
+- shell:
+    - bat cache --build

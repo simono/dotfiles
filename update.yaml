@@ -1,0 +1,25 @@
+# Dotbot config for updates.
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+- defaults:
+    link:
+      relink: true
+    shell:
+      stdin: true
+      stdout: true
+      stderr: true
+
+- link:
+    ~/.Brewfile:
+
+- shell:
+    - brew bundle install --global
+    - test -r ~/.Brewfile.local && brew bundle install --file=~/.Brewfile.local
+    - brew upgrade --greedy
+    - brew autoremove
+    - brew cleanup
+    - brew outdated
+    - mas outdated
+    - softwareupdate -l
