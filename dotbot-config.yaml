@@ -13,10 +13,6 @@
     ~/.config:
       recursive: true
 
-- shell:
-    - git pull
-    - git submodule update --init
-
 - create:
     - ~/.vim/backup
     - ~/.vim/swap
