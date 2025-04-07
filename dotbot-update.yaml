@@ -21,6 +21,7 @@
     - brew autoremove
     - brew cleanup
     - clear
+    - type -q rustup && rustup check
     - brew outdated
     - mas outdated
     - softwareupdate -l
