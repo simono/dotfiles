@@ -20,6 +20,7 @@
     - brew upgrade --greedy
     - brew autoremove
     - brew cleanup
+    - clear
     - brew outdated
     - mas outdated
     - softwareupdate -l
