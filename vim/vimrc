@@ -47,9 +47,6 @@ set undodir^=~/.vim/undo/
 
 " Appearance
 
-" Transparent background
-let g:disable_bg = 1
-
 " Get the theme from the environment
 const [s:appearance, s:colorscheme] = $SO_VIM_THEME->split()
 execute "set background=" . s:appearance

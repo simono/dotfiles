@@ -12,8 +12,6 @@ function __so_update_theme --on-variable __so_theme
     set -f theme_variant_capitalized "$__so_theme[3]"
 
     fish_config theme choose "Rosé Pine $theme_variant_capitalized"
-    # Make the pager background transparent
-    set -e fish_pager_color_background
     # Redraw the prompt
     commandline -f repaint
 
