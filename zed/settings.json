@@ -28,7 +28,7 @@
     "shell": {
       "program": "fish"
     },
-    "font_family": "Liga SFMono Nerd Font"
+    "font_family": "ZedMono Nerd Font"
   },
   "file_types": {
     "Helm": ["**/templates/**/*.yaml"]

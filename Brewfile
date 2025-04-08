@@ -35,7 +35,7 @@ brew "zoxide"
 
 cask "cyberduck"
 cask "firefox"
-cask "font-sf-mono-nerd-font-ligaturized"
+cask "font-zed-mono-nerd-font"
 cask "ghostty"
 cask "gimp"
 cask "google-chrome"
