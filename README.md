@@ -13,7 +13,7 @@ Below is a list of the programs I have configuration files for, along with a sho
 
 - **[Homebrew](https://brew.sh/):** The Missing Package Manager for macOS.
 - **[Zed](https://zed.dev/):** A next-generation code editor.
-- **[Terminal](https://support.apple.com/guide/terminal/welcome/mac):** The macOS built-in terminal.
+- **[Ghostty](https://ghostty.org/):** A fast and feature-rich terminal emulator.
 - **[tmux](https://github.com/tmux/tmux):** A terminal multiplexer.
 - **[fish](https://fishshell.com):** A smart and user-friendly command line shell.
 - **[starship](https://starship.rs/):** A cross-shell prompt.

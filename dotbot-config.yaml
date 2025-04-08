@@ -31,13 +31,13 @@
     ~/.config/fish/functions/:
       glob: true
       path: fish/functions/*
+    ~/.config/ghostty/config: ghostty/config
     ~/.config/starship/:
       glob: true
       path: starship/rose-pine/rose-pine-*.toml
     ~/.config/zed/settings.json: zed/settings.json
     ~/.gitconfig: git/gitconfig
     ~/.ripgreprc: ripgrep/ripgreprc
-    ~/.terminal:
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/:
       glob: true

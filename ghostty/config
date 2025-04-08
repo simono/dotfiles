@@ -1,0 +1,10 @@
+# Ghostty configuration file.
+#
+# Location: ~/.config/ghostty/config
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+# Setup the environment with zsh and execute tmux.
+command = zsh -c "exec tmux"
+theme = light:rose-pine-dawn,dark:rose-pine-moon
