@@ -23,7 +23,7 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[bat](https://github.com/sharkdp/bat):** A `cat` clone with syntax highlighting and Git integration.
 - **[eza](https://github.com/eza-community/eza):** A modern alternative to `ls`.
 - **[ripgrep (rg)](https://github.com/BurntSushi/ripgrep):** A line-oriented search tool.
-- **[Delta](https://github.com/BurntSushi/ripgrep):** A syntax-highlighting pager for `git` output.
+- **[Delta](https://github.com/dandavison/delta):** A syntax-highlighting pager for `git` output.
 
 ---
 
