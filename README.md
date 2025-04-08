@@ -7,9 +7,6 @@ Welcome to my collection of dotfiles! These configuration files are for various 
 > [!NOTE]
 > My dotfiles are managed with [Dotbot](https://github.com/anishathalye/dotbot) to streamline the installation and management process.
 
-> [!IMPORTANT]
-> I make changes to these configurations often, so if you decide to use them, please keep this in mind. Feedback and contributions are always welcome!
-
 ## Included Programs
 
 Below is a list of the programs I have configuration files for, along with a short description and links to their homepages:
@@ -31,3 +28,6 @@ Below is a list of the programs I have configuration files for, along with a sho
 ---
 
 Thank you for checking out my dotfiles! Enjoy customizing your setup.
+
+> [!IMPORTANT]
+> I make changes to these configurations often, so if you decide to use them, please keep this in mind. Feedback and contributions are always welcome!
