@@ -8,5 +8,5 @@
 function so-dotfiles-update --description 'Update dotfiles with Dotbot'
     dotbot -q -c $HOME/.dotfiles/dotbot-sync.yaml
     dotbot -q -c $HOME/.dotfiles/dotbot-config.yaml
-    dotbot -c $HOME/.dotfiles/dotbot-update.yaml
+    caffeinate dotbot -c $HOME/.dotfiles/dotbot-update.yaml
 end
