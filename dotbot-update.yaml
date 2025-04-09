@@ -19,7 +19,8 @@
     - test -r ~/.Brewfile.local && brew bundle install --file=~/.Brewfile.local
     - brew upgrade --greedy
     - brew autoremove
-    - brew cleanup
+    - command: brew cleanup
+      stdout: false
     - clear
     - type -q rustup && rustup check
     - brew outdated
