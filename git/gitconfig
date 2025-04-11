@@ -7,14 +7,6 @@
 
 [advice]
 	skippedCherryPicks = false
-[alias]
-	br = branch
-	ci = commit
-	dc = diff --cached
-	df = diff
-	logg = log --graph --all
-	st = status
-	unstage = restore --staged
 [commit]
 	gpgSign = true
 [core]
