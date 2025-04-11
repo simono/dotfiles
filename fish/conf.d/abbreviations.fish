@@ -5,6 +5,6 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-abbr -a -- df 'df -h'
-abbr -a -- du 'du -h'
-abbr -a -- l eza
+abbr df 'df -h'
+abbr du 'du -h'
+abbr l 'eza'

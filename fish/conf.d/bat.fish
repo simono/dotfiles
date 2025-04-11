@@ -6,10 +6,10 @@
 #
 
 # Use bat
-abbr -a -- b bat
+abbr b 'bat'
 
 # Highlight help messages
-abbr -a --position anywhere -- --help '--help | bat -plhelp'
+abbr --position anywhere -- --help '--help | bat -plhelp'
 
 # Make less more usable
 set -gx LESS "--ignore-case --no-histdups --color=s+y"
