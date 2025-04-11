@@ -13,6 +13,7 @@
 
 - link:
     ~/.Brewfile:
+    ~/.config/fish/functions/so-dotfiles-update.fish: fish/functions/so-dotfiles-update.fish
 
 - shell:
     - brew bundle install --global
