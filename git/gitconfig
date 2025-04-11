@@ -9,6 +9,7 @@
 	skippedCherryPicks = false
 [commit]
 	gpgSign = true
+	verbose = true
 [core]
 	pager = delta
 [delta]
