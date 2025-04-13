@@ -6,9 +6,7 @@
 #
 
 function so-brewfile-missing --description 'Show installed Apps missing from the Brewfiles'
-    # Add mas output once it works again,
-    # see https://github.com/mas-cli/mas/issues/724
-    for i in (brew leaves; brew ls --cask)
+    for i in (brew leaves; brew ls --cask; mas list | string split  -f 1 ' ')
         grep -q $i ~/.Brewfile* || echo $i
     end
 end
