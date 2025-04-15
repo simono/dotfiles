@@ -8,6 +8,7 @@
 abbr g 'git'
 abbr ga 'git add'
 abbr gc 'git commit'
+abbr gcm 'git commit -m '
 abbr gd 'git diff'
 abbr gdc 'git diff --cached'
 abbr gl 'git log'
