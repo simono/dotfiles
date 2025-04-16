@@ -48,8 +48,6 @@ mas "GoodLinks", id: 1474335294
 mas "Keynote", id: 409183694
 mas "Maccy", id: 1527619437
 mas "MeetingBar", id: 1532419400
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "rcmd", id: 1596283165
