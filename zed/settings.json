@@ -19,6 +19,7 @@
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
+  "buffer_font_fallbacks": ["BlexMono Nerd Font"],
   "theme": {
     "mode": "system",
     "light": "Rosé Pine Dawn",
@@ -27,8 +28,7 @@
   "terminal": {
     "shell": {
       "program": "fish"
-    },
-    "font_family": "ZedMono Nerd Font"
+    }
   },
   "file_types": {
     "Helm": ["**/templates/**/*.yaml"]
