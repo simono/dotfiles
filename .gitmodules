@@ -51,6 +51,3 @@
 [submodule "eza/themes"]
 	path = eza/themes
 	url = https://github.com/eza-community/eza-themes
-[submodule "starship/rose-pine"]
-	path = starship/rose-pine
-	url = https://github.com/rose-pine/starship

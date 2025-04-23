@@ -27,9 +27,8 @@ function __so_update_theme --on-variable __so_theme
     # `set -g window-style 'bg=...'`
     set -gx GIT_CONFIG_PARAMETERS "'delta.$appearance=true'"
 
-    # Eza and Starship use environment variables to choose the theme.
+    # Eza uses an environment variable to choose the theme.
     set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-$theme_variant"
-    set -gx STARSHIP_CONFIG "$HOME/.config/starship/rose-pine-$theme_variant.toml"
 
     # For fd et al.
     set -gx LS_COLORS "$(vivid generate rose-pine-$theme_variant)"

@@ -5,5 +5,6 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Init Starship prompt
-starship init fish | source
+# Configure Hydro
+set -g hydro_fetch true
+set -g hydro_multiline true

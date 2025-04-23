@@ -33,9 +33,6 @@
       path: fish/functions/*
       exclude: ["fish/functions/so-dotfiles-update.fish"]
     ~/.config/ghostty/config: ghostty/config
-    ~/.config/starship/:
-      glob: true
-      path: starship/rose-pine/rose-pine-*.toml
     ~/.config/zed/settings.json: zed/settings.json
     ~/.gitconfig: git/gitconfig
     ~/.ripgreprc: ripgrep/ripgreprc

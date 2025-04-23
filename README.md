@@ -16,7 +16,7 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[Ghostty](https://ghostty.org/):** A fast and feature-rich terminal emulator.
 - **[tmux](https://github.com/tmux/tmux):** A terminal multiplexer.
 - **[fish](https://fishshell.com):** A smart and user-friendly command line shell.
-- **[starship](https://starship.rs/):** A cross-shell prompt.
+- **[Hydro](https://github.com/jorgebucaran/hydro):** Ultra-pure, lag-free prompt for fish.
 - **[zoxide](https://github.com/ajeetdsouza/zoxide):** A smarter `cd` command.
 - **[Vim](https://www.vim.org/):** A highly configurable text editor.
 - **[Git](https://git-scm.com):** A distributed version control system.
