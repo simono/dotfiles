@@ -46,4 +46,5 @@
     ~/.zprofile: zsh/zprofile
 
 - shell:
+    - fisher update
     - bat cache --build
