@@ -13,5 +13,9 @@ end
 # Open command line in Editor
 bind ctrl-v edit_command_buffer
 
-# Accept one word from the current autosuggestion
-bind -M insert ctrl-e nextd-or-forward-word
+# Move one word to the right
+# or accept one word from the current autosuggestion
+bind -M insert ctrl-e forward-word
+
+# Move the cursor or search the history
+bind -M insert ctrl-p up-or-search
