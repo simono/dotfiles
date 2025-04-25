@@ -47,5 +47,15 @@ function __so_update_theme --on-variable __so_theme
     set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
 end
 
+# Set the theme, based on the system appearance.
+function so-theme
+    # When `AppleInterfaceStyle` is set, dark mode is enabled.
+    if defaults read -g AppleInterfaceStyle &> /dev/null
+        set -U __so_theme dark moon Moon
+    else
+        set -U __so_theme light dawn Dawn
+    end
+end
+
 # Initialize the theme.
-__so_update_theme
+so-theme
