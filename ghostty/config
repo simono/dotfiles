@@ -8,3 +8,4 @@
 # Setup the environment with zsh and execute tmux.
 command = zsh -c "exec tmux"
 theme = light:rose-pine-dawn,dark:rose-pine-moon
+window-save-state = always
