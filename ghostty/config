@@ -5,8 +5,7 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Setup the environment with zsh and execute tmux.
-command = zsh -c "exec tmux"
+command = /opt/homebrew/bin/fish
 theme = light:rose-pine-dawn,dark:rose-pine-moon
 window-save-state = always
 

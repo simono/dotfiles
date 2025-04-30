@@ -5,6 +5,9 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+# Set the editor to Vim
+set -gx EDITOR 'vim'
+
 abbr v 'vim'
 
 # Always start in normal mode

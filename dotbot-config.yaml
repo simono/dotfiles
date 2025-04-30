@@ -43,7 +43,6 @@
       path: tmux/*
     ~/.vim/pack: vim/pack
     ~/.vimrc: vim/vimrc
-    ~/.zprofile: zsh/zprofile
 
 - shell:
     - fisher update
