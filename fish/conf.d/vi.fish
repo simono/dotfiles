@@ -5,6 +5,8 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+abbr v 'vim'
+
 # Always start in normal mode
 function __so_vi_normal_mode --on-event fish_prompt
     fish_vi_key_bindings "default"
