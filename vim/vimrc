@@ -47,6 +47,9 @@ set undodir^=~/.vim/undo/
 
 " Appearance
 
+" Enable 24-bit colors
+set termguicolors
+
 " Get the theme from the environment
 const [s:appearance, s:colorscheme] = $SO_VIM_THEME->split()
 execute "set background=" . s:appearance
