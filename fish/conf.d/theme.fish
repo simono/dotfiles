@@ -28,15 +28,6 @@ function __so_update_theme --on-variable __so_theme
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"
 
-    # delta can detect the background color of the terminal automatically.
-    # This doesn't work in tmux when switching terminal themes, so we set it
-    # manually.
-    # See https://github.com/orgs/tmux/discussions/3994
-    #
-    # A possible workaround is to set the window background in tmux:
-    # `set -g window-style 'bg=...'`
-    set -gx GIT_CONFIG_PARAMETERS "'delta.$appearance=true'"
-
     # Eza uses an environment variable to choose the theme.
     set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-$theme_variant"
 
