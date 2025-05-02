@@ -42,8 +42,8 @@ set undofile
 " Store everything under ~/.vim
 set backupdir^=~/.vim/backup/
 set directory^=~/.vim/swap/
-set viminfo+=n~/.vim/viminfo
 set undodir^=~/.vim/undo/
+set viminfofile=~/.vim/viminfo
 
 " Don't blink in normal mode
 let g:togglecursor_default = 'block'
