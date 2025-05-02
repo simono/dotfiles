@@ -5,7 +5,15 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+# Set the editor to Vim
+set -gx EDITOR 'vim'
+
 abbr v 'vim'
+
+# Use blinking cursors
+set fish_cursor_insert line blink
+set fish_cursor_replace_one underscore blink
+set fish_cursor_replace underscore blink
 
 # Always start in normal mode
 function __so_vi_normal_mode --on-event fish_prompt
