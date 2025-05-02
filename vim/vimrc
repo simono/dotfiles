@@ -45,6 +45,16 @@ set directory^=~/.vim/swap/
 set viminfo+=n~/.vim/viminfo
 set undodir^=~/.vim/undo/
 
+" Don't blink in normal mode
+let g:togglecursor_default = 'block'
+
+" Sneak: show labels and replace the default f/F/t/T mappings
+let g:sneak#label = 1
+map f <Plug>Sneak_f
+map F <Plug>Sneak_F
+map t <Plug>Sneak_t
+map T <Plug>Sneak_T
+
 " Appearance
 
 " Enable 24-bit colors

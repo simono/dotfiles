@@ -51,3 +51,9 @@
 [submodule "eza/themes"]
 	path = eza/themes
 	url = https://github.com/eza-community/eza-themes
+[submodule "vim/pack/my-plugins/start/vim-togglecursor"]
+	path = vim/pack/my-plugins/start/vim-togglecursor
+	url = https://github.com/jszakmeister/vim-togglecursor.git
+[submodule "vim/pack/my-plugins/start/vim-sneak"]
+	path = vim/pack/my-plugins/start/vim-sneak
+	url = git@github.com:justinmk/vim-sneak.git
