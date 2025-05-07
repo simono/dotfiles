@@ -23,7 +23,7 @@
     - command: brew cleanup
       stdout: false
     - clear
-    - type -q rustup && rustup check
+    - rustup check
     - brew outdated
     - mas outdated
     - softwareupdate -l

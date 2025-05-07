@@ -45,5 +45,5 @@
     ~/.vimrc: vim/vimrc
 
 - shell:
-    - fisher update
+    - fish -c 'fisher update'
     - bat cache --build
