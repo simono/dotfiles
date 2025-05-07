@@ -16,14 +16,10 @@ function __so_update_theme --on-variable __so_theme
     commandline -f repaint
 
     # Set colors for Hydro
-    # Foam
-    set -g hydro_color_pwd $fish_color_keyword
-    # Iris
-    set -g hydro_color_git $fish_color_command
-    # Pine
-    set -g hydro_color_prompt $fish_color_redirection
-    # Gold
-    set -g hydro_color_duration $fish_color_quote
+    set -g hydro_color_pwd $fish_color_foam
+    set -g hydro_color_git $fish_color_iris
+    set -g hydro_color_prompt $fish_color_pine
+    set -g hydro_color_duration $fish_color_gold
 
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"
