@@ -22,7 +22,6 @@
     - brew autoremove
     - command: brew cleanup
       stdout: false
-    - clear
     - rustup check
     - brew outdated
     - mas outdated
