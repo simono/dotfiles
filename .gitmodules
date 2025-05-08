@@ -39,9 +39,6 @@
 [submodule "vim/pack/my-plugins/start/rose-pine"]
 	path = vim/pack/my-plugins/start/rose-pine
 	url = https://github.com/rose-pine/vim.git
-[submodule "tmux/tmux-fingers"]
-	path = tmux/tmux-fingers
-	url = https://github.com/Morantron/tmux-fingers
 [submodule "vim/pack/my-plugins/start/vim-ReplaceWithRegister"]
 	path = vim/pack/my-plugins/start/vim-ReplaceWithRegister
 	url = https://github.com/inkarkat/vim-ReplaceWithRegister
