@@ -37,7 +37,6 @@ cask "ghostty"
 cask "gimp"
 cask "google-chrome"
 cask "iina"
-cask "visual-studio-code"
 cask "zed"
 
 mas "1Blocker", id: 1365531024
