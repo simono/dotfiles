@@ -30,6 +30,15 @@ function __so_update_theme --on-variable __so_theme
     # For fd et al.
     set -gx LS_COLORS "$(vivid generate rose-pine-$theme_variant)"
 
+    # fzf
+    source "$HOME/.config/fzf/rose-pine-$theme_variant.fish"
+    # Set some defaults.
+    # See https://github.com/PatrickF1/fzf.fish/blob/main/functions/_fzf_wrapper.fish
+    set -a FZF_DEFAULT_OPTS '--cycle --layout=reverse --border --height=90% --preview-window=wrap --marker="*"'
+    # Somehow delta's background detection doesn't work with fzf.
+    # So we set the background to the current appearance.
+    set -g fzf_diff_highlighter delta --paging=never --$appearance
+
     # Appearance and Theme for Vim.
     set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
 end

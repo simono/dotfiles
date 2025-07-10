@@ -54,3 +54,6 @@
 [submodule "vim/pack/my-plugins/start/vim-sneak"]
 	path = vim/pack/my-plugins/start/vim-sneak
 	url = git@github.com:justinmk/vim-sneak.git
+[submodule "fzf/rose-pine"]
+	path = fzf/rose-pine
+	url = git@github.com:rose-pine/fzf.git
