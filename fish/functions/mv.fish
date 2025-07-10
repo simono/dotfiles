@@ -1,8 +1,8 @@
-# fish function to alias `mv`.
+# Fish function to alias `mv`.
 #
-# location: ~/.config/fish/functions/mv.fish
+# Location: ~/.config/fish/functions/mv.fish
 #
-# simon olofsson <simon@olofsson.de>
+# Simon Olofsson <simon@olofsson.de>
 #
 
 function mv --description 'alias mv=mv -iv'

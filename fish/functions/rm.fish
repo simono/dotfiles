@@ -1,8 +1,8 @@
-# fish function to alias `rm`.
+# Fish function to alias `rm`.
 #
-# location: ~/.config/fish/functions/rm.fish
+# Location: ~/.config/fish/functions/rm.fish
 #
-# simon olofsson <simon@olofsson.de>
+# Simon Olofsson <simon@olofsson.de>
 #
 
 function rm --description 'alias rm=rm -Iv'
