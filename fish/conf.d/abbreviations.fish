@@ -7,4 +7,3 @@
 
 abbr df 'df -h'
 abbr du 'du -h'
-abbr l 'eza'

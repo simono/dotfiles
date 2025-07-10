@@ -5,6 +5,6 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-function ll --wraps='eza' --description 'alias ll=eza --long --git --group-directories-first --header --smart-group --time-style=relative $argv'
-    eza --long --icons --git --group-directories-first --header --smart-group --time-style=relative $argv
+function ll --wraps='eza' --description 'alias ll=l --long --git --header --smart-group --time-style=relative $argv'
+    l --long --git --header --smart-group --time-style=relative $argv
 end
