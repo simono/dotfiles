@@ -35,8 +35,11 @@ function __so_update_theme --on-variable __so_theme
     # Set some defaults.
     # See https://github.com/PatrickF1/fzf.fish/blob/main/functions/_fzf_wrapper.fish
     set -a FZF_DEFAULT_OPTS '--cycle --layout=reverse --border --height=90% --preview-window=wrap --marker="*"'
-    # Somehow delta's background detection doesn't work with fzf.
-    # So we set the background to the current appearance.
+    # Set delta as diff highlighter for fzf.
+    #
+    # delta can detect the background color of the terminal automatically.
+    # But when used in fzf's preview, it doesn't work.
+    # See https://github.com/junegunn/fzf/issues/4317
     set -g fzf_diff_highlighter delta --paging=never --$appearance
 
     # Appearance and Theme for Vim.
