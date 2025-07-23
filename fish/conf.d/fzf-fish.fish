@@ -9,7 +9,7 @@
 set -g fzf_preview_dir_cmd l --all --color=always --oneline
 
 # Open files and directories in the editor.
-set -g fzf_directory_opts --bind "ctrl-o:execute($EDITOR {} &> /dev/tty)"
+set -g fzf_directory_opts --bind 'ctrl-o:execute($EDITOR {} &> /dev/tty)'
 
 # fzf.fish binds everything to normal and insert mode.
 # That's not what I want.
