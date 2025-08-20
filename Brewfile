@@ -8,7 +8,6 @@
 tap "homebrew/command-not-found"
 
 brew "bat"
-brew "claude-code"
 brew "colima"
 brew "csview"
 brew "doggo"
@@ -35,6 +34,7 @@ brew "vivid"
 brew "xh"
 brew "zoxide"
 
+cask "claude-code"
 cask "cyberduck"
 cask "firefox"
 cask "font-symbols-only-nerd-font"
