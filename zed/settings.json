@@ -13,6 +13,7 @@
 //
 
 {
+  "auto_update": false,
   "agent": {
     "inline_assistant_model": {
       "provider": "copilot_chat",
