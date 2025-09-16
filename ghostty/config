@@ -17,15 +17,15 @@ keybind = ctrl+space>q=close_surface
 keybind = ctrl+space>p=previous_tab
 keybind = ctrl+space>n=next_tab
 
-keybind = ctrl+space>physical:one=goto_tab:1
-keybind = ctrl+space>physical:two=goto_tab:2
-keybind = ctrl+space>physical:three=goto_tab:3
-keybind = ctrl+space>physical:four=goto_tab:4
-keybind = ctrl+space>physical:five=goto_tab:5
-keybind = ctrl+space>physical:six=goto_tab:6
-keybind = ctrl+space>physical:seven=goto_tab:7
-keybind = ctrl+space>physical:eight=goto_tab:8
-keybind = ctrl+space>physical:nine=last_tab
+keybind = ctrl+space>1=goto_tab:1
+keybind = ctrl+space>2=goto_tab:2
+keybind = ctrl+space>3=goto_tab:3
+keybind = ctrl+space>4=goto_tab:4
+keybind = ctrl+space>5=goto_tab:5
+keybind = ctrl+space>6=goto_tab:6
+keybind = ctrl+space>7=goto_tab:7
+keybind = ctrl+space>8=goto_tab:8
+keybind = ctrl+space>9=last_tab
 
 keybind = ctrl+space>v=new_split:right
 keybind = ctrl+space>s=new_split:down
