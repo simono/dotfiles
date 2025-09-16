@@ -6,7 +6,7 @@
 #
 
 command = /opt/homebrew/bin/fish
-theme = light:rose-pine-dawn,dark:rose-pine-moon
+theme = light:Rose Pine Dawn, dark:Rose Pine Moon
 window-save-state = always
 # Setting the cursor doesn't work correctly with vi-mode
 shell-integration-features = no-cursor
