@@ -37,3 +37,6 @@ keybind = ctrl+space>m=toggle_split_zoom
 
 keybind = ctrl+space>u=scroll_page_fractional:-0.5
 keybind = ctrl+space>d=scroll_page_fractional:0.5
+
+# Insert a newline with shift-enter
+keybind = shift+enter=text:\x1b\r
