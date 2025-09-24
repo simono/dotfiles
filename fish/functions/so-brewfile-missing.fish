@@ -7,6 +7,6 @@
 
 function so-brewfile-missing --description 'Show installed Apps missing from the Brewfiles'
     for i in (brew leaves; brew ls --cask; mas list | string split  -f 1 ' ')
-        grep -q $i ~/.Brewfile* || echo $i
+        grep -qw $i ~/.Brewfile* || echo $i
     end
 end
