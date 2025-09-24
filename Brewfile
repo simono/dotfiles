@@ -5,8 +5,6 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-tap "homebrew/command-not-found"
-
 brew "bat"
 brew "colima"
 brew "csview"
