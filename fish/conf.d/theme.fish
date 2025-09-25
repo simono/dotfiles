@@ -58,6 +58,9 @@ function so-theme
     else
         set -U __so_theme light dawn Dawn
     end
+
+    # Return success.
+    true
 end
 
 # Initialize the theme.
