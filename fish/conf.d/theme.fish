@@ -24,6 +24,13 @@ function __so_update_theme --on-variable __so_theme
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"
 
+    # delta can detect the background color of the terminal automatically.
+    #
+    # But this doesn't work when Delta is embedded in other tools like fzf
+    # or when it's output is piped.
+    # See https://github.com/dandavison/delta/blob/d5e0565cbfa47acde98d41d8777ace5d1bc4d690/manual/src/full---help-output.md?plain=1#L133
+    set -gx GIT_CONFIG_PARAMETERS "'delta.$appearance=true'"
+
     # Activate zebra feature for moved lines.
     # See https://dandavison.github.io/delta/color-moved-support.html
     set -gx DELTA_FEATURES "+zebra-$appearance"
@@ -40,11 +47,7 @@ function __so_update_theme --on-variable __so_theme
     # See https://github.com/PatrickF1/fzf.fish/blob/main/functions/_fzf_wrapper.fish
     set -a FZF_DEFAULT_OPTS '--cycle --layout=reverse --border --height=90% --preview-window=wrap --marker="*"'
     # Set delta as diff highlighter for fzf.
-    #
-    # delta can detect the background color of the terminal automatically.
-    # But when used in fzf's preview, it doesn't work.
-    # See https://github.com/junegunn/fzf/issues/4317
-    set -g fzf_diff_highlighter delta --paging=never --$appearance
+    set -g fzf_diff_highlighter delta --paging=never
 
     # Appearance and Theme for Vim.
     set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
