@@ -38,6 +38,7 @@
     ~/.config/ghostty/config: ghostty/config
     ~/.config/zed/settings.json: zed/settings.json
     ~/.gitconfig: git/gitconfig
+    ~/.gitconfig.themes: git/delta/themes.gitconfig
     ~/.ripgreprc: ripgrep/ripgreprc
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/:

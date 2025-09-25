@@ -57,3 +57,6 @@
 [submodule "fzf/rose-pine"]
 	path = fzf/rose-pine
 	url = git@github.com:rose-pine/fzf.git
+[submodule "git/delta"]
+	path = git/delta
+	url = git@github.com:dandavison/delta.git

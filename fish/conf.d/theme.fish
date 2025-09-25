@@ -24,6 +24,10 @@ function __so_update_theme --on-variable __so_theme
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"
 
+    # Activate zebra feature for moved lines.
+    # See https://dandavison.github.io/delta/color-moved-support.html
+    set -gx DELTA_FEATURES "+zebra-$appearance"
+
     # Eza uses an environment variable to choose the theme.
     set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-$theme_variant"
 

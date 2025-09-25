@@ -54,3 +54,4 @@
 	signingKey = ~/.ssh/id_ed25519.pub
 [include]
 	path = .gitconfig.local
+	path = .gitconfig.themes
