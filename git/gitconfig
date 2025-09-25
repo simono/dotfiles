@@ -15,6 +15,7 @@
 [core]
 	pager = delta
 [delta]
+	hyperlinks = true
 	# use n and N to move between diff sections
 	navigate = true
 	side-by-side = true
