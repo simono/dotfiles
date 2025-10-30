@@ -10,6 +10,9 @@ theme = light:Rose Pine Dawn, dark:Rose Pine Moon
 window-save-state = always
 shell-integration-features = ssh-env
 
+# Brew handles updates for me
+auto-update = off
+
 # Vim-like Keybindings
 keybind = ctrl+space>t=new_tab
 keybind = ctrl+space>q=close_surface
