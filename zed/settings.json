@@ -15,20 +15,19 @@
 {
   "auto_update": false,
   "agent": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
-    },
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "model": "claude-sonnet-4.5"
     }
   },
   "features": {
     "edit_prediction_provider": "copilot"
   },
   "vim_mode": true,
-  "relative_line_numbers": true,
+  "vim": {
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true
+  },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "buffer_font_fallbacks": ["Symbols Nerd Font"],
@@ -41,8 +40,5 @@
     "shell": {
       "program": "fish"
     }
-  },
-  "file_types": {
-    "Helm": ["**/templates/**/*.yaml"]
   }
 }
