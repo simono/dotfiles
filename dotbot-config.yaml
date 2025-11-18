@@ -21,7 +21,7 @@
 - link:
     ~/.config/bat/themes/:
       glob: true
-      path: bat/rose-pine/dist/themes/rose-pine-*.tmTheme
+      path: bat/rose-pine/dist/rose-pine-*.tmTheme
     ~/.config/eza/rose-pine-dawn/theme.yml: eza/themes/themes/rose-pine-dawn.yml
     ~/.config/eza/rose-pine-moon/theme.yml: eza/themes/themes/rose-pine-moon.yml
     ~/.config/fish/conf.d/:
