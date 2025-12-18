@@ -1,0 +1,12 @@
+# Serie configuration file.
+#
+# Location: ~/.config/serie/config.toml
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+[core.search]
+ignore_case = true
+
+[core.user_command]
+commands_1 = { name = "git diff (delta)", commands = ["sh", "-c", "git diff {{first_parent_hash}} {{target_hash}} | delta --width={{area_width}} --color-only"] }

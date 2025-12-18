@@ -32,6 +32,7 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[eza](https://github.com/eza-community/eza):** A modern alternative to `ls`.
 - **[ripgrep (rg)](https://github.com/BurntSushi/ripgrep):** A line-oriented search tool.
 - **[Delta](https://github.com/dandavison/delta):** A syntax-highlighting pager for `git` output.
+- **[serie](https://github.com/lusingander/serie):** A rich git commit graph in the terminal.
 
 ---
 
