@@ -1,0 +1,2 @@
+[core.user_command]
+commands_1 = { name = "git diff", commands = ["git", "diff", "--color=always", "{{first_parent_hash}}", "{{target_hash}}"]}
