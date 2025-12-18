@@ -17,16 +17,16 @@
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
-    }
+      "model": "claude-sonnet-4.5",
+    },
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "vim_mode": true,
   "vim": {
     "use_smartcase_find": true,
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
@@ -34,11 +34,11 @@
   "theme": {
     "mode": "system",
     "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine Moon"
+    "dark": "Rosé Pine Moon",
   },
   "terminal": {
     "shell": {
-      "program": "fish"
-    }
-  }
+      "program": "fish",
+    },
+  },
 }
