@@ -1,4 +1,4 @@
-# Fish config for git abbrevations.
+# Fish config for git abbreviations.
 #
 # Location: ~/.config/fish/conf.d/git.fish
 #

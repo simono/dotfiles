@@ -7,6 +7,14 @@ Welcome to my collection of dotfiles! These configuration files are for various 
 > [!NOTE]
 > My dotfiles are managed with [Dotbot](https://github.com/anishathalye/dotbot) to streamline the installation and management process.
 
+## Installation
+
+```sh
+git clone git@github.com:simono/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+fish -c "source fish/functions/so-dotfiles-update.fish; so-dotfiles-update"
+```
+
 ## Included Programs
 
 Below is a list of the programs I have configuration files for, along with a short description and links to their homepages:
@@ -15,7 +23,8 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[Zed](https://zed.dev/):** A next-generation code editor.
 - **[Ghostty](https://ghostty.org/):** A fast and feature-rich terminal emulator.
 - **[fish](https://fishshell.com):** A smart and user-friendly command line shell.
-- **[Hydro](https://github.com/jorgebucaran/hydro):** Ultra-pure, lag-free prompt for fish.
+- **[fzf](https://github.com/junegunn/fzf):** A command-line fuzzy finder.
+- **[Hydro](https://github.com/jorgebucaran/hydro):** Ultra-pure, lag-free prompt plugin for fish.
 - **[zoxide](https://github.com/ajeetdsouza/zoxide):** A smarter `cd` command.
 - **[Vim](https://www.vim.org/):** A highly configurable text editor.
 - **[Git](https://git-scm.com):** A distributed version control system.

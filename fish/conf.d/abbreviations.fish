@@ -1,4 +1,4 @@
-# Fish config for commonly used abbrevations.
+# Fish config for commonly used abbreviations.
 #
 # Location: ~/.config/fish/conf.d/abbreviations.fish
 #
