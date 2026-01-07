@@ -41,11 +41,6 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitconfig.themes: git/delta/themes.gitconfig
     ~/.ripgreprc: ripgrep/ripgreprc
-    ~/.tmux.conf: tmux/tmux.conf
-    ~/.tmux/:
-      glob: true
-      exclude: ["tmux/tmux.conf"]
-      path: tmux/*
     ~/.vim/pack: vim/pack
     ~/.vimrc: vim/vimrc
 

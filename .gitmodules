@@ -24,18 +24,12 @@
 [submodule "vim/bundle/vim-unimpaired"]
 	path = vim/pack/my-plugins/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "tmux/tmux-sensible"]
-	path = tmux/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible.git
 [submodule "vim/bundle/editorconfig-vim"]
 	path = vim/pack/my-plugins/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/bundle/lightline.vim"]
 	path = vim/pack/my-plugins/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
-[submodule "tmux/rose-pine"]
-	path = tmux/rose-pine
-	url = https://github.com/rose-pine/tmux.git
 [submodule "vim/pack/my-plugins/start/rose-pine"]
 	path = vim/pack/my-plugins/start/rose-pine
 	url = https://github.com/rose-pine/vim.git
