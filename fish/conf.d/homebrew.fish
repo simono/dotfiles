@@ -6,7 +6,7 @@
 #
 
 # Setup shell for Homebrew
-/opt/homebrew/bin/brew shellenv | source
+/opt/homebrew/bin/brew shellenv fish | source
 
 # Homebrew Command Not Found
 set -l __hb_cnf_handler (brew --repository)/Library/Homebrew/command-not-found/handler.fish
