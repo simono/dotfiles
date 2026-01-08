@@ -5,11 +5,18 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Update the theme.
-function __so_update_theme --on-variable __so_theme
-    set -f appearance "$__so_theme[1]"
-    set -f theme_variant "$__so_theme[2]"
-    set -f theme_variant_capitalized "$__so_theme[3]"
+# Apply the theme.
+function __so_apply_theme --on-variable fish_terminal_color_theme
+    if test "$fish_terminal_color_theme" = "dark"
+        set -f appearance "dark"
+        set -f theme_variant "moon"
+        set -f theme_variant_capitalized "Moon"
+
+    else
+        set -f appearance "light"
+        set -f theme_variant "dawn"
+        set -f theme_variant_capitalized "Dawn"
+    end
 
     fish_config theme choose "Rosé Pine $theme_variant_capitalized"
     # Redraw the prompt
@@ -52,19 +59,3 @@ function __so_update_theme --on-variable __so_theme
     # Appearance and Theme for Vim.
     set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
 end
-
-# Set the theme, based on the system appearance.
-function so-theme
-    # When `AppleInterfaceStyle` is set, dark mode is enabled.
-    if defaults read -g AppleInterfaceStyle &> /dev/null
-        set -U __so_theme dark moon Moon
-    else
-        set -U __so_theme light dawn Dawn
-    end
-
-    # Return success.
-    true
-end
-
-# Initialize the theme.
-so-theme
