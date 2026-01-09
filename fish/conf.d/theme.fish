@@ -5,22 +5,19 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+# Fish 4.3+ auto themes handle light/dark switching automatically.
+fish_config theme choose "Rosé Pine Moon Auto"
+
 # Apply the theme.
 function __so_apply_theme --on-variable fish_terminal_color_theme
     if test "$fish_terminal_color_theme" = "dark"
         set -f appearance "dark"
         set -f theme_variant "moon"
-        set -f theme_variant_capitalized "Moon"
 
     else
         set -f appearance "light"
         set -f theme_variant "dawn"
-        set -f theme_variant_capitalized "Dawn"
     end
-
-    fish_config theme choose "Rosé Pine $theme_variant_capitalized"
-    # Redraw the prompt
-    commandline -f repaint
 
     # Set colors for Hydro
     set -g hydro_color_pwd $fish_color_foam
