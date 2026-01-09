@@ -32,9 +32,6 @@
       glob: true
       path: fish/functions/*
       exclude: ["fish/functions/so-dotfiles-update.fish"]
-    ~/.config/fzf/:
-      glob: true
-      path: fzf/rose-pine/dist/rose-pine-*.fish
     ~/.config/ghostty/config: ghostty/config
     ~/.config/serie/config.toml: serie/config.toml
     ~/.config/zed/settings.json: zed/settings.json

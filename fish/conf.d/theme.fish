@@ -33,8 +33,8 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
 
     # delta can detect the background color of the terminal automatically.
     #
-    # But this doesn't work when Delta is embedded in other tools like fzf
-    # or when its output is piped.
+    # But this doesn't work when Delta is embedded in other tools or when its
+    # output is piped.
     # See https://github.com/dandavison/delta/blob/d5e0565cbfa47acde98d41d8777ace5d1bc4d690/manual/src/full---help-output.md?plain=1#L133
     set -gx GIT_CONFIG_PARAMETERS "'delta.$appearance=true'"
 
@@ -47,14 +47,6 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
 
     # For fd et al.
     set -gx LS_COLORS "$(vivid generate rose-pine-$theme_variant)"
-
-    # fzf
-    source "$HOME/.config/fzf/rose-pine-$theme_variant.fish"
-    # Set some defaults.
-    # See https://github.com/PatrickF1/fzf.fish/blob/main/functions/_fzf_wrapper.fish
-    set -a FZF_DEFAULT_OPTS '--cycle --layout=reverse --border --height=90% --preview-window=wrap --marker="*"'
-    # Set delta as diff highlighter for fzf.
-    set -g fzf_diff_highlighter delta --paging=never
 
     # Appearance and Theme for Vim.
     set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
