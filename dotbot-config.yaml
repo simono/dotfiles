@@ -33,7 +33,6 @@
       path: fish/functions/*
       exclude: ["fish/functions/so-dotfiles-update.fish"]
     ~/.config/ghostty/config: ghostty/config
-    ~/.config/serie/config.toml: serie/config.toml
     ~/.config/zed/settings.json: zed/settings.json
     ~/.gitconfig: git/gitconfig
     ~/.gitconfig.themes:
