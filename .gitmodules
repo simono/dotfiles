@@ -51,9 +51,6 @@
 [submodule "fzf/rose-pine"]
 	path = fzf/rose-pine
 	url = git@github.com:rose-pine/fzf.git
-[submodule "git/delta"]
-	path = git/delta
-	url = git@github.com:dandavison/delta.git
 [submodule "vim/pack/my-plugins/start/vim-numbertoggle"]
 	path = vim/pack/my-plugins/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
