@@ -23,7 +23,6 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[Zed](https://zed.dev/):** A next-generation code editor.
 - **[Ghostty](https://ghostty.org/):** A fast and feature-rich terminal emulator.
 - **[fish](https://fishshell.com):** A smart and user-friendly command line shell.
-- **[fzf](https://github.com/junegunn/fzf):** A command-line fuzzy finder.
 - **[Hydro](https://github.com/jorgebucaran/hydro):** Ultra-pure, lag-free prompt plugin for fish.
 - **[zoxide](https://github.com/ajeetdsouza/zoxide):** A smarter `cd` command.
 - **[Vim](https://www.vim.org/):** A highly configurable text editor.
@@ -32,7 +31,6 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[eza](https://github.com/eza-community/eza):** A modern alternative to `ls`.
 - **[ripgrep (rg)](https://github.com/BurntSushi/ripgrep):** A line-oriented search tool.
 - **[Delta](https://github.com/dandavison/delta):** A syntax-highlighting pager for `git` output.
-- **[serie](https://github.com/lusingander/serie):** A rich git commit graph in the terminal.
 
 ---
 
