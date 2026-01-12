@@ -39,7 +39,9 @@
     ~/.config/serie/config.toml: serie/config.toml
     ~/.config/zed/settings.json: zed/settings.json
     ~/.gitconfig: git/gitconfig
-    ~/.gitconfig.themes: $HOMEBREW_PREFIX/share/git-delta/themes.gitconfig
+    ~/.gitconfig.themes:
+      path: $HOMEBREW_PREFIX/share/git-delta/themes.gitconfig
+      if: '[ -n "$HOMEBREW_PREFIX" ]'
     ~/.ripgreprc: ripgrep/ripgreprc
     ~/.vim/pack: vim/pack
     ~/.vimrc: vim/vimrc
