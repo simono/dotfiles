@@ -33,6 +33,7 @@
       path: fish/functions/*
       exclude: ["fish/functions/so-dotfiles-update.fish"]
     ~/.config/ghostty/config: ghostty/config
+    ~/.config/television/config.toml: television/config.toml
     ~/.config/zed/settings.json: zed/settings.json
     ~/.gitconfig: git/gitconfig
     ~/.gitconfig.themes:
@@ -45,3 +46,4 @@
 - shell:
     - fish -c 'fisher update'
     - bat cache --build
+    - tv update-channels
