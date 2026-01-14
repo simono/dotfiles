@@ -32,11 +32,8 @@
       glob: true
       path: fish/functions/*
       exclude: ["fish/functions/so-dotfiles-update.fish"]
-    ~/.config/fzf/:
-      glob: true
-      path: fzf/rose-pine/dist/rose-pine-*.fish
     ~/.config/ghostty/config: ghostty/config
-    ~/.config/serie/config.toml: serie/config.toml
+    ~/.config/television/config.toml: television/config.toml
     ~/.config/zed/settings.json: zed/settings.json
     ~/.gitconfig: git/gitconfig
     ~/.gitconfig.themes:
@@ -49,3 +46,4 @@
 - shell:
     - fish -c 'fisher update'
     - bat cache --build
+    - tv update-channels

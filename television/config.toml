@@ -1,0 +1,10 @@
+# Television configuration.
+#
+# Location: ~/.config/television/config.toml
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+[shell_integration.keybindings]
+command_history = "/"
+smart_autocomplete = "ctrl-space"
