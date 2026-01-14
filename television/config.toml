@@ -6,5 +6,4 @@
 #
 
 [shell_integration.keybindings]
-command_history = "/"
 smart_autocomplete = "ctrl-space"

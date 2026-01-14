@@ -7,3 +7,6 @@
 
 # Shell integration
 tv init fish | source
+
+# Override default ctrl-r with / for history search
+bind / tv_shell_history
