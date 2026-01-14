@@ -5,5 +5,11 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+[keybindings]
+ctrl-u = "scroll_preview_half_page_up"
+ctrl-d = "scroll_preview_half_page_down"
+pageup = "no_op"
+pagedown = "no_op"
+
 [shell_integration.keybindings]
 smart_autocomplete = "ctrl-space"
