@@ -8,6 +8,7 @@
 [keybindings]
 ctrl-u = "scroll_preview_half_page_up"
 ctrl-d = "scroll_preview_half_page_down"
+ctrl-l = "delete_line"
 pageup = "no_op"
 pagedown = "no_op"
 
