@@ -1,0 +1,14 @@
+# Override for tv files channel.
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+[preview]
+env = "__DELETE__"
+
+[keybindings]
+ctrl-x = "actions:edit"
+ctrl-b = "actions:goto_parent_dir"
+
+[actions.edit]
+mode = "fork"

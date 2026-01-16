@@ -1,0 +1,7 @@
+# Override for tv dirs channel.
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+[preview]
+command = "eza --group-directories-first --all --icons=always --color=always --oneline '{}'"

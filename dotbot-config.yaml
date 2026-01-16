@@ -46,4 +46,5 @@
 - shell:
     - fish -c 'fisher update'
     - bat cache --build
-    - tv update-channels
+    - tv update-channels --force
+    - for f in television/cable-overrides/*.toml; do ./television/merge-toml.py ~/.config/television/cable/"$(basename "$f")" "$f"; done

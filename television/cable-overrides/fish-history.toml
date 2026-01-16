@@ -1,0 +1,9 @@
+# Override for tv fish-history channel.
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+# Keep chronological order (newest first) when searching.
+# TODO: Remove once tv releases with this as default.
+[source]
+sort_results = false
