@@ -25,6 +25,7 @@ brew "sd"
 brew "television"
 brew "uv"
 brew "vivid"
+brew "worktrunk"
 brew "xh"
 brew "zoxide"
 
