@@ -7,3 +7,6 @@
 
 # Initialize worktrunk
 wt config shell init fish | source
+
+abbr wts 'wt select --branches'
+abbr wtc 'wt switch --create'
