@@ -7,7 +7,7 @@
 env = "__DELETE__"
 
 [keybindings]
-ctrl-x = "actions:edit"
+ctrl-v = "actions:edit"
 ctrl-b = "actions:goto_parent_dir"
 
 [actions.edit]

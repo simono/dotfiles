@@ -6,9 +6,5 @@
 [preview]
 env = "__DELETE__"
 
-[keybindings]
-ctrl-x = "actions:edit"
-
 [actions.edit]
-command = "vim '+{strip_ansi|split:\\::1}' '{strip_ansi|split:\\::0}'"
 mode = "fork"
