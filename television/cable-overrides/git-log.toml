@@ -3,10 +3,5 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Keep chronological order (newest first) when searching.
-# TODO: Remove once tv releases with this as default.
-[source]
-sort_results = false
-
 [preview]
 command = "git show -p --stat --pretty=fuller '{strip_ansi|split: :1}' | delta --color-only"
