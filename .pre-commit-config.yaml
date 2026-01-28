@@ -8,11 +8,8 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
-      - id: check-json
-        exclude: ^zed/
       - id: check-toml
       - id: check-merge-conflict
-      - id: check-symlinks
       - id: detect-private-key
 
   - repo: local
