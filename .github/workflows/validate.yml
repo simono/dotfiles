@@ -16,15 +16,9 @@ jobs:
         with:
           submodules: true
 
-      - name: Validate Fish scripts
+      - name: Install Fish
         run: |
           sudo apt update
           sudo apt install -y fish
-          fish -n fish/**/*.fish
 
-      - name: Validate Dotbot configs
-        run: |
-          pip install dotbot
-          dotbot -n -c dotbot-config.yaml
-          dotbot -n -c dotbot-sync.yaml
-          dotbot -n -c dotbot-update.yaml
+      - uses: j178/prek-action@v1
