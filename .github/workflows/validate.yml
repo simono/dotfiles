@@ -22,3 +22,5 @@ jobs:
           sudo apt install -y fish
 
       - uses: j178/prek-action@v1
+        with:
+          extra-args: --all-files --stage pre-push
