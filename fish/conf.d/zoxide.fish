@@ -5,9 +5,12 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-# Initialize zoxide
-# use `j` as command
+# Initialize zoxide with j as command
 zoxide init --cmd j fish | source
+
+# Override completions (clear vi mode history, add directories)
+complete -c j -e
+complete -c j -f -a '(__fish_complete_directories (commandline -ct) "")'
 
 # Interactive mode via television
 function ji
