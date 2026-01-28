@@ -8,3 +8,9 @@
 # Initialize zoxide
 # use `j` as command
 zoxide init --cmd j fish | source
+
+# Interactive mode via television
+function ji
+    set -l dir (tv zoxide)
+    test -n "$dir" && j $dir
+end
