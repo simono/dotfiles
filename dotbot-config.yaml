@@ -45,6 +45,8 @@
 
 - shell:
     - fish -c 'fisher update'
+    - fish -c "tide configure --auto --style=Rainbow --prompt_colors='True color' --show_time='24-hour format' --rainbow_prompt_separators=Angled --powerline_prompt_heads=Sharp --powerline_prompt_tails=Flat --powerline_prompt_style='Two lines, character and frame' --prompt_connection=Disconnected --powerline_right_prompt_frame=No --prompt_connection_andor_frame_color=Light --prompt_spacing=Sparse --icons='Many icons' --transient=Yes"
+    - fish -c "set -U tide_time_format '%F %H:%M'"
     - bat cache --build
     - tv update-channels --force
     - for f in television/cable-overrides/*.toml; do ./television/merge-toml.py ~/.config/television/cable/"$(basename "$f")" "$f"; done

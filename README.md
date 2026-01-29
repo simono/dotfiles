@@ -23,7 +23,7 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[Zed](https://zed.dev/):** A next-generation code editor.
 - **[Ghostty](https://ghostty.org/):** A fast and feature-rich terminal emulator.
 - **[fish](https://fishshell.com):** A smart and user-friendly command line shell.
-- **[Hydro](https://github.com/jorgebucaran/hydro):** Ultra-pure, lag-free prompt plugin for fish.
+- **[Tide](https://github.com/IlanCosman/tide):** The ultimate fish prompt.
 - **[zoxide](https://github.com/ajeetdsouza/zoxide):** A smarter `cd` command.
 - **[Vim](https://www.vim.org/):** A highly configurable text editor.
 - **[Git](https://git-scm.com):** A distributed version control system.

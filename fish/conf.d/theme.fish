@@ -19,12 +19,6 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
         set -f theme_variant "dawn"
     end
 
-    # Set colors for Hydro
-    set -g hydro_color_pwd $fish_color_foam
-    set -g hydro_color_git $fish_color_iris
-    set -g hydro_color_prompt $fish_color_pine
-    set -g hydro_color_duration $fish_color_gold
-
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"
 
