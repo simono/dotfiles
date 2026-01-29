@@ -5,6 +5,6 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-function rg --description 'alias rg=rg --json $argv | delta'
+function rg --description 'rg with delta syntax highlighting'
     command rg --json $argv | delta
 end
