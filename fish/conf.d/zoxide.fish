@@ -5,12 +5,11 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+# Clear fish's built-in autojump completions
+complete -c j -e
+
 # Initialize zoxide with j as command
 zoxide init --cmd j fish | source
-
-# Override completions (clear vi mode history, add directories)
-complete -c j -e
-complete -c j -f -a '(__fish_complete_directories (commandline -ct) "")'
 
 # Interactive mode via television
 function ji
