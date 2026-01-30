@@ -5,11 +5,11 @@
 # Simon Olofsson <simon@olofsson.de>
 
 # coreutils
-alias cp 'command cp -iv'
-alias df 'command df -h'
-alias du 'command du -h'
-alias mv 'command mv -iv'
-alias rm 'command rm -Iv'
+alias cp 'cp -iv'
+alias df 'df -h'
+alias du 'du -h'
+alias mv 'mv -iv'
+alias rm 'rm -Iv'
 
 # eza
 alias l 'eza --icons --group-directories-first'
