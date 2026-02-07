@@ -20,7 +20,7 @@ repo = "local"
 hooks = [
   {
     id = "fish-indent",
-    name = "Format Fish scripts",
+    name = "format fish scripts",
     entry = "fish_indent --write",
     language = "system",
     files = '\.fish$',
@@ -28,7 +28,7 @@ hooks = [
   },
   {
     id = "fish-indent-check",
-    name = "Check Fish formatting",
+    name = "check fish formatting",
     entry = "fish_indent --check",
     language = "system",
     files = '\.fish$',
@@ -36,7 +36,7 @@ hooks = [
   },
   {
     id = "fish-syntax",
-    name = "Validate Fish scripts",
+    name = "validate fish scripts",
     entry = "fish -n",
     language = "system",
     files = '\.fish$',
@@ -44,7 +44,7 @@ hooks = [
   },
   {
     id = "dotbot-config",
-    name = "Validate Dotbot configs",
+    name = "validate dotbot configs",
     entry = "dotbot -n -c",
     language = "python",
     additional_dependencies = ["dotbot"],
