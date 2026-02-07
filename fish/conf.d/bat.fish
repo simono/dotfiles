@@ -6,7 +6,7 @@
 #
 
 # Use bat
-abbr b 'bat'
+abbr b bat
 
 # Highlight help messages
 abbr --position anywhere -- --help '--help | bat -plhelp'

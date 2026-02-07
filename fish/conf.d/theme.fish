@@ -10,12 +10,12 @@ fish_config theme choose "Rosé Pine Moon Auto"
 
 # Apply the theme.
 function __so_apply_theme --on-variable fish_terminal_color_theme
-    if test "$fish_terminal_color_theme" = "dark"
-        set -f appearance "dark"
-        set -f theme_variant "moon"
+    if test "$fish_terminal_color_theme" = dark
+        set -f appearance dark
+        set -f theme_variant moon
     else
-        set -f appearance "light"
-        set -f theme_variant "dawn"
+        set -f appearance light
+        set -f theme_variant dawn
     end
 
     # Tide prompt colors.
