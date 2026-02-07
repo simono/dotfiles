@@ -19,6 +19,22 @@ hooks = [
 repo = "local"
 hooks = [
   {
+    id = "fish-indent",
+    name = "Format Fish scripts",
+    entry = "fish_indent --write",
+    language = "system",
+    files = '\.fish$',
+    stages = ["pre-commit"]
+  },
+  {
+    id = "fish-indent-check",
+    name = "Check Fish formatting",
+    entry = "fish_indent --check",
+    language = "system",
+    files = '\.fish$',
+    stages = ["pre-push"]
+  },
+  {
     id = "fish-syntax",
     name = "Validate Fish scripts",
     entry = "fish -n",
