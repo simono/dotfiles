@@ -40,6 +40,7 @@
       path: $HOMEBREW_PREFIX/share/git-delta/themes.gitconfig
       if: '[ -n "$HOMEBREW_PREFIX" ]'
     ~/.ripgreprc: ripgrep/ripgreprc
+    ~/.tmux.conf: tmux/tmux.conf
     ~/.vim/pack: vim/pack
     ~/.vimrc: vim/vimrc
 
