@@ -16,7 +16,7 @@
 
 - shell:
     - brew bundle install --file=Brewfile
-    - test -r ~/.Brewfile.local && brew bundle install --file=~/.Brewfile.local
+    - test -r ~/.Brewfile.local && brew bundle install --file=~/.Brewfile.local || true
     - brew upgrade --greedy
     - brew autoremove
     - command: brew cleanup
