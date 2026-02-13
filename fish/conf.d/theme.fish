@@ -27,6 +27,9 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"
 
+    # Use Solarized for man pages because Rosé Pine doesn't support man page highlighting.
+    set -gx MANPAGER "sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman --theme \"Solarized ($appearance)\"'"
+
     # delta can detect the background color of the terminal automatically.
     #
     # But this doesn't work when Delta is embedded in other tools or when its
