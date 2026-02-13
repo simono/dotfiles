@@ -1,12 +1,9 @@
-# Bundle for Homebrew, Homebrew Cask, and Mac App Store Apps.
-#
-# Location: ~/.Brewfile
+# Homebrew bundle (cross-platform).
 #
 # Simon Olofsson <simon@olofsson.de>
 #
 
 brew "bat"
-brew "colima"
 brew "csview"
 brew "dotbot"
 brew "eza"
@@ -16,8 +13,6 @@ brew "fisher"
 brew "gh"
 brew "git-delta"
 brew "jaq"
-brew "mas"
-brew "openconnect"
 brew "prek"
 brew "ripgrep"
 brew "rnr"
@@ -31,19 +26,3 @@ brew "xh"
 brew "zoxide"
 
 cask "claude-code"
-cask "cyberduck"
-cask "firefox"
-cask "font-symbols-only-nerd-font"
-cask "ghostty"
-cask "gimp"
-cask "google-chrome"
-cask "iina"
-cask "zed"
-
-mas "1Blocker", id: 1365531024
-mas "GoodLinks", id: 1474335294
-mas "Maccy", id: 1527619437
-mas "MeetingBar", id: 1532419400
-mas "Numbers", id: 361304891
-mas "Pages", id: 361309726
-mas "rcmd", id: 1596283165

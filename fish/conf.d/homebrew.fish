@@ -6,10 +6,16 @@
 #
 
 # Setup shell for Homebrew
-/opt/homebrew/bin/brew shellenv fish | source
+for brew in /opt/homebrew/bin/brew /home/linuxbrew/.linuxbrew/bin/brew
+    if test -x $brew
+        $brew shellenv fish | source
 
-# Homebrew Command Not Found
-set -l __hb_cnf_handler (brew --repository)/Library/Homebrew/command-not-found/handler.fish
-if test -f $__hb_cnf_handler
-    source $__hb_cnf_handler
+        # Homebrew Command Not Found
+        set -l handler (brew --repository)/Library/Homebrew/command-not-found/handler.fish
+        if test -f $handler
+            source $handler
+        end
+
+        break
+    end
 end

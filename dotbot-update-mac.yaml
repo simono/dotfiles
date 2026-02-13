@@ -1,0 +1,15 @@
+# Dotbot config for macOS updates.
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+- defaults:
+    shell:
+      stdin: true
+      stdout: true
+      stderr: true
+
+- shell:
+    - brew bundle install --file=Brewfile.mac
+    - mas outdated
+    - softwareupdate -l
