@@ -12,11 +12,10 @@
       stderr: true
 
 - link:
-    ~/.Brewfile:
     ~/.config/fish/functions/so-dotfiles-update.fish: fish/functions/so-dotfiles-update.fish
 
 - shell:
-    - brew bundle install --global
+    - brew bundle install --file=Brewfile
     - test -r ~/.Brewfile.local && brew bundle install --file=~/.Brewfile.local
     - brew upgrade --greedy
     - brew autoremove
@@ -24,5 +23,3 @@
       stdout: false
     - rustup check
     - brew outdated
-    - mas outdated
-    - softwareupdate -l
