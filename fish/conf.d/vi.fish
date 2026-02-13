@@ -17,7 +17,7 @@ set fish_cursor_replace underscore blink
 
 # Always start in normal mode
 function __so_vi_normal_mode --on-event fish_prompt
-    fish_vi_key_bindings default 2>/dev/null
+    fish_vi_key_bindings default
 end
 
 # Open command line in Editor
