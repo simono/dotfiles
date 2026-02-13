@@ -47,7 +47,7 @@
 	url = https://github.com/jszakmeister/vim-togglecursor.git
 [submodule "vim/pack/my-plugins/start/vim-sneak"]
 	path = vim/pack/my-plugins/start/vim-sneak
-	url = git@github.com:justinmk/vim-sneak.git
+	url = https://github.com/justinmk/vim-sneak.git
 [submodule "vim/pack/my-plugins/start/vim-numbertoggle"]
 	path = vim/pack/my-plugins/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
