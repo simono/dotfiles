@@ -34,8 +34,8 @@
     ~/.config/ghostty/config: ghostty/config
     ~/.config/television/config.toml: television/config.toml
     ~/.config/zed/settings.json: zed/settings.json
-    ~/.gitconfig: git/gitconfig
-    ~/.gitconfig.themes:
+    ~/.config/git/config: git/config
+    ~/.config/git/config.themes:
       path: $HOMEBREW_PREFIX/share/git-delta/themes.gitconfig
       if: '[ -n "$HOMEBREW_PREFIX" ]'
     ~/.ripgreprc: ripgrep/ripgreprc

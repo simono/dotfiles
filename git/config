@@ -1,6 +1,6 @@
 # git configuration file.
 #
-# Location: ~/.gitconfig
+# Location: ~/.config/git/config
 #
 # Simon Olofsson <simon@olofsson.de>
 #
@@ -50,5 +50,5 @@
 [status]
 	showStash = true
 [include]
-	path = .gitconfig.local
-	path = .gitconfig.themes
+	path = config.local
+	path = config.themes
