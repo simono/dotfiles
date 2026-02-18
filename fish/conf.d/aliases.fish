@@ -4,6 +4,8 @@
 #
 # Simon Olofsson <simon@olofsson.de>
 
+status is-interactive; or return
+
 # coreutils
 alias cp 'cp -iv'
 alias df 'df -h'

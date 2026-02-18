@@ -5,6 +5,8 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+status is-interactive; or return
+
 # Initialize zoxide with j as command
 zoxide init --cmd j fish | source
 

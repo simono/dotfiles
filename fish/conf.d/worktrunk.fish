@@ -5,6 +5,8 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+status is-interactive; or return
+
 # Initialize worktrunk
 wt config shell init fish | source
 

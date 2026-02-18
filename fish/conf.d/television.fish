@@ -5,6 +5,8 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+status is-interactive; or return
+
 # Shell integration
 tv init fish | source
 

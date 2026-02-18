@@ -5,6 +5,8 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+status is-interactive; or return
+
 # Set the editor to Vim
 set -gx EDITOR vim
 

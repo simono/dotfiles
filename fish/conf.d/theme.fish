@@ -5,6 +5,8 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+status is-interactive; or return
+
 # Fish 4.3+ auto themes handle light/dark switching automatically.
 fish_config theme choose "Rosé Pine Moon Auto"
 
