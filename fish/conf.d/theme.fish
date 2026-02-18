@@ -40,7 +40,7 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
     #
     # But this doesn't work when Delta is embedded in other tools or when its
     # output is piped.
-    # See https://github.com/dandavison/delta/blob/d5e0565cbfa47acde98d41d8777ace5d1bc4d690/manual/src/full---help-output.md?plain=1#L133
+    # See https://github.com/dandavison/delta/blob/main/manual/src/full---help-output.md?plain=1#L133
     set -gx GIT_CONFIG_PARAMETERS "'delta.$appearance=true'"
 
     # Activate zebra feature for moved lines.
