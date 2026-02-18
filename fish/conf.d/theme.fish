@@ -18,11 +18,15 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
         set -f theme_variant dawn
     end
 
-    # Tide prompt colors.
-    rose_pine_tide $theme_variant
-
-    # Reload Tide to pick up color changes (workaround for cached colors in _tide_pwd and fish_prompt)
-    tide reload
+    # Pure prompt colors
+    set -g pure_color_primary $fish_color_iris
+    set -g pure_color_info $fish_color_foam
+    set -g pure_color_mute $fish_color_subtle
+    set -g pure_color_success $fish_color_iris
+    set -g pure_color_danger $fish_color_love
+    set -g pure_color_warning $fish_color_gold
+    set -g pure_color_light $fish_color_text
+    set -g pure_color_dark $fish_color_pine
 
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"

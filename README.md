@@ -23,7 +23,7 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[Ghostty](https://ghostty.org/):** A fast and feature-rich terminal emulator.
 - **[fish](https://fishshell.com):** A smart and user-friendly command line shell.
 - **[fisher](https://github.com/jorgebucaran/fisher):** A plugin manager for fish.
-- **[Tide](https://github.com/IlanCosman/tide):** The ultimate fish prompt.
+- **[Pure](https://github.com/pure-fish/pure):** Pretty, minimal, and fast fish prompt.
 - **[Git](https://git-scm.com):** A distributed version control system.
 - **[worktrunk](https://github.com/nicois/worktrunk):** A tool for managing git worktrees.
 - **[Delta](https://github.com/dandavison/delta):** A syntax-highlighting pager for `git` output.
