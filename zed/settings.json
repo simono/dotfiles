@@ -14,31 +14,23 @@
 
 {
   "auto_update": false,
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5",
-    },
-  },
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
-  "vim_mode": true,
-  "vim": {
-    "use_smartcase_find": true,
-    "toggle_relative_line_numbers": true,
-  },
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
   "buffer_font_fallbacks": ["Symbols Nerd Font"],
-  "theme": {
-    "mode": "system",
-    "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine Moon",
+  "edit_predictions": {
+    "provider": "copilot",
   },
   "terminal": {
     "shell": {
       "program": "fish",
     },
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine Moon",
+  },
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true,
+    "use_smartcase_find": true,
   },
 }
