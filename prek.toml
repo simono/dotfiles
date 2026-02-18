@@ -8,7 +8,7 @@
 
 default_install_hook_types = [
   "pre-commit",
-  "pre-push"
+  "pre-push",
   ]
 
 [[repos]]
@@ -20,7 +20,8 @@ hooks = [
   { id = "check-toml" },
   { id = "mixed-line-ending" },
   { id = "check-merge-conflict" },
-  { id = "detect-private-key" }
+  { id = "detect-private-key" },
+  { id = "check-executables-have-shebangs" },
 ]
 
 [[repos]]
@@ -32,7 +33,7 @@ hooks = [
     entry = "fish_indent --write",
     language = "system",
     files = '\.fish$',
-    stages = ["pre-commit"]
+    stages = ["pre-commit"],
   },
   {
     id = "fish-indent-check",
@@ -40,7 +41,7 @@ hooks = [
     entry = "fish_indent --check",
     language = "system",
     files = '\.fish$',
-    stages = ["pre-push"]
+    stages = ["pre-push"],
   },
   {
     id = "fish-syntax",
@@ -48,7 +49,7 @@ hooks = [
     entry = "fish -n",
     language = "system",
     files = '\.fish$',
-    stages = ["pre-push"]
+    stages = ["pre-push"],
   },
   {
     id = "dotbot-config",
@@ -57,6 +58,6 @@ hooks = [
     language = "python",
     additional_dependencies = ["dotbot"],
     files = '^dotbot-.*\.yaml$',
-    stages = ["pre-push"]
-  }
+    stages = ["pre-push"],
+  },
 ]
