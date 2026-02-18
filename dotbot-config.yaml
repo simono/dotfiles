@@ -31,7 +31,6 @@
     ~/.config/fish/functions/:
       glob: true
       path: fish/functions/*
-      exclude: ["fish/functions/so-dotfiles-update.fish"]
     ~/.config/ghostty/config: ghostty/config
     ~/.config/television/config.toml: television/config.toml
     ~/.config/zed/settings.json: zed/settings.json

@@ -12,7 +12,8 @@ Welcome to my collection of dotfiles! These configuration files are for various 
 ```sh
 git clone git@github.com:simono/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-fish -c "source fish/functions/so-dotfiles-update.fish; so-dotfiles-update"
+dotbot -c dotbot-sync.yaml
+dotbot -c dotbot-config.yaml
 ```
 
 ## Included Programs

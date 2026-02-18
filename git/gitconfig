@@ -49,10 +49,6 @@
 	enabled = true
 [status]
 	showStash = true
-[user]
-	email = simon@olofsson.de
-	name = Simon Olofsson
-	signingKey = ~/.ssh/id_ed25519.pub
 [include]
 	path = .gitconfig.local
 	path = .gitconfig.themes
