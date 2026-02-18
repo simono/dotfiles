@@ -21,7 +21,7 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
     end
 
     # Pure prompt colors
-    set -g pure_color_primary $fish_color_iris
+    set -g pure_color_primary $fish_color_rose
     set -g pure_color_info $fish_color_foam
     set -g pure_color_mute $fish_color_subtle
     set -g pure_color_success $fish_color_iris
