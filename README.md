@@ -19,21 +19,22 @@ fish -c "source fish/functions/so-dotfiles-update.fish; so-dotfiles-update"
 
 Below is a list of the programs I have configuration files for, along with a short description and links to their homepages:
 
-- **[Homebrew](https://brew.sh/):** The Missing Package Manager for macOS.
+- **[Homebrew](https://brew.sh/):** The Missing Package Manager.
 - **[Ghostty](https://ghostty.org/):** A fast and feature-rich terminal emulator.
 - **[fish](https://fishshell.com):** A smart and user-friendly command line shell.
 - **[fisher](https://github.com/jorgebucaran/fisher):** A plugin manager for fish.
-- **[Pure](https://github.com/pure-fish/pure):** Pretty, minimal, and fast fish prompt.
+- **[Pure](https://pure-fish.github.io/pure/):** Pretty, minimal, and fast fish prompt.
 - **[Git](https://git-scm.com):** A distributed version control system.
-- **[worktrunk](https://github.com/nicois/worktrunk):** A tool for managing git worktrees.
-- **[Delta](https://github.com/dandavison/delta):** A syntax-highlighting pager for `git` output.
+- **[prek](https://prek.j178.dev/):** A framework to run git hooks.
+- **[worktrunk](https://worktrunk.dev):** A tool for managing git worktrees.
+- **[Delta](https://dandavison.github.io/delta/):** A syntax-highlighting pager for `git` output.
 - **[Vim](https://www.vim.org/):** A highly configurable text editor.
 - **[Zed](https://zed.dev/):** A next-generation code editor.
 - **[bat](https://github.com/sharkdp/bat):** A `cat` clone with syntax highlighting and Git integration.
-- **[eza](https://github.com/eza-community/eza):** A modern alternative to `ls`.
+- **[eza](https://eza.rocks):** A modern alternative to `ls`.
 - **[fd](https://github.com/sharkdp/fd):** A simple, fast alternative to `find`.
 - **[ripgrep (rg)](https://github.com/BurntSushi/ripgrep):** A line-oriented search tool.
-- **[television](https://github.com/alexpasmantier/television):** A fuzzy finder for the terminal.
+- **[television](https://alexpasmantier.github.io/television/):** A fuzzy finder for the terminal.
 - **[zoxide](https://github.com/ajeetdsouza/zoxide):** A smarter `cd` command.
 
 ---
