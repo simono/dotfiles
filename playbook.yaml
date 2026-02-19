@@ -1,0 +1,34 @@
+- name: configure dotfiles
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: sync repo
+      ansible.builtin.command:
+        cmd: git pull
+        chdir: "{{ playbook_dir }}"
+      register: git_pull
+      changed_when: "'Already up to date.' not in git_pull.stdout"
+      tags: always
+
+    - name: find component tasks
+      ansible.builtin.find:
+        paths: "{{ playbook_dir }}"
+        patterns: tasks.yaml
+        recurse: true
+        depth: 2
+      register: task_files
+      tags: always
+
+    - name: include component tasks
+      ansible.builtin.include_tasks:
+        file: "{{ tasks_file.path }}"
+        apply:
+          tags: "{{ tasks_file.path | dirname | basename }}"
+      vars:
+        component: "{{ tasks_file.path | dirname | basename }}"
+      loop: "{{ task_files.files | sort(attribute='path') }}"
+      loop_control:
+        loop_var: tasks_file
+        label: "{{ tasks_file.path | dirname | basename }}"
+      tags: always

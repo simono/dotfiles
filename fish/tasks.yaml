@@ -1,0 +1,19 @@
+- name: "{{ component }} | create config dir"
+  ansible.builtin.file:
+    path: "~/.config/fish/{{ item }}"
+    state: directory
+  loop: [conf.d, functions]
+
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ item }}"
+    dest: "~/.config/fish/{{ item | relpath(playbook_dir + '/fish') }}"
+    state: link
+    force: true
+  loop: >-
+    {{ query('fileglob', playbook_dir + '/fish/conf.d/*')
+     + query('fileglob', playbook_dir + '/fish/functions/*')
+     + [playbook_dir + '/fish/fish_plugins'] }}
+
+- name: "{{ component }} | update fisher"
+  ansible.builtin.command: fish -c 'fisher update'

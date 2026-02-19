@@ -1,0 +1,11 @@
+- name: "{{ component }} | create config dir"
+  ansible.builtin.file:
+    path: ~/.config/zed
+    state: directory
+
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ playbook_dir }}/zed/settings.json"
+    dest: ~/.config/zed/settings.json
+    state: link
+    force: true

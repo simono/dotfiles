@@ -1,0 +1,15 @@
+- name: "{{ component }} | create config dir"
+  ansible.builtin.file:
+    path: "~/.vim/{{ item }}"
+    state: directory
+  loop: [backup, swap, undo]
+
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    state: link
+    force: true
+  loop:
+    - { src: "{{ playbook_dir }}/vim/vimrc", dest: ~/.vimrc }
+    - { src: "{{ playbook_dir }}/vim/pack", dest: ~/.vim/pack }

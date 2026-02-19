@@ -1,0 +1,6 @@
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ playbook_dir }}/ripgrep/ripgreprc"
+    dest: ~/.ripgreprc
+    state: link
+    force: true

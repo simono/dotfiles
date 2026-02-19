@@ -4,7 +4,6 @@
 #
 
 brew "bat"
-brew "dotbot"
 brew "eza"
 brew "fd"
 brew "fish"

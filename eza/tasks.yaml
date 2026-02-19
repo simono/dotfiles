@@ -1,0 +1,13 @@
+- name: "{{ component }} | create config dir"
+  ansible.builtin.file:
+    path: "~/.config/eza/{{ item | basename | splitext | first }}"
+    state: directory
+  loop: "{{ query('fileglob', playbook_dir + '/eza/themes/themes/rose-pine-*.yml') }}"
+
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ item }}"
+    dest: "~/.config/eza/{{ item | basename | splitext | first }}/theme.yml"
+    state: link
+    force: true
+  loop: "{{ query('fileglob', playbook_dir + '/eza/themes/themes/rose-pine-*.yml') }}"

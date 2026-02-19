@@ -5,16 +5,34 @@
 Welcome to my collection of dotfiles! These configuration files are for various programs and tools I use regularly. Feel free to use, fork, and modify them as you see fit.
 
 > [!NOTE]
-> My dotfiles are managed with [Dotbot](https://github.com/anishathalye/dotbot) to streamline the installation and management process.
+> My dotfiles are managed with [Ansible](https://docs.ansible.com/) to streamline the installation and management process.
 
 ## Installation
+
+Prerequisites: [Homebrew](https://brew.sh/).
+
+### Full setup
+
+Clone the repo, install all programs from the Brewfile, and link every config:
 
 ```sh
 git clone git@github.com:simono/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-dotbot -c dotbot-sync.yaml
-dotbot -c dotbot-config.yaml
+git submodule update --init
+brew bundle
+uvx --from ansible-core ansible-playbook playbook.yaml
 ```
+
+### Selective setup
+
+Install [uv](https://docs.astral.sh/uv/) and the programs you want, then link their configs with `--tags`. For example, to set up only fish and git:
+
+```sh
+brew install uv fish
+uvx --from ansible-core ansible-playbook playbook.yaml --tags fish,git
+```
+
+Tags match directory names (`bat`, `fish`, `vim`, etc.).
 
 ## Included Programs
 

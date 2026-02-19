@@ -1,0 +1,6 @@
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ playbook_dir }}/tmux/tmux.conf"
+    dest: ~/.tmux.conf
+    state: link
+    force: true

@@ -1,0 +1,11 @@
+- name: "{{ component }} | create config dir"
+  ansible.builtin.file:
+    path: ~/.config/ghostty
+    state: directory
+
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ playbook_dir }}/ghostty/config"
+    dest: ~/.config/ghostty/config
+    state: link
+    force: true

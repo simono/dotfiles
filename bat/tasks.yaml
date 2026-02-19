@@ -1,0 +1,15 @@
+- name: "{{ component }} | create config dir"
+  ansible.builtin.file:
+    path: ~/.config/bat/themes
+    state: directory
+
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ item }}"
+    dest: "~/.config/bat/themes/{{ item | basename }}"
+    state: link
+    force: true
+  loop: "{{ query('fileglob', playbook_dir + '/bat/rose-pine/dist/rose-pine-*.tmTheme') }}"
+
+- name: "{{ component }} | build cache"
+  ansible.builtin.command: bat cache --build

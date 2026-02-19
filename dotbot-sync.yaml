@@ -1,8 +1,0 @@
-# Dotbot config to sync repo.
-#
-# Simon Olofsson <simon@olofsson.de>
-#
-
-- shell:
-    - git pull
-    - git submodule update --init

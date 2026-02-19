@@ -52,12 +52,13 @@ hooks = [
     stages = ["pre-push"],
   },
   {
-    id = "dotbot-config",
-    name = "validate dotbot configs",
-    entry = "dotbot -n -c",
+    id = "ansible-syntax",
+    name = "validate ansible playbook",
+    entry = "ansible-playbook --syntax-check playbook.yaml",
     language = "python",
-    additional_dependencies = ["dotbot"],
-    files = '^dotbot-.*\.yaml$',
+    additional_dependencies = ["ansible-core"],
+    pass_filenames = false,
+    files = '(playbook|tasks)\.yaml$',
     stages = ["pre-push"],
   },
 ]

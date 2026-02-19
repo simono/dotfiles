@@ -1,0 +1,19 @@
+- name: "{{ component }} | create config dir"
+  ansible.builtin.file:
+    path: ~/.config/television
+    state: directory
+
+- name: "{{ component }} | link config"
+  ansible.builtin.file:
+    src: "{{ playbook_dir }}/television/config.toml"
+    dest: ~/.config/television/config.toml
+    state: link
+    force: true
+
+- name: "{{ component }} | update channels"
+  ansible.builtin.command: tv update-channels --force
+
+- name: "{{ component }} | merge cable overrides"
+  ansible.builtin.command:
+    cmd: "{{ playbook_dir }}/television/merge-toml.py ~/.config/television/cable/{{ item | basename }} {{ item }}"
+  loop: "{{ query('fileglob', playbook_dir + '/television/cable-overrides/*.toml') }}"
