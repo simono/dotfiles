@@ -6,4 +6,4 @@
 #
 
 # Config file for ripgrep
-set -gx RIPGREP_CONFIG_PATH "$HOME/.ripgreprc"
+set -gx RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"

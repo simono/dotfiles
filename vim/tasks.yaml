@@ -11,5 +11,5 @@
     state: link
     force: true
   loop:
-    - { src: "{{ playbook_dir }}/vim/vimrc", dest: ~/.vimrc }
+    - { src: "{{ playbook_dir }}/vim/vimrc", dest: ~/.vim/vimrc }
     - { src: "{{ playbook_dir }}/vim/pack", dest: ~/.vim/pack }

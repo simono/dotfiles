@@ -1,6 +1,11 @@
+- name: "{{ component }} | create config dir"
+  ansible.builtin.file:
+    path: ~/.config/tmux
+    state: directory
+
 - name: "{{ component }} | link config"
   ansible.builtin.file:
     src: "{{ playbook_dir }}/tmux/tmux.conf"
-    dest: ~/.tmux.conf
+    dest: ~/.config/tmux/tmux.conf
     state: link
     force: true
