@@ -5,7 +5,7 @@
 
 - name: "{{ component }} | link config"
   ansible.builtin.file:
-    src: "{{ playbook_dir }}/ripgrep/ripgreprc"
+    src: "{{ playbook_dir }}/ripgrep/config"
     dest: ~/.config/ripgrep/config
     state: link
     force: true

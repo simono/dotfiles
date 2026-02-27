@@ -1,6 +1,6 @@
 # ripgrep configuration file.
 #
-# Location: ~/.ripgreprc
+# Location: ~/.config/ripgrep/config
 #
 # Simon Olofsson <simon@olofsson.de>
 #
