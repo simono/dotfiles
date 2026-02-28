@@ -11,6 +11,14 @@
       changed_when: "'Already up to date.' not in git_pull.stdout"
       tags: always
 
+    - name: sync submodules
+      ansible.builtin.command:
+        cmd: git submodule update --init
+        chdir: "{{ playbook_dir }}"
+      register: git_submodule
+      changed_when: git_submodule.stdout | length > 0
+      tags: always
+
     - name: find component tasks
       ansible.builtin.find:
         paths: "{{ playbook_dir }}"
