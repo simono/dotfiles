@@ -6,5 +6,9 @@
 #
 
 function rg --description 'rg with delta syntax highlighting'
-    command rg --json $argv | delta
+    if isatty stdout
+        command rg --json $argv | delta
+    else
+        command rg $argv
+    end
 end

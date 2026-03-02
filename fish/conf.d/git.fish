@@ -5,6 +5,8 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
+status is-interactive; or return
+
 abbr g git
 abbr ga 'git add'
 abbr gb 'git branch'

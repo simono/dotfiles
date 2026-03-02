@@ -44,7 +44,7 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
     set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine-$theme_variant"
 
     # For fd et al.
-    set -gx LS_COLORS "$(vivid generate rose-pine-$theme_variant)"
+    set -gx LS_COLORS (vivid generate rose-pine-$theme_variant)
 
     # Appearance and Theme for Vim.
     set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
