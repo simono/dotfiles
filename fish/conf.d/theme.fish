@@ -20,9 +20,6 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
         set -f theme_variant dawn
     end
 
-    # Pure prompt colors
-    rose_pine_pure $theme_variant
-
     # Bat and delta both use `BAT_THEME`.
     set -gx BAT_THEME "rose-pine-$theme_variant"
 
