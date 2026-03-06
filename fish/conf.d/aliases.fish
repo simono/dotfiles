@@ -16,3 +16,6 @@ alias rm 'rm -Iv'
 # eza
 alias l 'eza --icons --group-directories-first'
 alias ll 'l --long --git --header --smart-group --time-style=relative'
+
+# tmp
+alias so-tmp 'j (mktemp -d)'
