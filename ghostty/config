@@ -9,6 +9,7 @@ command = /opt/homebrew/bin/fish
 theme = light:Rose Pine Dawn, dark:Rose Pine Moon
 window-save-state = always
 shell-integration-features = ssh-env
+copy-on-select = clipboard
 
 # Brew handles updates for me
 auto-update = off
