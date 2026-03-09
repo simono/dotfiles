@@ -11,4 +11,4 @@ status is-interactive; or return
 wt config shell init fish | source
 
 abbr wts 'wt switch'
-abbr wtsb 'wt switch --branches'
+abbr wtsb 'wt switch --branches --remotes'
