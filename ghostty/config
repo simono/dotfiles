@@ -10,6 +10,7 @@ theme = light:Rose Pine Dawn, dark:Rose Pine Moon
 window-save-state = always
 shell-integration-features = ssh-env
 copy-on-select = clipboard
+notify-on-command-finish = unfocused
 
 # Brew handles updates for me
 auto-update = off
