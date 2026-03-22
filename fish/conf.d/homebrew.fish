@@ -6,16 +6,19 @@
 #
 
 # Setup shell for Homebrew
-for prefix in /opt/homebrew /home/linuxbrew/.linuxbrew
-    if test -d $prefix
-        $prefix/bin/brew shellenv fish | source
+if command -q brew
+    set -f brew brew
+else if test -x /home/linuxbrew/.linuxbrew/bin/brew
+    set -f brew /home/linuxbrew/.linuxbrew/bin/brew
+else
+    echo >&2 "homebrew.fish: brew not found"
+    return
+end
 
-        # Homebrew Command Not Found
-        set -l handler $prefix/Library/Homebrew/command-not-found/handler.fish
-        if test -f $handler
-            source $handler
-        end
+$brew shellenv fish | source
 
-        break
-    end
+# Homebrew Command Not Found
+set -l handler $HOMEBREW_PREFIX/Library/Homebrew/command-not-found/handler.fish
+if test -f $handler
+    source $handler
 end

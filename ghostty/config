@@ -5,7 +5,7 @@
 # Simon Olofsson <simon@olofsson.de>
 #
 
-command = /opt/homebrew/bin/fish
+command = fish
 theme = light:Rose Pine Dawn, dark:Rose Pine Moon
 window-save-state = always
 shell-integration-features = ssh-env
