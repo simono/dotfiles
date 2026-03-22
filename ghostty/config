@@ -14,6 +14,3 @@ notify-on-command-finish = unfocused
 
 # Brew handles updates for me
 auto-update = off
-
-# Insert a newline with shift-enter
-keybind = shift+enter=text:\x1b\r
