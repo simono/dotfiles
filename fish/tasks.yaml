@@ -2,7 +2,7 @@
   ansible.builtin.file:
     path: "~/.config/fish/{{ item }}"
     state: directory
-  loop: [conf.d, functions]
+  loop: [conf.d]
 
 - name: "{{ component }} | link config"
   ansible.builtin.file:
@@ -12,7 +12,6 @@
     force: true
   loop: >-
     {{ query('fileglob', playbook_dir + '/fish/conf.d/*')
-     + query('fileglob', playbook_dir + '/fish/functions/*')
      + [playbook_dir + '/fish/fish_plugins'] }}
 
 - name: "{{ component }} | update fisher"
