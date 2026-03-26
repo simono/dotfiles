@@ -8,4 +8,3 @@
     src: "{{ playbook_dir }}/ghostty/config"
     dest: ~/.config/ghostty/config
     state: link
-    force: true

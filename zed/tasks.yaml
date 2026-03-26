@@ -8,4 +8,3 @@
     src: "{{ playbook_dir }}/zed/settings.json"
     dest: ~/.config/zed/settings.json
     state: link
-    force: true

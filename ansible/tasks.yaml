@@ -3,4 +3,3 @@
     src: "{{ playbook_dir }}/ansible/ansible.cfg"
     dest: ~/.ansible.cfg
     state: link
-    force: true

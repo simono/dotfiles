@@ -9,5 +9,4 @@
     src: "{{ item }}"
     dest: "~/.config/eza/{{ item | basename | splitext | first }}/theme.yml"
     state: link
-    force: true
   loop: "{{ query('fileglob', playbook_dir + '/eza/themes/themes/rose-pine-*.yml') }}"

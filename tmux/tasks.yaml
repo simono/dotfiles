@@ -8,4 +8,3 @@
     src: "{{ playbook_dir }}/tmux/tmux.conf"
     dest: ~/.config/tmux/tmux.conf
     state: link
-    force: true

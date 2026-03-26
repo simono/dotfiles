@@ -8,4 +8,3 @@
     src: "{{ playbook_dir }}/ripgrep/config"
     dest: ~/.config/ripgrep/config
     state: link
-    force: true

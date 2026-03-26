@@ -8,7 +8,6 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
     state: link
-    force: true
   loop:
     - src: "{{ playbook_dir }}/git/config"
       dest: ~/.config/git/config

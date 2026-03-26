@@ -9,7 +9,6 @@
     src: "{{ item }}"
     dest: "~/.config/fish/{{ item | relpath(playbook_dir + '/fish') }}"
     state: link
-    force: true
   loop: >-
     {{ query('fileglob', playbook_dir + '/fish/conf.d/*')
      + [playbook_dir + '/fish/fish_plugins'] }}
