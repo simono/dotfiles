@@ -10,4 +10,6 @@ set -g async_prompt_functions _pure_prompt_git
 
 if command -q kubectl
     set --universal pure_enable_k8s true
+else
+    set --universal pure_enable_k8s false
 end
