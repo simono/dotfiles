@@ -22,6 +22,9 @@
   "edit_predictions": {
     "provider": "copilot",
   },
+  "file_types": {
+    "Helm": ["**/templates/**/*.yaml"],
+  },
   "terminal": {
     "shell": {
       "program": "fish",
