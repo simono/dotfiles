@@ -26,3 +26,5 @@ abbr gs 'git status'
 abbr gsh 'git show'
 abbr gsw 'git switch'
 abbr gst 'git stash'
+
+abbr ghpl 'gh pr list'
