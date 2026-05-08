@@ -13,6 +13,11 @@
 //
 
 {
+  "indent_guides": {
+    "background_coloring": "disabled",
+    "coloring": "indent_aware"
+  },
+  "colorize_brackets": true,
   "agent_servers": {
     "github-copilot-cli": {
       "type": "registry"
