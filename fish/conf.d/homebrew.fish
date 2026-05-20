@@ -18,7 +18,7 @@ end
 $brew shellenv fish | source
 
 # Homebrew Command Not Found
-set -l handler $HOMEBREW_PREFIX/Library/Homebrew/command-not-found/handler.fish
+set -l handler ($brew --repository)/Library/Homebrew/command-not-found/handler.fish
 if test -f $handler
     source $handler
 end
