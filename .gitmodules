@@ -45,3 +45,6 @@
 [submodule "vim/pack/my-plugins/start/vim-numbertoggle"]
 	path = vim/pack/my-plugins/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "vim/pack/my-plugins/start/vim-signify"]
+	path = vim/pack/my-plugins/start/vim-signify
+	url = https://github.com/mhinz/vim-signify.git

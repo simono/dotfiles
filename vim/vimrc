@@ -63,6 +63,12 @@ map F <Plug>Sneak_F
 map t <Plug>Sneak_t
 map T <Plug>Sneak_T
 
+" Signify: always show the sign column, so the text never shifts
+set signcolumn=yes
+
+" Signify updates the signs on CursorHold, so keep 'updatetime' short
+set updatetime=100
+
 " Appearance
 
 " Enable 24-bit colors
