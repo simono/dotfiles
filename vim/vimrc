@@ -9,6 +9,14 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Optional packages shipped with Vim
+" comment:      gc/gcc/gC comment toggling and the ic/ac text objects
+" editorconfig: apply settings from .editorconfig files
+" hlyank:       briefly highlight the yanked text
+packadd! comment
+packadd! editorconfig
+packadd! hlyank
+
 " Use the system clipboard
 set clipboard^=unnamed
 

@@ -4,9 +4,6 @@
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/pack/my-plugins/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
-[submodule "vim/bundle/vim-commentary"]
-	path = vim/pack/my-plugins/start/vim-commentary
-	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/bundle/vim-speeddating"]
 	path = vim/pack/my-plugins/start/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git
@@ -24,9 +21,6 @@
 [submodule "vim/bundle/vim-unimpaired"]
 	path = vim/pack/my-plugins/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "vim/bundle/editorconfig-vim"]
-	path = vim/pack/my-plugins/start/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/bundle/lightline.vim"]
 	path = vim/pack/my-plugins/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
