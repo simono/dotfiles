@@ -11,8 +11,10 @@
 
 - name: "{{ component }} | update channels"
   ansible.builtin.command: tv update-channels --force
+  changed_when: false
 
 - name: "{{ component }} | merge cable overrides"
   ansible.builtin.command:
     cmd: "{{ playbook_dir }}/television/merge-toml.py ~/.config/television/cable/{{ item | basename }} {{ item }}"
   loop: "{{ query('fileglob', playbook_dir + '/television/cable-overrides/*.toml') }}"
+  changed_when: false

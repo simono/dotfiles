@@ -12,3 +12,4 @@
 
 - name: "{{ component }} | build cache"
   ansible.builtin.command: bat cache --build
+  changed_when: false
