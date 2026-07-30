@@ -8,7 +8,8 @@
         cmd: git pull
         chdir: "{{ playbook_dir }}"
       register: git_pull
-      changed_when: "'Already up to date.' not in git_pull.stdout"
+      # Rebasing a branch that is ahead says "Current branch main is up to date." instead.
+      changed_when: "'up to date' not in git_pull.stdout"
       tags: always
 
     - name: sync submodules
