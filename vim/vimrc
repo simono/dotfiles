@@ -43,6 +43,13 @@ set ignorecase
 " Override 'ignorecase' if the search pattern contains upper case characters
 set smartcase
 
+" Clear the highlighting when entering insert mode. Going through feedkeys() is
+" necessary because :nohlsearch has no effect when run from an autocmd.
+augroup so_nohlsearch
+  autocmd!
+  autocmd InsertEnter * if v:hlsearch | call feedkeys("\<Cmd>nohlsearch\<CR>", 'm') | endif
+augroup END
+
 " Keep backup files
 set backup
 " Enable undo persistence
