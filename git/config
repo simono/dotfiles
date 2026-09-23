@@ -42,11 +42,14 @@
 	rebase = true
 [push]
 	autoSetupRemote = true
+	recurseSubmodules = no
 [rebase]
 	autoSquash = true
 	autoStash = true
 [rerere]
 	enabled = true
+[submodule]
+	recurse = true
 [status]
 	showStash = true
 [include]
