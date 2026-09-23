@@ -16,3 +16,10 @@
 - name: "{{ component }} | update fisher"
   ansible.builtin.command: fish -c 'fisher update'
   changed_when: false
+
+# Make sure fisher installed every plugin and didn't fail silently.
+- name: "{{ component }} | check fisher installed every plugin"
+  ansible.builtin.command: >-
+    fish -c 'diff (fisher list | sort | psub)
+    (string lower < $__fish_config_dir/fish_plugins | sort | psub)'
+  changed_when: false
