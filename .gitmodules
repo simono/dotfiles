@@ -48,3 +48,6 @@
 [submodule "vim/pack/my-plugins/start/vim-signify"]
 	path = vim/pack/my-plugins/start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
+[submodule "leaf/rose-pine"]
+	path = leaf/rose-pine
+	url = https://github.com/rose-pine/leaf

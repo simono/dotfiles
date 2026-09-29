@@ -50,6 +50,7 @@ Below is a list of the programs I have configuration files for, along with a sho
 - **[Vim](https://www.vim.org/):** A highly configurable text editor.
 - **[Zed](https://zed.dev/):** A next-generation code editor.
 - **[bat](https://github.com/sharkdp/bat):** A `cat` clone with syntax highlighting and Git integration.
+- **[leaf](https://leaf.rivolink.mg):** A terminal Markdown previewer.
 - **[eza](https://eza.rocks):** A modern alternative to `ls`.
 - **[fd](https://github.com/sharkdp/fd):** A simple, fast alternative to `find`.
 - **[ripgrep (rg)](https://github.com/BurntSushi/ripgrep):** A line-oriented search tool.

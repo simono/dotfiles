@@ -1,0 +1,8 @@
+# leaf configuration.
+#
+# Location: ~/.config/leaf/config.toml
+#
+# Simon Olofsson <simon@olofsson.de>
+#
+
+watch = true
