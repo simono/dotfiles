@@ -1,6 +1,6 @@
-- name: "{{ component }} | create config dir"
+- name: "{{ component }} | create config dirs"
   ansible.builtin.file:
-    path: ~/.config/leaf
+    path: ~/.config/leaf/themes
     state: directory
 
 - name: "{{ component }} | link config"
@@ -12,6 +12,6 @@
 - name: "{{ component }} | link themes"
   ansible.builtin.file:
     src: "{{ item }}"
-    dest: "~/.config/leaf/{{ item | basename }}"
+    dest: "~/.config/leaf/themes/{{ item | basename }}"
     state: link
   loop: "{{ query('fileglob', playbook_dir + '/leaf/rose-pine/themes/rose-pine-*.toml') }}"
