@@ -41,9 +41,8 @@ function __so_apply_theme --on-variable fish_terminal_color_theme
     # For fd et al.
     set -gx LS_COLORS (vivid generate rose-pine-$theme_variant)
 
-    # leaf resolves a theme path from `LEAF_THEME` relative to the working
-    # directory, so it has to be absolute.
-    set -gx LEAF_THEME "$HOME/.config/leaf/rose-pine-$theme_variant.toml"
+    # leaf resolves a relative `LEAF_THEME` from its config dir.
+    set -gx LEAF_THEME "rose-pine-$theme_variant.toml"
 
     # Appearance and Theme for Vim.
     set -gx SO_VIM_THEME "$appearance rosepine_$theme_variant"
