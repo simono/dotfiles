@@ -41,3 +41,13 @@
         loop_var: tasks_file
         label: "{{ tasks_file.path | dirname | basename }}"
       tags: always
+
+    # After the components, so a first run has already installed prek.
+    - name: install git hooks
+      ansible.builtin.command:
+        cmd: prek install
+        chdir: "{{ playbook_dir }}"
+      when: lookup('ansible.builtin.pipe', 'command -v prek || true') | length > 0
+      # prek prints the same lines whether or not the hooks were already there.
+      changed_when: false
+      tags: always
