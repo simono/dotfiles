@@ -18,11 +18,6 @@
     "coloring": "indent_aware"
   },
   "colorize_brackets": true,
-  "agent_servers": {
-    "github-copilot-cli": {
-      "type": "registry"
-    }
-  },
   "outline_panel": {
     "dock": "left"
   },
@@ -44,7 +39,7 @@
   "auto_update": false,
   "buffer_font_fallbacks": ["Symbols Nerd Font"],
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "none",
   },
   "file_types": {
     "Helm": ["**/templates/**/*.yaml"],
