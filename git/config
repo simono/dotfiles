@@ -23,6 +23,9 @@
 	navigate = true
 	# Side by side only for hunks with both sides, and only from 140 columns.
 	side-by-side = hunk,140
+[delta-tui]
+	# Deleted files as a header only, as on GitHub.
+	show-args = -D
 [diff]
 	renames = copies
 	colorMoved = default
