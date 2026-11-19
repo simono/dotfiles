@@ -6,4 +6,6 @@
 # vim exits with "Error reading input". The name must stay `vim`: delta picks
 # the `+line file` arguments by the editor's name.
 #
+# Remove once https://github.com/dandavison/delta/issues/2348 is fixed.
+#
 exec "${EDITOR:-vim}" "$@" </dev/tty
