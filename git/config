@@ -37,6 +37,8 @@
 [log]
 	follow = true
 	abbrevCommit = true
+	# auto drops them under the delta TUI pager.
+	decorate = short
 	date = auto:relative
 [merge]
 	conflictStyle = zdiff3
