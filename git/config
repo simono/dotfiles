@@ -16,9 +16,11 @@
 	pager = delta
 [delta]
 	hyperlinks = true
+	line-numbers = true
 	# use n and N to move between diff sections
 	navigate = true
-	side-by-side = true
+	# Side by side only for hunks with both sides, and only from 140 columns.
+	side-by-side = hunk,140
 [diff]
 	renames = copies
 	colorMoved = default
