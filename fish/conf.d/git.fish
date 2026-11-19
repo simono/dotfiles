@@ -23,7 +23,7 @@ abbr --description="Push, refusing to clobber others' commits" -- gpsf 'git push
 abbr grm 'git rebase main'
 abbr gre 'git restore'
 abbr gres 'git restore --staged'
-abbr gs 'git status'
+abbr --description="Status view in the delta TUI" -- gs 'delta --tui'
 abbr gsh 'git show'
 abbr gsw 'git switch'
 abbr gst 'git stash'

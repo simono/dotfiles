@@ -40,6 +40,10 @@
 	date = auto:relative
 [merge]
 	conflictStyle = zdiff3
+[pager]
+	diff = delta --tui
+	log = delta --tui
+	show = delta --tui
 [pull]
 	rebase = true
 [push]
@@ -52,6 +56,9 @@
 	enabled = true
 [submodule]
 	recurse = true
+[sequence]
+	# Without a terminal (agents, scripts) the TUI cannot start: keep the list as is.
+	editor = "f() { if [ -t 1 ]; then delta --tui sequence-editor \"$@\"; fi; }; f"
 [status]
 	showStash = true
 [include]
