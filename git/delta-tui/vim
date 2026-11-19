@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# Editor for delta --tui, set as GITU_SHOW_EDITOR.
+#
+# As git's pager, delta --tui starts the editor with git's pipe as stdin, so
+# vim exits with "Error reading input". The name must stay `vim`: delta picks
+# the `+line file` arguments by the editor's name.
+#
+exec "${EDITOR:-vim}" "$@" </dev/tty
