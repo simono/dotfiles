@@ -9,6 +9,7 @@
 	skippedCherryPicks = false
 [branch]
 	autoSetupRebase = always
+	sort = -committerdate
 [commit]
 	gpgSign = true
 	verbose = true
@@ -21,7 +22,7 @@
 	commit-decoration-style = blue ol
 	hyperlinks = true
 	line-numbers = true
-	# use n and N to move between diff sections
+	# n and N between files, outside the TUI
 	navigate = true
 	# Side by side only for hunks with both sides, and only from 140 columns.
 	side-by-side = hunk,140
@@ -89,6 +90,8 @@
 [rebase]
 	autoSquash = true
 	autoStash = true
+	# Moves a backup branch too: snapshot with a tag, or --no-update-refs.
+	updateRefs = true
 [rerere]
 	enabled = true
 [submodule]
