@@ -10,6 +10,7 @@ status is-interactive; or return
 abbr g git
 abbr ga 'git add'
 abbr gb 'git branch'
+abbr gba 'git branch -a'
 abbr gc 'git commit'
 abbr gca 'git commit -a'
 abbr gd 'git diff'
