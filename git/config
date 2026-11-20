@@ -15,8 +15,10 @@
 [core]
 	pager = delta
 [delta]
-	# Also match commits under git log --graph, so the TUI can open them.
-	commit-regex = "^[*|/\\\\ ]*commit "
+	# Commits under git log --graph, and the ▸ line of the [pretty] formats, so
+	# the TUI can open them.
+	commit-regex = "^[*|/\\\\ ]*(▸|commit )"
+	commit-decoration-style = blue ol
 	hyperlinks = true
 	line-numbers = true
 	# use n and N to move between diff sections
@@ -24,8 +26,33 @@
 	# Side by side only for hunks with both sides, and only from 140 columns.
 	side-by-side = hunk,140
 [delta-tui]
+	log-args = --stat
+	log-args = --pretty=commit-format
 	# Deleted files as a header only, as on GitHub.
 	show-args = -D
+	show-args = --pretty=commit-format-full
+	file-header = stat
+	start-folded = true
+[delta-tui "bindings.root"]
+	show-or-unfold = enter
+	toggle-all-sections = alt+enter
+	fold-or-back = h
+	help-menu = ?
+	# Default is alt+j / alt+k: option types accented letters on macOS.
+	move-next-section = ]
+	move-prev-section = [
+	# Default is enter: o opens the file, hunk or line in the editor, as in vim.
+	show = o
+[delta-tui "general.diff-renderer.feature-keys"]
+	# Keys set here replace the defaults: S and L again.
+	side-by-side = S
+	line-numbers = L
+	with-deleted = D
+	ignore-whitespace = W
+[delta-tui "general.views"]
+	ignore-whitespace = {command} -w
+	# show-args hides deleted files: open the commit again with them.
+	with-deleted = git show --pretty=commit-format-full {commit}
 [diff]
 	renames = copies
 	colorMoved = default
@@ -51,6 +78,9 @@
 	diff = delta --tui
 	log = delta --tui
 	show = delta --tui
+[pretty]
+	commit-format = tformat:%n%n▸ %h %C(blue)%an %C(blue)%ar%C(auto)%d%C(reset)%n%n    %C(green)%s%C(auto)
+	commit-format-full = tformat:%n%n▸ %h %C(blue)%an %C(blue)%ar%C(auto)%d%C(reset)%n%n%w(0,4,4)%C(green)%s%C(reset)%n%+b
 [pull]
 	rebase = true
 [push]
