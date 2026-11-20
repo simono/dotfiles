@@ -11,8 +11,6 @@
   loop:
     - src: "{{ playbook_dir }}/git/config"
       dest: ~/.config/git/config
-    - src: "{{ playbook_dir }}/git/delta-tui"
-      dest: ~/.config/git/delta-tui
     - src: "{{ lookup('env', 'HOMEBREW_PREFIX') }}/share/git-delta/themes.gitconfig"
       dest: ~/.config/git/config.themes
       enabled: "{{ lookup('env', 'HOMEBREW_PREFIX') | length > 0 }}"
