@@ -26,7 +26,7 @@
 	navigate = true
 	# Side by side only for hunks with both sides, and only from 140 columns.
 	side-by-side = hunk,140
-[delta-tui]
+	# TUI
 	log-args = --stat
 	log-args = --pretty=commit-format
 	# Deleted files as a header only, as on GitHub.
@@ -34,26 +34,27 @@
 	show-args = --pretty=commit-format-full
 	file-header = stat
 	start-folded = true
-[delta-tui "bindings.root"]
-	show-or-unfold = enter
-	toggle-all-sections = alt+enter
-	fold-or-back = h
-	help-menu = ?
+	bind = root.show-or-unfold enter
+	bind = root.toggle-all-sections alt+enter
+	# Default is alt+enter, taken by toggle-all-sections above.
+	bind = root.show-in-alt-editor ctrl+o
+	bind = root.fold-or-back h
+	bind = root.help-menu ?
 	# Default is alt+j / alt+k: option types accented letters on macOS.
-	move-next-section = ]
-	move-prev-section = [
+	bind = root.move-next-section ]
+	bind = root.move-prev-section [
 	# Default is enter: o opens the file, hunk or line in the editor, as in vim.
-	show = o
-[delta-tui "general.diff-renderer.feature-keys"]
+	bind = root.show o
+	# Default is o, taken by show above.
+	bind = root.show-on-github g+h
 	# Keys set here replace the defaults: S and L again.
-	side-by-side = S
-	line-numbers = L
-	with-deleted = D
-	ignore-whitespace = W
-[delta-tui "general.views"]
-	ignore-whitespace = {command} -w
+	feature-key = side-by-side S
+	feature-key = line-numbers L
+	feature-key = with-deleted D
+	feature-key = ignore-whitespace W
+	view = ignore-whitespace {command} -w
 	# show-args hides deleted files: open the commit again with them.
-	with-deleted = git show --pretty=commit-format-full {commit}
+	view = with-deleted git show --pretty=commit-format-full {commit}
 [diff]
 	renames = copies
 	colorMoved = default
