@@ -52,6 +52,7 @@
 	feature-key = line-numbers L
 	feature-key = with-deleted D
 	feature-key = ignore-whitespace W
+	feature-key = difftastic *
 	view = ignore-whitespace {command} -w
 	# show-args hides deleted files: open the commit again with them.
 	view = with-deleted git show --pretty=commit-format-full {commit}

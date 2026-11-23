@@ -4,6 +4,7 @@
 #
 
 brew "bat"
+brew "difftastic"
 brew "eza"
 brew "fd"
 brew "fish"
