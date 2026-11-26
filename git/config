@@ -33,7 +33,6 @@
 	show-args = -D
 	show-args = --pretty=commit-format-full
 	file-header = stat
-	start-folded = true
 	bind = root.show-or-unfold enter
 	bind = root.toggle-all-sections alt+enter
 	# Default is alt+enter, taken by toggle-all-sections above.
